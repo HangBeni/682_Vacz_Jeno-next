@@ -6,10 +6,10 @@ function Camp() {
 
      const GetElements= () => {
       for (let i = 0; i < 89; i++) {
-      Images.push(`https://ik.imagekit.io/HangBeni/Tábor/img_${i}.JPG`);
+      Images.push(`https://ik.imagekit.io/HangBeni/Tábor/img_${i}.JPG?tr=w-600`);
     }
     for (let i = 0; i < 14; i++) {
-      LongImages.push(`https://ik.imagekit.io/HangBeni/Tábor/long_pic${i}.JPG`);
+      LongImages.push(`https://ik.imagekit.io/HangBeni/Tábor/long_pic${i}.JPG?tr=w-300`);
     }
   }
       
@@ -18,14 +18,22 @@ function Camp() {
     return ( 
         <div>
         {
-          Images.map((e) => {
-           return( <img src={e} loading="lazy"/>)
+          Images.map((i,e) => {
+           return(
+               e>8 ?
+                <img src={i} loading="lazy"/>
+                :<img src={i} loading="eager"/>
+               );
           })
           
         }   
         { 
-        LongImages.map((e) => {
-            return( <img src={e} loading="lazy"/>)
+        LongImages.map((i,e) => {
+            return(
+                e>8 ?
+                 <img src={i} loading="lazy"/>
+                 :<img src={i} loading="eager"/>
+                );
            })
         }
         </div>
