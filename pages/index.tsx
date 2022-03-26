@@ -7,10 +7,10 @@ import Contacts from '../components/index/Contacts'
 const Home: NextPage = () => {
   return (
     <div>
-      <head>
+      <Head>
         <title>682 Vácz Jenő</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      </head>
+      </Head>
     <Navbar/>
     <About/>
     <Contacts/>
