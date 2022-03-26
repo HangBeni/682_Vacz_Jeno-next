@@ -20,7 +20,7 @@ function Camp() {
         {
           Images.map((i,e) => {
            return(
-               e>8 ?
+               e>10 ?
                 <img src={i} loading="lazy"/>
                 :<img src={i} loading="eager"/>
                );
@@ -30,7 +30,7 @@ function Camp() {
         { 
         LongImages.map((i,e) => {
             return(
-                e>8 ?
+                e>10 ?
                  <img src={i} loading="lazy"/>
                  :<img src={i} loading="eager"/>
                 );
