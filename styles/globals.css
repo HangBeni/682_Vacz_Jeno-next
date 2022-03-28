@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+--trendy-green: #76b82a;
+    --light-blue: #0075bf;
+    --regos:#93130a;
+    --türkisz: #009a93;
+*/
+@layer components{
+
+    .nav_link{
+        @apply block mx-4 cursor-pointer hover:text-[#93130a] hover:translate-x-[6px] transition-transform after:h-0.5 after:absolute after:left-0 after:bottom-0 after:w-full after:bg-orange-400 after:scale-x-0 after:origin-right after:transition-transform  hover:after:scale-x-100   hover:after:origin-left;
+       
+    }
+}

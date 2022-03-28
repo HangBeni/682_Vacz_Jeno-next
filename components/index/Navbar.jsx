@@ -1,9 +1,11 @@
+import Link  from "next/link";
+
 export default function Navbar(){
     return(
-        <nav className="flex h-20 sticky top-0 z-40 text-xl w-full justify-center items-center">
-        <div className="flex justify-between p-5 mx-auto my-0">
+        <nav className="flex bg-white sticky top-0 z-40 text-xl border-[#76b82a] border-b-4 border-r-4 border-l-8 rounded-lg">
+        <div className=" container self-center flex  flex-wrap py-4 justify-between mx-auto  w-11/12">
         
-            <h1 className="flex font-extrabold text-3xl">682 Vácz Jenő</h1>
+            <h1 className="flex font-extrabold text-3xl ">682 Vácz Jenő</h1>
                                
             <div>
             <span ></span>
@@ -11,18 +13,26 @@ export default function Navbar(){
             <span ></span>
             </div>
             
-            <ul className="items-center flex ">
-               <li className="flex m-2 mx-auto">
-                   <a>Főoldal</a>
+            <ul className="flex justify-between items-center w-auto ml-auto">
+               <li>
+                   <Link  href="/">
+                   <a className="nav_link">Főoldal</a>
+                   </Link>
                </li>
-               <li className="flex m-2 mx-auto">
-                <a >Csapatunkról</a>
+               <li>
+                <Link  href="/Team">
+                <a className="nav_link">Csapatunkról</a>
+                </Link>
             </li>
-            <li className="flex m-2 mx-auto">
-                <a>Galéria</a>
+            <li>
+                <Link  href="/Gallery">
+                <a className="nav_link">Galéria</a>
+                </Link >
             </li>
-            <li className="flex m-2 mx-auto">
-                <a>ECSET Naptárunk</a>
+            <li>
+                <Link  href="https://ecset.cserkesz.hu/mcssz/682/naptar">
+                <a className="nav_link">ECSET Naptárunk</a>
+                </Link >
             </li>
             </ul>
         </div>
@@ -30,6 +40,7 @@ export default function Navbar(){
     </nav>
     );
 }
+
 
 
 
@@ -92,14 +103,14 @@ transition: all 0.3s ease;
 
 
 
-.navbar__links:hover{
+.navbar__link s:hover{
     color: var(--regos);
     transform: translateX(10px);
     list-style: none;
     transition: all 200ms ease-in-out;
     opacity: 1;
 }
-.navbar__links::after{
+.navbar__link s::after{
     height: 2px;
 position: absolute;
 content: "";
@@ -111,7 +122,7 @@ transform: scaleX(0);
 transform-origin: right;
 transition: all 200ms ease-in;
 }
-.navbar__links:hover::after{
+.navbar__link s:hover::after{
 transform: scaleX(1);
 transform-origin: left;
 }
