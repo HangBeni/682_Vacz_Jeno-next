@@ -1,10 +1,10 @@
 export default function Contacts() {
     return(
-        <footer >
-        <p >Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
-        <p >Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
-        <p >Created by: Hang Benjámin</p>
-        <p >A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja. www.cserkesz.hu</p>
+    <footer className="grid grid-cols-2 grid-flow-row place-items-center opacity-70 hover:opacity-100 transition-all">
+        <p className="text-center ">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
+        <p className="text-center ">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja. www.cserkesz.hu</p>
+        <p className="text-center ">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
+        <p className="text-center ">Created by: Hang Benjámin</p>
     </footer>
     );
 }
