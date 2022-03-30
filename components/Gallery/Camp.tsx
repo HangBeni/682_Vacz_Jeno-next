@@ -17,23 +17,23 @@ function Camp() {
       GetElements();
      
     return ( 
-        <div>
+        <div className="">
         {
           Images.map((i,e) => {
            return(
                e>10 ?
-                <img key={e.toString()} src={i} loading="lazy"/>
-                :<img key={e.toString()} src={i} loading="eager"/>
+                <img src={i} key={i} loading="lazy"/>
+                :<img  src={i}  key={i} loading="eager"/>
                );
           })
         }  
-         
+
         { 
         LongImages.map((i,e) => {
             return(
                 e>10 ?
-                 <img key={e.toString()} src={i} loading="lazy"/>
-                 :<img key={e.toString()} src={i} loading="eager"/>
+                 <img  src={i}  key={i} loading="lazy"/>
+                 :<img src={i} key={i} loading="eager"/>
                 );
            })
         }

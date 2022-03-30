@@ -5,7 +5,7 @@ function Mates() {
             
             <div>
 
-            <Image title="Cserkész Liliom" alt="Cserkész Liliom"  width="350px" height="350px" src="https://ik.imagekit.io/HangBeni/T%C3%A1bor/liliom.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1646152003125"/>    
+            <Image title="Cserkész Liliom" alt="Cserkész Liliom"  width="350px" height="350px" src="https://ik.imagekit.io/HangBeni/Tabor/liliom.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1646152003125"/>    
 
         <div >
             
