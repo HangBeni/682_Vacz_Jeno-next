@@ -1,3 +1,4 @@
+import { HtmlAttributes } from 'csstype';
 import Enums from '../Enums'
 
 function Camp() {
@@ -13,9 +14,14 @@ function Camp() {
       LongImages.push(`${Enums.CAMP_LONG_IMGS}${i}.JPG?tr=w-300`);
     }
   }
+
+
       
       GetElements();
      
+
+
+
     return ( 
         <div className="m-4">
           <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mx-auto">
@@ -39,6 +45,10 @@ function Camp() {
                 );
            })
         }
+          </div>
+
+          <div>
+
           </div>
         </div>
      );
