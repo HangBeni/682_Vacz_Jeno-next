@@ -15,9 +15,13 @@ function Farsang() {
       }
     }
         
-        GetElements();
-       
-        const FarsangGal = () => {
+        
+      return ( 
+          <div className="m-4">
+            <button onClick={GetElements}>Farsang</button> 
+
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+            {
           Images.map((i,e) => {
             return(
                 e>10 ?
@@ -26,7 +30,10 @@ function Farsang() {
                 );
            })
         }
-        const FarsangLongGal = () => {
+            </div>
+
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+            {
           LongImages.map((i,e) => {
             return(
                 e>10 ?
@@ -35,16 +42,8 @@ function Farsang() {
                 );
           })
         }
-      return ( 
-          <div>
-            <button>Farsang</button> 
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
-                {FarsangGal}
-            </div>
-
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
-                {FarsangLongGal}
             </div> 
+
           </div>
        );
   }
