@@ -14,22 +14,22 @@ export default function Navbar(){
             </div>
             
             <ul className="flex justify-between items-center w-auto ml-auto">
-               <li>
+               <li key="Főoldal">
                    <Link  href="/">
                    <a className="nav_link">Főoldal</a>
                    </Link>
                </li>
-               <li>
+               <li key="Csapatunkról">
                 <Link  href="/Team">
                 <a className="nav_link">Csapatunkról</a>
                 </Link>
             </li>
-            <li>
+            <li key="Galéria">
                 <Link  href="/Gallery">
                 <a className="nav_link">Galéria</a>
                 </Link >
             </li>
-            <li>
+            <li key="ECSET Naptárunk">
                 <Link  href="https://ecset.cserkesz.hu/mcssz/682/naptar">
                 <a className="nav_link">ECSET Naptárunk</a>
                 </Link >

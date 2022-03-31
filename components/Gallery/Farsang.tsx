@@ -1,3 +1,5 @@
+import Enums from '../Enums'
+
 function Farsang() {
 
     const Images = new Array()
@@ -5,10 +7,10 @@ function Farsang() {
   
        const GetElements= () => {
         for (let i = 1; i < 19; i++) {
-        Images.push(`https://ik.imagekit.io/HangBeni/Farsang/Farsang_${i}.JPG?tr=w-600`);
+        Images.push(`${Enums.FARSANG_IMGS}${i}.JPG?tr=w-600`);
       }
       for (let i = 1; i < 3; i++) {
-        LongImages.push(`https://ik.imagekit.io/HangBeni/Farsang/Farsang_long_${i}.JPG?tr=w-300`);
+        LongImages.push(`${Enums.FARSANG_LONG_IMGS}${i}.JPG?tr=w-300`);
       }
     }
         
@@ -20,8 +22,8 @@ function Farsang() {
             Images.map((i,e) => {
              return(
                  e>10 ?
-                  <img src={i} loading="lazy"/>
-                  :<img src={i} loading="eager"/>
+                  <img key={e.toString()} src={i} loading="lazy"/>
+                  :<img key={e.toString()} src={i} loading="eager"/>
                  );
             })
             
@@ -30,8 +32,8 @@ function Farsang() {
           LongImages.map((i,e) => {
               return(
                   e>10 ?
-                   <img src={i} loading="lazy"/>
-                   :<img src={i} loading="eager"/>
+                   <img key={e.toString()} src={i} loading="lazy"/>
+                   :<img key={e.toString()} src={i} loading="eager"/>
                   );
              })
           }
