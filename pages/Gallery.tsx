@@ -9,7 +9,6 @@ const Gallery: NextPage = () => {
     <div>
       <Navbar/>
        <Camp/>
-       <Farsang/>
       <Contacts/>
     </div>
   )
