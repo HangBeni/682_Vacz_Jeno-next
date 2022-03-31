@@ -40,17 +40,15 @@ function Camp() {
 
     return ( 
         <div className="m-4">
-          <button>
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mx-auto">
-              {CampGal}  
-            </div>
-          </button>
+          <button>Tábor</button>
 
-          <button>
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mt-4">
+          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mx-auto">
+              {CampGal}  
+          </div>
+          
+          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mt-4">
               {CampLongGal}
             </div>
-          </button>
           <div>
             {/*Popup or something else*/ }
           </div>

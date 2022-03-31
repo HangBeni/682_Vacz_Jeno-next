@@ -37,17 +37,14 @@ function Farsang() {
         }
       return ( 
           <div>
-            <button>
-              <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+            <button>Farsang</button> 
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
                 {FarsangGal}
-              </div>
-            </button>
+            </div>
 
-            <button>
-              <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
                 {FarsangLongGal}
-              </div> 
-            </button> 
+            </div> 
           </div>
        );
   }
