@@ -27,7 +27,7 @@ function About() {
             tábort tartunk.
             </p>
 
-            <img className="mx-auto" src="https://ik.imagekit.io/HangBeni/Tábor/img_0.JPG?tr=w-850" alt="Csapatunk tagjai" />
+            <img className="mx-auto" src="https://ik.imagekit.io/HangBeni/Tabor/img_0.JPG?tr=w-850" alt="Csapatunk tagjai a nyári táborban" title="Csapatunk tagjai a nyári táborban" />
             
             <p className="m-4">
             Alapvető értékeink a kereszténység, a hazaszeretet, természet szeretet. A közösségben és a

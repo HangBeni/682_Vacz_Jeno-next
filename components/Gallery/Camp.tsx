@@ -17,7 +17,8 @@ function Camp() {
       GetElements();
      
     return ( 
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+        <div className="m-4">
+          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mx-auto">
         {
           Images.map((i,e) => {
            return(
@@ -27,7 +28,8 @@ function Camp() {
                );
           })
         }  
-
+          </div>
+          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mt-4">
         { 
         LongImages.map((i,e) => {
             return(
@@ -37,6 +39,7 @@ function Camp() {
                 );
            })
         }
+          </div>
         </div>
      );
 }
