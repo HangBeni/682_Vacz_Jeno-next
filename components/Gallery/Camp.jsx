@@ -17,6 +17,7 @@ function Camp() {
      
     return ( 
         <div>
+          <div className="grid">
         {
           Images.map((i,e) => {
            return(
@@ -26,7 +27,8 @@ function Camp() {
                );
           })
           
-        }   
+        }  
+        </div> 
         { 
         LongImages.map((i,e) => {
             return(
