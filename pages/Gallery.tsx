@@ -1,15 +1,12 @@
 import type { NextPage } from 'next'
-import Camp from '../components/Gallery/Camp'
 import Navbar from '../components/index/Navbar'
 import Contacts from '../components/index/Contacts'
-import Farsang from '../components/Gallery/Farsang'
-
+import GalleryLoadUp from '../components/Gallery/GallerysLoadUp'
 const Gallery: NextPage = () => {
   return (
     <div>
       <Navbar/>
-       <Camp/>
-       <Farsang/>
+       <GalleryLoadUp/>
       <Contacts/>
     </div>
   )
