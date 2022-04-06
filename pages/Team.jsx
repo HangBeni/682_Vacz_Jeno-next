@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
 import Contacts from '../components/index/Contacts'
 import Laws from '../components/Team/Laws'
 import TeamMates from '../components/Team/TeamMates'
 import Navbar from '../components/index/Navbar'
-const Team: NextPage = () => {
+const Team = () => {
   return (
     <div>
         <Navbar/>

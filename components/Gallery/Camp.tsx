@@ -1,46 +1,45 @@
+import Image from 'next/image'
 
+type Image = {  
+    id: number
+    imageScr: string
+    tags: string
+  }
 
-function Camp() {
-
-    return ( 
-        <div className="m-4">
-          <button onClick={GetElements}>Tábor</button>
-
-          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mx-auto">
-            {
-              LongImages.map((i,e) => {
-                return(
-                    e<10 ?
-                    <Image layout="responsive" width={150} height={400}  className='block max-w-full relative cursor-pointer max-h-80 rounded-md  hover:translate-x-1 hover:translate-y-1 hover:shadow-black hover:shadow-md transition-all' src={i}  key={i} loading="lazy" />
-                    :<Image layout="responsive" width={150} height={400}  className='block max-w-full relative cursor-pointer max-h-80 rounded-md  hover:translate-x-1 hover:translate-y-1 hover:shadow-black hover:shadow-md transition-all' src={i} key={i} loading="lazy" />
-                    );
-                })
-            }
-          </div>
-
-          <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 mt-4">
-          {
-              Images.map((i,e) => {
-              return(
-                  e>10 ?
-                  <Image layout="responsive" quality={60} width={300} height={200} src={i} key={i} loading="lazy" className='block max-w-full relative cursor-pointer max-h-80 rounded-md hover:translate-x-1 hover:translate-y-1 hover:shadow-black hover:shadow-md transition-all'/>
-                  :<Image layout="responsive" quality={60} width={300} height={200} src={i}  key={i} loading="eager" className='block max-w-full relative cursor-pointer max-h-80 rounded-md  hover:translate-x-1 hover:translate-y-1 hover:shadow-black hover:shadow-md transition-all'/>
-                  );
-            })
-          }
-            </div>
-          <div>
-            {/*Popup or something else*/ }
-          </div>
-        </div>
-     );
-        
+export default function Camp({ camp }: { camp: Image[] }) {
+  return (
+    <div className="m-4">
+      <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+        {camp.map((image) => {
+          return <CampImage key={image.id} camp={image} />
+        })}
+      </div>
+    </div>
+  )
 }
 
-
-
-
-
-
-
-export default Camp;
+function CampImage({ camp }: { camp: Image }) {
+  return camp.tags.includes('Long') ? (
+   <a href={camp.imageScr}>
+     <Image
+      layout="fixed"
+      width={240}
+      height={400}
+      src={camp.imageScr}
+      key={camp.id}
+      className="relative block max-h-80 max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+      />
+    </a>
+  ) : (
+   <a href={camp.imageScr}>
+      <Image
+        layout="fixed"
+        width={400}
+        height={300}
+        src={camp.imageScr}
+        key={camp.id}
+        className="relative block max-h-80 max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+      />
+    </a>
+  )
+}

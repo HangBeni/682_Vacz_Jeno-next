@@ -1,10 +1,14 @@
-import type { NextPage } from 'next'
 import Head from 'next/head';
 import Navbar from '../components/index/Navbar'
 import About from '../components/index/About'
 import Contacts from '../components/index/Contacts'
+import { NextPage } from 'next';
 
-const Home: NextPage = () => {
+
+
+
+
+const Home : NextPage = () => {
   return (
     <div>
       <Head>
