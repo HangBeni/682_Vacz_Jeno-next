@@ -1,34 +1,40 @@
-import Camp from '../components/Gallery/Camp'
-import { createClient } from '@supabase/supabase-js'
+import Camp from "../components/Gallery/Camp"
+import  Farsang  from "../components/Gallery/Farsang"
+import supabase from "../utils/supabase"
 
 export async function getStaticProps() {
-  const supabaseAdmin = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-    process.env.SUPABASE_SERVICE_ROLE_KEY || ''
-  )
-  const { data } = await supabaseAdmin.from('Camp').select('*').order('id')
+
+  const {data: camp} = await supabase.from('Camp').select('*').order('id')
+  const {data: farsang} = await supabase.from('Farsang').select('*').order('id')
+
   return {
     props: {
-      camp: data
+      camp,
+      farsang
     },
   }
 }
 
 type Image = {  
-  id: number
-  imageScr: string
-  tags: string
-}
+    id: number
+    imageScr: string
+    tags: string
+  }
 
 
-export default function Gallery({ camp }: { camp: Image[] }) {
+
+
+
+ function Gallery({ camp, farsang }: { camp: Image[], farsang:Image[] }) {
  return(
-   <>
-   <Camp camp={camp}/>
-   </>
- )
+ <>
+ <Camp camp={camp}/>
+ <Farsang farsang={farsang}/>
+ </> 
+ );
 }
 
 
 
 
+export default Gallery
