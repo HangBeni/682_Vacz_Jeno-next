@@ -1,36 +1,13 @@
-import Camp from "../components/Gallery/Camp"
-import  Farsang  from "../components/Gallery/Farsang"
-import supabase from "../utils/supabase"
-
-export async function getStaticProps() {
-
-  const {data: camp} = await supabase.from('Camp').select('*').order('id')
-  const {data: farsang} = await supabase.from('Farsang').select('*').order('id')
-
-  return {
-    props: {
-      camp,
-      farsang
-    },
-  }
-}
-
-type Image = {  
-    id: number
-    imageScr: string
-    tags: string
-  }
+import Link from "next/link";
 
 
 
-
-
- function Gallery({ camp, farsang }: { camp: Image[], farsang:Image[] }) {
+ function Gallery() {
  return(
- <>
- <Camp camp={camp}/>
- <Farsang farsang={farsang}/>
- </> 
+ <div>
+   <Link as='/Gallery/Camp' href='/Gallery/[event]'><a>Táborunk</a></Link>
+   <Link as='/Gallery/Farsang' href='/Gallery/[event]'><a>Farsang</a></Link>   
+ </div> 
  );
 }
 
