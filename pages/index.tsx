@@ -2,13 +2,27 @@ import Head from 'next/head';
 import Navbar from '../components/index/Navbar'
 import About from '../components/index/About'
 import Contacts from '../components/index/Contacts'
-import { NextPage } from 'next';
+import supabase from '../utils/supabase';
 
 
+export async function getStaticProps() {
+ const {data:data} = await supabase.from('Camp').select('*').order('id')
+
+  return{
+      props:{
+          data,
+      }
+  }
+}
+
+type Image = {  
+  id: number
+  imageScr: string
+  tags: string
+}
 
 
-
-const Home : NextPage = () => {
+function Home({data}:{data:Image[]}) {
   return (
     <div>
       <Head>
@@ -16,7 +30,7 @@ const Home : NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
     <Navbar/>
-    <About/>
+    <About data={data}/>
     <Contacts/>
     </div>
   );

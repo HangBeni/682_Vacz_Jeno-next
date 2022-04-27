@@ -34,7 +34,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
     <div id='camp' className="m-4 hidden">
       <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
-         if(image.tags.includes('Long'))
+         if(image.imageScr.includes('long'))
          return (          
               <a href={image.imageScr} >
               <Image
@@ -55,7 +55,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
 
       <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
-          if(!image.tags.includes('Long'))
+          if(!image.imageScr.includes('long'))
           return (
             <a href={image.imageScr}  >
             <Image

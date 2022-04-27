@@ -33,7 +33,7 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
     <div id='farsi' className="m-4 hidden">
       <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {farsang?.map((image) => {
-         if(image.tags.includes('Long'))
+         if(image.imageScr.includes('long'))
          return (          
               <a href={image.imageScr} >
               <Image
@@ -54,7 +54,7 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
 
       <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {farsang?.map((image) => {
-          if(!image.tags.includes('Long'))
+          if(!image.imageScr.includes('long'))
           return (
             <a href={image.imageScr}  >
             <Image
