@@ -34,23 +34,24 @@ function About({data}:{data:Image[]}) {
             programunk van: kirándulások, portyák, csapat karácsony, farsang, nyáron pedig nomád
             tábort tartunk.
             </p>
+            <div className='flex relative w-full justify-between'>
             {
                 data?.map((image) => {
                     if(image.tags.includes('Csapatunk nyáritáborában'))
-                    return
+                    return(
                     <Image
-                        layout="responsive"
-                        width={150}
+                        layout="fixed"
+                        width={400}
                         height={250}
                         quality={100}
                         src={image.imageScr}
                         key={image.id}
-                        title={image.tags}
                         alt={image.tags}
-                        className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
-                    />
+                        className="mx-auto block"/>
+                    )
                 })
             }
+            </div>
             <p className="m-4">
             Alapvető értékeink a kereszténység, a hazaszeretet, természet szeretet. A közösségben és a
             természetben megtapasztalhatjuk a Jóisten irántunk való szeretetét és az ebből fakadó örömet.

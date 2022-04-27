@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/[Gallery]/GallerysLoadUp.jsx", "pages/_app.tsx", "pages/Team.jsx", "pages/Gallery.tsx", "pages/index.tsx", "pages/[Gallery]/Camp.tsx", "pages/[Gallery]/Farsang.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/[Gallery]/GallerysLoadUp.jsx", "pages/_app.tsx", "pages/Team.tsx", "pages/Gallery.tsx", "pages/index.tsx", "pages/[Gallery]/Camp.tsx", "pages/[Gallery]/Farsang.tsx"],
   "exclude": ["node_modules"]
 }
