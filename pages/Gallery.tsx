@@ -1,7 +1,7 @@
 import Camp from "../components/Gallery/Camp"
 import  Farsang  from "../components/Gallery/Farsang"
 import supabase from "../utils/supabase"
-
+import Navbar from "../components/index/Navbar"
 export async function getStaticProps() {
 
   const {data: camp} = await supabase.from('Camp').select('*').order('id')
@@ -26,10 +26,19 @@ type Image = {
 
 
  function Gallery({ camp, farsang }: { camp: Image[], farsang:Image[] }) {
- return(
+ 
+ 
+ 
+ const ShowFarsang = () =>{
+  return<Farsang farsang={farsang}/>;
+ }
+ 
+  return(
  <>
+ <Navbar></Navbar>
  <Camp camp={camp}/>
  <Farsang farsang={farsang}/>
+ 
  </> 
  );
 }
