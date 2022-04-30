@@ -4,7 +4,7 @@ import TeamMates from '../components/Team/TeamMates'
 import Navbar from '../components/index/Navbar'
 const Team = () => {
   return (
-    <div>
+    <div className='block justify-center'>
         <Navbar/>
           <Laws/>
           <TeamMates/>
