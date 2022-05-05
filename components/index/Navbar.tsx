@@ -1,43 +1,52 @@
-import Link  from "next/link";
+import Link from 'next/link'
 
-export default function Navbar(){
-    return(
-        <nav className="flex bg-white sticky top-0 z-40 text-xl border-[#76b82a] border-b-4 border-r-4 border-l-8 rounded-lg">
-        <div className="container self-center flex flex-wrap md:py-4 sm:py-2 justify-between mx-auto  w-11/12 sm:place-content-center">
-        
-            <h1 className="flex font-extrabold text-3xl md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] ">682 </h1>
-            
-            <ul className="flex justify-between items-center w-auto ml-auto">
-               <li key="Főoldal">
-                   <Link  href="/">
-                   <a className="nav_link">Főoldal</a>
-                   </Link>
-               </li>
-               <li key="Csapatunkról">
-                <Link  href="/Team">
-                <a className="nav_link">Csapatunkról</a>
-                </Link>
-            </li>
-            <li key="Galéria">
-                <Link  href="/Gallery">
-                <a className="nav_link">Galéria</a>
-                </Link >
-            </li>
-            <li key="ECSET Naptárunk">
-                <Link  href="https://ecset.cserkesz.hu/mcssz/682/naptar">
-                <a className="nav_link">ECSET Naptár</a>
-                </Link >
-            </li>
-            </ul>
-        </div>
-        
+export default function Navbar(this: any) {
+  
+  const menu= () => {
+      const list = document.querySelector('ul');
+    list?.id=== 'menu' ? (list.id='close', list?.classList.add('top-10'),list?.classList.add('opacity-100') ) :(list!.id='menu', list?.classList.remove('top-10'),list?.classList.remove('opacity-100'));
+  }
+  
+    return (
+    <nav className="sticky top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
+      <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
+        <h1 className="flex z-1 text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] ">
+          682{' '}
+        </h1>
+        <button onClick={menu} className="block mt-2 mr-0 space-y-[5px] md:opacity-0 opacity-100">
+            <div className="w-7 h-0.5 bg-gray-600"></div>
+            <div className="w-7 h-0.5 bg-gray-600"></div>
+            <div className="w-7 h-0.5 bg-gray-600"></div>
+        </button>
+        <ul id='menu' className="absolute right-0 top-10 z-[-1] text-left w-full bg-[#76b82a]
+         md:static md:z-auto md:ml-auto md:flex md:w-fit md:items-center
+        md:bg-white md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0
+         md:top-[-400px] transition-all ease-in duration-500 ">
+          <li key="Főoldal">
+            <Link href="/">
+              <a className="nav_link">Főoldal</a>
+            </Link>
+          </li>
+          <li key="Csapatunkról">
+            <Link href="/Team">
+              <a className="nav_link">Csapatunkról</a>
+            </Link>
+          </li>
+          <li key="Galéria">
+            <Link href="/Gallery">
+              <a className="nav_link">Galéria</a>
+            </Link>
+          </li>
+          <li key="ECSET Naptárunk">
+            <Link href="https://ecset.cserkesz.hu/mcssz/682/naptar">
+              <a className="nav_link">ECSET Naptár</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
-    );
+  )
 }
-
-
-
-
 
 /*
 .navbar{
