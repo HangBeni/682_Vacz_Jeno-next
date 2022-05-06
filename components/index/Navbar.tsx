@@ -1,27 +1,27 @@
 import Link from 'next/link'
 
-export default function Navbar(this: any) {
+export default function Navbar() {
   
   const menu= () => {
       const list = document.querySelector('ul');
-    list?.id=== 'menu' ? (list.id='close', list?.classList.add('top-10'),list?.classList.add('opacity-100') ) :(list!.id='menu', list?.classList.remove('top-10'),list?.classList.remove('opacity-100'));
+    list?.id=== 'menu' ? (list.id='close', list?.classList.add('top-10'),list?.classList.remove('opacity-0'),list?.classList.remove('top-[-400px]') ) :(list!.id='menu', list?.classList.remove('top-10'),list?.classList.add('opacity-0'), list?.classList.add('top-[-400px]') );
   }
   
     return (
-    <nav className="sticky top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
+    <nav className="sticky z-10 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
         <h1 className="flex z-1 text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] ">
           682{' '}
         </h1>
-        <button onClick={menu} className="block mt-2 mr-0 space-y-[5px] md:opacity-0 opacity-100">
+        <button onClick={menu} className="block z-10 mt-2 mr-0 space-y-[5px] md:opacity-0 opacity-100">
             <div className="w-7 h-0.5 bg-gray-600"></div>
             <div className="w-7 h-0.5 bg-gray-600"></div>
             <div className="w-7 h-0.5 bg-gray-600"></div>
         </button>
-        <ul id='menu' className="absolute right-0 top-10 z-[-1] text-left w-full bg-[#76b82a]
-         md:static md:z-auto md:ml-auto md:flex md:w-fit md:items-center
-        md:bg-white md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0
-         md:top-[-400px] transition-all ease-in duration-500 ">
+        <ul id='menu' className="absolute right-0 bg-[#76b82a]
+         md:static md:ml-auto md:flex w-fit md:items-center text-2xl
+        md:bg-white md:py-0 py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]
+         transition-all ease-in duration-300 rounded-xl text-right font-semibold">
           <li key="Főoldal">
             <Link href="/">
               <a className="nav_link">Főoldal</a>
