@@ -4,11 +4,13 @@ export default function Navbar() {
   
   const menu= () => {
       const list = document.querySelector('ul');
-    list?.id=== 'menu' ? (list.id='close', list?.classList.add('top-10'),list?.classList.remove('opacity-0'),list?.classList.remove('top-[-400px]') ) :(list!.id='menu', list?.classList.remove('top-10'),list?.classList.add('opacity-0'), list?.classList.add('top-[-400px]') );
+    list?.id=== 'menu' ? 
+    (list.id='close', list?.classList.add('right-0'),list?.classList.remove('opacity-0'),list?.classList.remove('-right-32')) 
+    :(list!.id='menu', list?.classList.remove('right-0'),list?.classList.add('opacity-0'), list?.classList.add('-right-32'));
   }
   
     return (
-    <nav className="sticky z-10 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
+    <nav className=" sticky z-10 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
         <h1 className="flex z-1 text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] ">
           682{' '}
@@ -18,10 +20,10 @@ export default function Navbar() {
             <div className="w-7 h-0.5 bg-gray-600"></div>
             <div className="w-7 h-0.5 bg-gray-600"></div>
         </button>
-        <ul id='menu' className="absolute right-0 bg-[#76b82a]
+        <ul id='menu' className="absolute -right-32 bg-[#76b82a]
          md:static md:ml-auto md:flex w-fit md:items-center text-2xl
-        md:bg-white md:py-0 py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]
-         transition-all ease-in duration-300 rounded-xl text-right font-semibold">
+        md:bg-white md:py-0 py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-0
+         transition-all ease-in duration-300 rounded-xl text-right font-semibold pt-32 pb-32 ">
           <li key="Főoldal">
             <Link href="/">
               <a className="nav_link">Főoldal</a>
