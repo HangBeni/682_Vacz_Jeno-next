@@ -9,14 +9,14 @@ function Laws() {
         const laws = document.getElementById('laws');
         const content = document.getElementById('content');
         open!=='open' ?
-        (laws?.classList.add('translate-y-[-500px]'),setOpen('open'),content?.classList.remove('h-auto') )
-        :(laws?.classList.remove('translate-y-[-500px]'),setOpen('close'), content?.classList.add('h-auto')) ;
+        (laws?.classList.add('translate-y-[-1000px]'),setOpen('open'),content?.classList.remove('h-auto'), content?.classList.add('h-2') )
+        :(laws?.classList.remove('translate-y-[-1000px]'),setOpen('close'), content?.classList.add('h-auto'), content?.classList.remove('h-2') ) ;
     }
 
     return (
         <div id="content" className="content-center items-center mt-4 h-2"> 
         <button onClick={show} className="block uppercase font-mono text-center my-2 mx-auto text-4xl p-2 w-auto ">Törvényeink</button>
-            <ol id="laws" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center translate-y-[-500px] transition-all duration-500 mb-4 p-3">  
+            <ol id="laws" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center translate-y-[-1000px] transition-all duration-500 mb-4 p-3">  
                 <li className="first-letter:text-2xl text-center p-2 text-base md:text-lg lg:text-xl  ">1. A cserkész <strong>híven teljesíti kötelességeit </strong>, amelyekkel <strong> Istennek </strong>,<strong>hazájának</strong>  és <strong>embertársainak</strong>  tartozik.</li>
                 <li className="first-letter:text-2xl text-center p-2 text-base md:text-lg lg:text-xl  ">2. A cserkész,<strong>ahol tud</strong> ,<strong>segít.</strong></li>
                 <li className="first-letter:text-2xl text-center p-2 text-base md:text-lg lg:text-xl  ">3. A cserkész <strong> minden cserkészt testvérének tekint.</strong></li>
