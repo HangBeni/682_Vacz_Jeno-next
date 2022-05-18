@@ -5,8 +5,8 @@ export default function Navbar() {
   const menu= () => {
       const list = document.querySelector('ul');
     list?.id=== 'menu' ? 
-    (list.id='close', list?.classList.add('right-0'),list?.classList.remove('opacity-0'),list?.classList.remove('-right-60')) 
-    :(list!.id='menu', list?.classList.remove('right-0'),list?.classList.add('opacity-0'), list?.classList.add('-right-60'));
+    (list.id='close',list?.classList.remove('hidden'),list?.classList.add('right-0')) 
+    :(list!.id='menu', list?.classList.add('hidden'));
   }
   
     return (
@@ -20,9 +20,9 @@ export default function Navbar() {
             <div className="w-7 h-0.5 bg-gray-600"></div>
             <div className="w-7 h-0.5 bg-gray-600"></div>
         </button>
-        <ul id='menu' className="absolute -right-60 bg-[#76b82a]
-         md:static md:ml-auto md:flex w-fit md:items-center text-2xl
-        md:bg-white md:py-0 py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-0
+        <ul id='menu' className="absolute bg-[#76b82a]
+         md:static md:ml-auto md:flex md:items-center text-2xl
+        md:bg-white md:py-0 py-2 md:pl-0 pl-7 hidden top-0
          transition-all ease-in duration-300 rounded-xl text-right font-semibold pt-32 pb-32 ">
           <li key="Főoldal">
             <Link href="/">
