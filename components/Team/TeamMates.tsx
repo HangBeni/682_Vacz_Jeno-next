@@ -22,15 +22,16 @@ function Mates() {
     return (
             
             <div>
-                <div className="flex place-content-center md:rounded-full rounded-3xl sm:w-11/12 sm:mx-auto mt-32 bg-gradient-to-b from-yellow-300 to-white ">
+                <div className="flex place-content-center h-fit md:rounded-full rounded-3xl sm:w-11/12 sm:mx-auto mt-32 bg-gradient-to-b from-yellow-300 to-white ">
                     <Image
                     onClick={show}
-                    className="block m-auto w-full  cursor-pointer bg-white rounded-[100%] "
+                    className="block  m-auto w-full cursor-pointer bg-white rounded-[100%] "
                     title="Cserkész Liliom" alt="Cserkész Liliom"
                     width='250px' height='250px'
                     src="https://ik.imagekit.io/HangBeni/Tabor/liliom_D3k2o81c_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649005932775"
                     />    
                 </div>
+               
         <div id="team" className="hidden">
             
             <h1 >Csapatunk tagjai és felépítése</h1>

@@ -1,6 +1,6 @@
 export default function Contacts() {
     return(
-    <footer className="grid grid-cols-2 grid-flow-row place-items-center opacity-70 hover:opacity-100 transition-all mb-5">
+    <footer className="grid grid-cols-2 grid-flow-row place-items-center opacity-70 hover:opacity-100 transition-all mt-10">
         <p className="text-center ">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
         <p className="text-center ">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja. www.cserkesz.hu</p>
         <p className="text-center ">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
