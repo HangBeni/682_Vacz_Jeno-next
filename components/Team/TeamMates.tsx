@@ -32,99 +32,99 @@ function Mates() {
                     />    
                 </div>
                
-        <div id="team" className="hidden">
+        <div id="team" className="hidden ">
             
-            <h1 >Csapatunk tagjai és felépítése</h1>
-                <div >
+            <h1 className="block font-extrabold text-3xl w-fit mx-auto mt-6">Csapatunk tagjai</h1>
+                <div className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10" >
 
-                <div>
-                    <h2 >Vidra őrs</h2>            
-                    <ul>
-                    <li>Hang Benjámin </li>
-                    <li>Nyisztor Álmos</li>
-                    <li>Merics Imre   </li>
-                    <li>Bodó Bendegúz </li>
-                    <li>Puxler Mátyás </li>
-                    <li>Kernya Szilveszter</li>
-                    <li>Bocz Botond  </li>
-                    <li>Stolcz Norbi </li>
-                    <li>Csimszi Ákos </li>
+                <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                    <h2 className="text-2xl font-bold text-center">Vidra őrs</h2>            
+                    <ul className="grid place-items-center gap-2">
+                    <li className="team_mate">Hang Benjámin </li>
+                    <li className="team_mate">Nyisztor Álmos</li>
+                    <li className="team_mate">Merics Imre   </li>
+                    <li className="team_mate">Bodó Bendegúz </li>
+                    <li className="team_mate">Puxler Mátyás </li>
+                    <li className="team_mate">Kernya Szilveszter</li>
+                    <li className="team_mate">Bocz Botond  </li>
+                    <li className="team_mate">Stolcz Norbi </li>
+                    <li className="team_mate">Csimszi Ákos </li>
                 </ul>
                 </div>
 
-                <div  >
-                    <h2 >Vörös róka őrs</h2>
-                    <ul>
-                    <li>Őv: Piffkó Dániel </li>
-                    <li>Friedrich Ákos    </li>
-                    <li>Friedrich Gergő   </li>
-                    <li>Siker András      </li>
-                    <li>Siker Mihály      </li>
+                <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                    <h2 className="text-2xl font-bold text-center" >Vörös róka őrs</h2>
+                    <ul className="grid place-items-center gap-2">
+                    <li className="team_mate">Őv: Piffkó Dániel </li>
+                    <li className="team_mate">Friedrich Ákos    </li>
+                    <li className="team_mate">Friedrich Gergő   </li>
+                    <li className="team_mate">Siker András      </li>
+                    <li className="team_mate">Siker Mihály      </li>
                     </ul>
                 </div>
 
 
-                <div  >
-                    <h2 >Tigris őrs</h2>
-                    <ul>
-                        <li>Dákai Botond </li>
-                        <li>Gábor Dániel </li>
-                        <li>Hajdú Kolos  </li>
-                        <li>Kaáli-Nagy Koppány </li>
-                        <li>Kozmáry Flórián</li>
-                        <li>Meretei Soma </li>
-                        <li>Szolga Milán </li>
-                        <li>Tormási Csanád </li>
+                <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                    <h2 className="text-2xl font-bold text-center" >Tigris őrs</h2>
+                    <ul className="grid place-items-center gap-2">
+                        <li className="team_mate">Dákai Botond </li>
+                        <li className="team_mate">Gábor Dániel </li>
+                        <li className="team_mate">Hajdú Kolos  </li>
+                        <li className="team_mate">Kaáli-Nagy Koppány </li>
+                        <li className="team_mate">Kozmáry Flórián</li>
+                        <li className="team_mate">Meretei Soma </li>
+                        <li className="team_mate">Szolga Milán </li>
+                        <li className="team_mate">Tormási Csanád </li>
                     </ul>
                 </div>
 
             </div> {/*Bois raj*/}
             
-        <div  >
+        <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
 
-            <div  >
-                <h2 >Pisztácia őrs</h2>
-                <ul>
-                <li>Kozmáry Kamilla  </li>
-                <li>Nyisztor Zselyke </li>
-                <li>Kaáli Nagy Villő Janka</li>
-                <li>Bergauer Dorina  </li>
-                <li>Fehér Rebeka </li>
-                <li>Jánosi Emőke </li>
-                <li>Piffkó Julianna </li>
+            <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                <h2 className="text-2xl font-bold text-center" >Pisztácia őrs</h2>
+                <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Kozmáry Kamilla  </li>
+                <li className="team_mate">Nyisztor Zselyke </li>
+                <li className="team_mate">Kaáli Nagy Villő Janka</li>
+                <li className="team_mate">Bergauer Dorina  </li>
+                <li className="team_mate">Fehér Rebeka </li>
+                <li className="team_mate">Jánosi Emőke </li>
+                <li className="team_mate">Piffkó Julianna </li>
                 </ul>
             </div>
 
-            <div >
-                <h2 >Gránátalma őrs</h2>
-                <ul>
+            <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                <h2 className="text-2xl font-bold text-center" >Gránátalma őrs</h2>
+                <ul className="grid place-items-center gap-2">
                     
-                <li>Őv: Jánosi Kincső    </li>
-                <li>Bodó Csenge Mária    </li>
-                <li>Puxler Flóra         </li>
-                <li>Reinhardt Júlia       </li>
-                <li>Merics Orsolya Ilona </li>
-                <li>Siker Katinka Kincső </li>
-                <li>Asztalos Alexandra   </li>
-                <li>Závoczky Eszter      </li>
+                <li className="team_mate">Őv: Jánosi Kincső    </li>
+                <li className="team_mate">Bodó Csenge Mária    </li>
+                <li className="team_mate">Puxler Flóra         </li>
+                <li className="team_mate">Reinhardt Júlia       </li>
+                <li className="team_mate">Merics Orsolya Ilona </li>
+                <li className="team_mate">Siker Katinka Kincső </li>
+                <li className="team_mate">Asztalos Alexandra   </li>
+                <li className="team_mate">Závoczky Eszter      </li>
                 </ul>
             </div>
 
         </div> {/*Lány raj*/}
             
-        <div  >
+        <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
 
-            <div  >
-                <h2 >Avokádó őrs</h2>
-                <ul>
-                <li>Őv-k: Bergauer Dorina, Jánosi Emőke </li>
-                <li>Bertus Kata </li>
-                <li>Bodó Lilla</li>
-                <li>Bojtos Lili  </li>
-                <li>Mezei Csenge </li>
-                <li>Piffkó Annamária</li>
-                <li>Pölöte Rebeka   </li>
-                <li>Szilágyi Boróka</li>
+            <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+                <h2 className="text-2xl font-bold text-center" >Avokádó őrs</h2>
+                <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Őv: Bergauer Dorina, Jánosi Emőke </li>
+                <li className="team_mate">Bertus Kata </li>
+                <li className="team_mate">Bodó Lilla</li>
+                <li className="team_mate">Bojtos Lili  </li>
+                <li className="team_mate">Mezei Csenge </li>
+                <li className="team_mate">Piffkó Annamária</li>
+                <li className="team_mate">Pölöte Rebeka   </li>
+                <li className="team_mate">Szilágyi Boróka</li>
                 </ul>
             </div>
             
@@ -132,73 +132,75 @@ function Mates() {
         
             
             
-            <div  >
-                <h2 >Tavirózsa őrs</h2>
-                <ul>
-                <li>Őv: Nyisztor Zselyke </li>
-                <li>Ágotai Gréta </li>
-                <li>Bodó Szederke</li>
-                <li>Gábor Kata  </li>
-                <li>Hajdú Tekla </li>
-                <li>Jánosi Zengő</li>
-                <li>Kis-Vidéki Bíborka   </li>
-                <li>Schumann Réka</li>
-                <li>Tóth Zsófia</li>
+            <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
+                <h2 className="text-2xl font-bold text-center" >Tavirózsa őrs</h2>
+                <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Őv: Nyisztor Zselyke </li>
+                <li className="team_mate">Ágotai Gréta </li>
+                <li className="team_mate">Bodó Szederke</li>
+                <li className="team_mate">Gábor Kata  </li>
+                <li className="team_mate">Hajdú Tekla </li>
+                <li className="team_mate">Jánosi Zengő</li>
+                <li className="team_mate">Kis-Vidéki Bíborka   </li>
+                <li className="team_mate">Schumann Réka</li>
+                <li className="team_mate">Tóth Zsófia</li>
                 </ul>
             </div>
 
             
                 
 
-            <div >
-                <h2 >Csíkos szöcskeegér őrs</h2>
-                <ul>
-                <li>Őv-k: Merics Imre, Bodó Bendegúz   </li>
-                <li>Gyurasics János    </li>
-                <li>Grünfeld Bence    </li>
-                <li>Jánosi Örs László </li>
-                <li>Lieber Csongor    </li>
-                <li>Lieber Soma    </li>
-                <li>Nyisztor Csanád   </li>    
-                <li>Oszterták Balázs  </li>
-                <li>Oszterák Marcell  </li>
-                <li>Vicze Nimród      </li>
-                <li>Baráti Zénó</li>
-                <li>Bertus Benedek</li>
-                <li>Bertus Botond</li>
-                <li>Szigeti Botond</li>
+            <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
+                <h2 className="text-2xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
+                <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Őv: Merics Imre, Bodó Bendegúz   </li>
+                <li className="team_mate">Gyurasics János    </li>
+                <li className="team_mate">Grünfeld Bence    </li>
+                <li className="team_mate">Jánosi Örs László </li>
+                <li className="team_mate">Lieber Csongor    </li>
+                <li className="team_mate">Lieber Soma    </li>
+                <li className="team_mate">Nyisztor Csanád   </li>    
+                <li className="team_mate">Oszterták Balázs  </li>
+                <li className="team_mate">Oszterák Marcell  </li>
+                <li className="team_mate">Vicze Nimród      </li>
+                <li className="team_mate">Baráti Zénó</li>
+                <li className="team_mate">Bertus Benedek</li>
+                <li className="team_mate">Bertus Botond</li>
+                <li className="team_mate">Szigeti Botond</li>
             </ul>
             </div>
 
-        <div >
-            <h2 >Levendula őrs</h2>
-            <ul>
-                <li>Őv: Fehér Rebeka</li>
-                <li>Bizse Kincső</li>
-                <li>Bodó Cinka</li>
-                <li>Csényi Frida</li>
-                <li>Fábos Eszter</li>
-                <li>Herner Borbála</li>
-                <li>Hoffer Ida</li>
-                <li>Oláh Emese</li>
-                <li>Schell Noémi</li>
-                <li>Vasvári Lilla</li>
+        <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+            <h2 className="text-2xl font-bold text-center" >Levendula őrs</h2>
+            <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Őv: Fehér Rebeka</li>
+                <li className="team_mate">Bizse Kincső</li>
+                <li className="team_mate">Bodó Cinka</li>
+                <li className="team_mate">Csényi Frida</li>
+                <li className="team_mate">Fábos Eszter</li>
+                <li className="team_mate">Herner Borbála</li>
+                <li className="team_mate">Hoffer Ida</li>
+                <li className="team_mate">Oláh Emese</li>
+                <li className="team_mate">Schell Noémi</li>
+                <li className="team_mate">Vasvári Lilla</li>
             </ul>
         </div>
 
 
 
 
-        <div >
-        <h2 >Hiúz őrs</h2>
-        <li>Őv-k: Merics Orsolya, Reinhardt Júlia</li>
-        <li>Auth Bálint</li>
-        <li>Latschám Botond</li>
-        <li>Luzsi Mátyás</li>
-        <li>Neukirchner András Noel</li>
-        <li>Szőts Márton Soma</li>
-        <li>Tisztl Milán</li>
-        <li>Vasvári Gyula</li>
+        <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
+        <h2 className="text-2xl font-bold text-center" >Hiúz őrs</h2>
+        <ul className="grid place-items-center gap-2">
+        <li className="team_mate">Őv: Merics Orsolya, Reinhardt Júlia</li>
+        <li className="team_mate">Auth Bálint</li>
+        <li className="team_mate">Latschám Botond</li>
+        <li className="team_mate">Luzsi Mátyás</li>
+        <li className="team_mate">Neukirchner András Noel</li>
+        <li className="team_mate">Szőts Márton Soma</li>
+        <li className="team_mate">Tisztl Milán</li>
+        <li className="team_mate">Vasvári Gyula</li>
+        </ul>
         </div>
 
 
