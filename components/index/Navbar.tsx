@@ -15,10 +15,10 @@ export default function Navbar() {
         <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto">
           682{' '}
         </h1>
-        <button onClick={menu} className="block z-10 mt-2 mr-0 space-y-[5px] md:opacity-0 opacity-100">
-            <div className="w-7 h-0.5 bg-gray-600"></div>
-            <div className="w-7 h-0.5 bg-gray-600"></div>
-            <div className="w-7 h-0.5 bg-gray-600"></div>
+        <button onClick={menu} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100">
+            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
+            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
+            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
         </button>
         <ul id='menu' className="absolute bg-[#76b82a]
          md:static md:ml-auto md:flex md:items-center text-2xl

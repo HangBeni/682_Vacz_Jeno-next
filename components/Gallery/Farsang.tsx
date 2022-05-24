@@ -13,13 +13,21 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
 
   function Show(){
       const fars = document.getElementById('farsi');
+      const btn = document.getElementById('bt-far');
+
       if(!open){
         fars?.classList.remove('hidden');
-      setOpen(true);
+        setOpen(true);
+        btn?.classList.add('h-5');
+        btn?.classList.add('bg-red-600');
+        btn!.innerHTML="";
       }
       else{
         fars?.classList.add('hidden');
         setOpen(false);
+        btn?.classList.remove('h-5');
+        btn?.classList.remove('bg-red-600');
+        btn!.innerHTML="Táborunk";
       }
  }
   
@@ -27,8 +35,13 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
   return (
     <>
   <div className="mt-6 ">
-    <button onClick={Show} className="block mx-auto h-20 w-1/2 text-lg bg-none border-none rounded-lg shadow-lg shadow-red-600">Farsang</button>
-  </div>
+  <button id='bt-far' onClick={Show} 
+   className="block mx-auto mt-3 h-20 w-1/2 text-lg bg-none 
+   border-none rounded-lg shadow-lg shadow-red-600 ">
+
+     Farsang
+   </button>
+   </div>
 
     <div id='farsi' className="m-4 hidden">
       <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
