@@ -36,7 +36,7 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
     <>
   <div className="mt-6 ">
   <button id='bt-far' onClick={Show} 
-   className="block mx-auto mt-3 h-20 w-1/2 text-lg bg-none 
+   className="block mx-auto mt-3 h-16 w-1/2 text-lg bg-none 
    border-none rounded-lg shadow-lg shadow-red-600 ">
 
      Farsang

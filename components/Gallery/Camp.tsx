@@ -36,7 +36,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
     
     <div>
    <button id='bt-camp' onClick={ShowCamp} 
-   className="block mx-auto mt-3 h-20 w-1/2 text-lg bg-none 
+   className="block mx-auto mt-3 h-16 w-1/2 text-lg bg-none 
    border-none rounded-lg shadow-lg shadow-red-600 ">
      Táborunk
    </button>   
