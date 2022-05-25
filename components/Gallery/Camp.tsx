@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 
 
   type Image = {  
@@ -31,6 +32,10 @@ export default function Camp({ camp }: { camp: Image[] }) {
     }
 }
 
+
+ 
+
+
   return (
     <>
     
@@ -41,8 +46,15 @@ export default function Camp({ camp }: { camp: Image[] }) {
      Táborunk
    </button>   
     </div>
-
+    
     <div id='camp' className="m-4 hidden">
+    <a className='hidden md:block sticky top-28 float-right 
+    font-extrabold p-2 ml-1 text-xl rounded-full bg-slate-800 text-red-600 hover:bg-red-700 hover:text-black
+    cursor-pointer'
+    href='#bt-camp'>
+    🡡
+    </a>
+     
       <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
          if(image.imageScr.includes('long'))
@@ -64,7 +76,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
         })}
       </div>
 
-      <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+      <div className="mt-4 mr-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
           if(!image.imageScr.includes('long'))
           return (
@@ -84,7 +96,9 @@ export default function Camp({ camp }: { camp: Image[] }) {
             )
         })}
       </div>
+      
     </div>
+   
     </>
   )
 }

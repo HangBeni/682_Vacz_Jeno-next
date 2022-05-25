@@ -35,7 +35,7 @@ function Mates() {
         <div id="team" className="hidden ">
             
             <h1 className="block font-extrabold text-3xl w-fit mx-auto mt-6">Csapatunk tagjai</h1>
-                <div className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10" >
+                <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                     <h2 className=" sm:text-2xl text-xl font-bold text-center">Vidra őrs</h2>            
@@ -80,7 +80,7 @@ function Mates() {
 
             </div> {/*Bois raj*/}
             
-        <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
+        <div  className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10">
 
             <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                 <h2 className="sm:text-2xl text-xl font-bold text-center" >Pisztácia őrs</h2>
@@ -112,7 +112,7 @@ function Mates() {
 
         </div> {/*Lány raj*/}
             
-        <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
+        <div  className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10">
 
             <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                 <h2 className="sm:text-2xl text-xl font-bold text-center" >Avokádó őrs</h2>
@@ -150,25 +150,7 @@ function Mates() {
             
                 
 
-            <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
-                <h2 className="sm:text-2xl text-xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
-                <ul className="grid place-items-center gap-2">
-                <li className="team_mate">Őv: Merics Imre, Bodó Bendegúz   </li>
-                <li className="team_mate">Gyurasics János    </li>
-                <li className="team_mate">Grünfeld Bence    </li>
-                <li className="team_mate">Jánosi Örs László </li>
-                <li className="team_mate">Lieber Csongor    </li>
-                <li className="team_mate">Lieber Soma    </li>
-                <li className="team_mate">Nyisztor Csanád   </li>    
-                <li className="team_mate">Oszterták Balázs  </li>
-                <li className="team_mate">Oszterák Marcell  </li>
-                <li className="team_mate">Vicze Nimród      </li>
-                <li className="team_mate">Baráti Zénó</li>
-                <li className="team_mate">Bertus Benedek</li>
-                <li className="team_mate">Bertus Botond</li>
-                <li className="team_mate">Szigeti Botond</li>
-            </ul>
-            </div>
+           
 
         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
             <h2 className="sm:text-2xl text-xl font-bold text-center" >Levendula őrs</h2>
@@ -202,7 +184,26 @@ function Mates() {
         <li className="team_mate">Vasvári Gyula</li>
         </ul>
         </div>
-
+        
+        <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
+                <ul className="grid place-items-center gap-2">
+                <li className="team_mate">Őv: Merics Imre, Bodó Bendegúz   </li>
+                <li className="team_mate">Gyurasics János    </li>
+                <li className="team_mate">Grünfeld Bence    </li>
+                <li className="team_mate">Jánosi Örs László </li>
+                <li className="team_mate">Lieber Csongor    </li>
+                <li className="team_mate">Lieber Soma    </li>
+                <li className="team_mate">Nyisztor Csanád   </li>    
+                <li className="team_mate">Oszterták Balázs  </li>
+                <li className="team_mate">Oszterák Marcell  </li>
+                <li className="team_mate">Vicze Nimród      </li>
+                <li className="team_mate">Baráti Zénó</li>
+                <li className="team_mate">Bertus Benedek</li>
+                <li className="team_mate">Bertus Botond</li>
+                <li className="team_mate">Szigeti Botond</li>
+            </ul>
+            </div>
 
         </div>      {/*Kiscseró raj*/}
 

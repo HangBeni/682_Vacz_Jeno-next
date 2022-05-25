@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --trendy-green: #76b82a;
     --light-blue: #0075bf;
