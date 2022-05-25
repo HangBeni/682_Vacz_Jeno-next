@@ -38,7 +38,7 @@ function Mates() {
                 <div className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10" >
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                    <h2 className="text-2xl font-bold text-center">Vidra őrs</h2>            
+                    <h2 className=" sm:text-2xl text-xl font-bold text-center">Vidra őrs</h2>            
                     <ul className="grid place-items-center gap-2">
                     <li className="team_mate">Hang Benjámin </li>
                     <li className="team_mate">Nyisztor Álmos</li>
@@ -53,7 +53,7 @@ function Mates() {
                 </div>
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                    <h2 className="text-2xl font-bold text-center" >Vörös róka őrs</h2>
+                    <h2 className="sm:text-2xl text-xl font-bold text-center" >Vörös róka őrs</h2>
                     <ul className="grid place-items-center gap-2">
                     <li className="team_mate">Őv: Piffkó Dániel </li>
                     <li className="team_mate">Friedrich Ákos    </li>
@@ -65,7 +65,7 @@ function Mates() {
 
 
                 <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                    <h2 className="text-2xl font-bold text-center" >Tigris őrs</h2>
+                    <h2 className="sm:text-2xl text-xl font-bold text-center" >Tigris őrs</h2>
                     <ul className="grid place-items-center gap-2">
                         <li className="team_mate">Dákai Botond </li>
                         <li className="team_mate">Gábor Dániel </li>
@@ -83,7 +83,7 @@ function Mates() {
         <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
 
             <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                <h2 className="text-2xl font-bold text-center" >Pisztácia őrs</h2>
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Pisztácia őrs</h2>
                 <ul className="grid place-items-center gap-2">
                 <li className="team_mate">Kozmáry Kamilla  </li>
                 <li className="team_mate">Nyisztor Zselyke </li>
@@ -96,7 +96,7 @@ function Mates() {
             </div>
 
             <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                <h2 className="text-2xl font-bold text-center" >Gránátalma őrs</h2>
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Gránátalma őrs</h2>
                 <ul className="grid place-items-center gap-2">
                     
                 <li className="team_mate">Őv: Jánosi Kincső    </li>
@@ -115,7 +115,7 @@ function Mates() {
         <div  className="grid grid-cols-2 place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4 m-10">
 
             <div  className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-                <h2 className="text-2xl font-bold text-center" >Avokádó őrs</h2>
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Avokádó őrs</h2>
                 <ul className="grid place-items-center gap-2">
                 <li className="team_mate">Őv: Bergauer Dorina, Jánosi Emőke </li>
                 <li className="team_mate">Bertus Kata </li>
@@ -133,7 +133,7 @@ function Mates() {
             
             
             <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
-                <h2 className="text-2xl font-bold text-center" >Tavirózsa őrs</h2>
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Tavirózsa őrs</h2>
                 <ul className="grid place-items-center gap-2">
                 <li className="team_mate">Őv: Nyisztor Zselyke </li>
                 <li className="team_mate">Ágotai Gréta </li>
@@ -151,7 +151,7 @@ function Mates() {
                 
 
             <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
-                <h2 className="text-2xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
+                <h2 className="sm:text-2xl text-xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
                 <ul className="grid place-items-center gap-2">
                 <li className="team_mate">Őv: Merics Imre, Bodó Bendegúz   </li>
                 <li className="team_mate">Gyurasics János    </li>
@@ -171,7 +171,7 @@ function Mates() {
             </div>
 
         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-            <h2 className="text-2xl font-bold text-center" >Levendula őrs</h2>
+            <h2 className="sm:text-2xl text-xl font-bold text-center" >Levendula őrs</h2>
             <ul className="grid place-items-center gap-2">
                 <li className="team_mate">Őv: Fehér Rebeka</li>
                 <li className="team_mate">Bizse Kincső</li>
@@ -190,7 +190,7 @@ function Mates() {
 
 
         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
-        <h2 className="text-2xl font-bold text-center" >Hiúz őrs</h2>
+        <h2 className="sm:text-2xl text-xl font-bold text-center" >Hiúz őrs</h2>
         <ul className="grid place-items-center gap-2">
         <li className="team_mate">Őv: Merics Orsolya, Reinhardt Júlia</li>
         <li className="team_mate">Auth Bálint</li>
