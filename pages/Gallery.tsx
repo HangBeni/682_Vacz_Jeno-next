@@ -2,7 +2,7 @@ import Camp from "../components/Gallery/Camp"
 import  Farsang  from "../components/Gallery/Farsang"
 import supabase from "../utils/supabase"
 import Navbar from "../components/index/Navbar"
-
+import Footer from '../components/index/Contacts'
 export async function getStaticProps() {
 
   const {data: camp} = await supabase.from('Camp').select('*').order('id')
@@ -30,6 +30,7 @@ type Image = {
  <Navbar></Navbar>
  <Camp camp={camp}/>
  <Farsang farsang={farsang}/>
+ <Footer></Footer>
  </> 
  );
 }
