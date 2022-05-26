@@ -1,4 +1,4 @@
-import Image from "next/image";
+import {animate, motion} from "framer-motion";
 import { useState } from "react";
 
 
@@ -8,33 +8,36 @@ import { useState } from "react";
 
 
 function Mates() {
-
-    const [open, setOpen] =  useState('close');
-
-    function show(){
-        const team = document.getElementById('team');
-        open === 'open' ? 
-        (setOpen('close'), team?.classList.add('hidden'))
-        :(setOpen('open'),team?.classList.remove('hidden'));
+    const variants = {
+        open: { opacity: 1, y: 0,  transition:{duration: 1}, height:"auto"  },
+        closed: { opacity: 0, y: "-150%", transition:{duration: 2}, height:0 },
     }
+    const [open, setOpen] =  useState(false);
+
+    
 
 
     return (
             
-            <div>
-                <div className="flex place-content-center h-fit md:rounded-full rounded-3xl sm:w-11/12 sm:mx-auto mt-32 bg-gradient-to-b from-yellow-300 to-white ">
-                    <Image
-                    onClick={show}
-                    className="block  m-auto w-full cursor-pointer bg-white rounded-[100%] "
-                    title="Cserkész Liliom" alt="Cserkész Liliom"
-                    width='250px' height='250px'
-                    src="https://ik.imagekit.io/HangBeni/Tabor/liliom_D3k2o81c_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649005932775"
-                    />    
+            <div className="mb-24">
+                <div>
+                    <button onClick={() => setOpen(open => !open)} className="relative inline-block w-auto h-auto bg-transparent 
+                z-0 sm:w-11/12 sm:mx-auto
+                 mt-32 pb-6   
+                 before:bg-gradient-to-b before:from-yellow-300 before:to-white">
+                       <span 
+                       className="relative inline-block text-lg font-bold uppercase 
+                       top-0 left-0 w-full px-4 py-5 border-2 border-black 
+                       md:rounded-full rounded-3xl  ">
+                           Csapatunk tagjai
+                        </span>
+                    </button>
                 </div>
-               
-        <div id="team" className="hidden ">
+                
+                 <motion.div animate={open ? "open" : "closed"} initial="closed" variants={variants} >   
+     
             
-            <h1 className="block font-extrabold text-3xl w-fit mx-auto mt-6">Csapatunk tagjai</h1>
+           
                 <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
@@ -206,9 +209,9 @@ function Mates() {
             </div>
 
         </div>      {/*Kiscseró raj*/}
-
+        
+        </motion.div>
         </div>
-            </div>
     );
 }
 
