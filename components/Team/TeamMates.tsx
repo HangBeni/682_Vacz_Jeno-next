@@ -1,4 +1,4 @@
-import {animate, motion} from "framer-motion";
+import { motion} from "framer-motion";
 import { useState } from "react";
 
 
@@ -9,32 +9,55 @@ import { useState } from "react";
 
 function Mates() {
     const variants = {
-        open: { opacity: 1, y: 0,  transition:{duration: 1}, height:"auto"  },
-        closed: { opacity: 0, y: "-150%", transition:{duration: 2}, height:0 },
+        left: { opacity: 0, y: "-150%",x: "-150%", transition:{duration: 2}, height:0 },
+        open: { opacity: 1, y: 0, x: 0, transition:{duration: 1}, height:"auto" },
+        right: { opacity: 0, y: "-150%",x: "150%", transition:{duration: 2}, height:0},
     }
-    const [open, setOpen] =  useState(false);
-
+   
+    const [direction, setDirection] = useState("left");
+    const [sw, setsw] = useState(0);
     
+    function handleChange(){
+        
+        
+        if(direction=="open")
+            {
+                if(sw==0)
+                {
+                    setsw(1);
+                    setDirection("left");
+                }
+                else if(sw==1)
+               {    
+                   setsw(0);
+                   setDirection("right");
+                
+                }
+            }
+        else
+             setDirection("open");
 
+        
+    }
 
     return (
             
             <div className="mb-24">
-                <div>
-                    <button onClick={() => setOpen(open => !open)} className="relative inline-block w-auto h-auto bg-transparent 
-                z-0 sm:w-11/12 sm:mx-auto
+                <div className="flex w-4/5  mx-auto ">
+                    <button onClick={() => (handleChange(), console.log(sw, direction))} className="relative inline-block h-auto bg-transparent 
+                z-0 w-full mx-auto
                  mt-32 pb-6   
                  before:bg-gradient-to-b before:from-yellow-300 before:to-white">
                        <span 
-                       className="relative inline-block text-lg font-bold uppercase 
+                       className="relative inline-block text-lg lg:text-3xl font-bold uppercase 
                        top-0 left-0 w-full px-4 py-5 border-2 border-black 
-                       md:rounded-full rounded-3xl  ">
+                       md:rounded-full rounded-3xl tracking-widest">
                            Csapatunk tagjai
                         </span>
                     </button>
                 </div>
                 
-                 <motion.div animate={open ? "open" : "closed"} initial="closed" variants={variants} >   
+                 <motion.div animate={direction} initial="left" variants={variants} >   
      
             
            
