@@ -9,9 +9,9 @@ import { useState } from "react";
 
 function Mates() {
     const variants = {
-        left: { opacity: 0, y: "-150%",x: "-150%", transition:{duration: 2}, height:0 },
-        open: { opacity: 1, y: 0, x: 0, transition:{duration: 1}, height:"auto" },
-        right: { opacity: 0, y: "-150%",x: "150%", transition:{duration: 2}, height:0},
+        left: { opacity: 0, y: "-150%",x: "-150%" ,transition:{duration: 2, delayChildren: 2}},
+        open: { opacity: 1, y: 0, x: 0, transition:{duration: 2}},
+        right: { opacity: 0, y: "-150%",x: "150%",  transition:{duration: 2, delayChildren: 2}},
     }
    
     const [direction, setDirection] = useState("left");
@@ -60,7 +60,7 @@ function Mates() {
                  <motion.div animate={direction} initial="left" variants={variants} >   
      
             
-           
+            <motion.li transition={direction=="left" ||  direction=="right" ? {delay: 2.2} : {delay: 0.5}} animate={direction=="left" ||  direction=="right" ? {display: "none"} : {display: "block"}} initial="grid">
                 <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
@@ -232,8 +232,9 @@ function Mates() {
             </div>
 
         </div>      {/*Kiscseró raj*/}
-        
-        </motion.div>
+        </motion.li>
+            </motion.div>
+       
         </div>
     );
 }
