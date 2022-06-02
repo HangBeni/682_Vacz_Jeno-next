@@ -10,8 +10,8 @@ import { useState } from 'react'
  
 export default function Camp({ camp }: { camp: Image[] }) {
   const [open, setOpen] = useState(false);
-  const [tempimg, setimg] = useState('');
-  const [modal, setModal] = useState(false);
+  const [tempimg_camp, setimg_camp] = useState('');
+  const [modal_camp, setModal_camp] = useState(false);
 
  function ShowCamp(){
    const camp = document.getElementById('camp');
@@ -55,13 +55,13 @@ export default function Camp({ camp }: { camp: Image[] }) {
      
    
     <div 
-        className={modal ? 
+        className={modal_camp ? 
         ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50")
         :
         ("hidden overflow-hidden")}>
-            <img src={tempimg} className="block w-auto max-w-full h-auto max-h-full box-border p-3 mx-auto my-0" />
+            <img src={tempimg_camp} className="block w-auto max-w-full h-auto max-h-full box-border p-3 mx-auto my-0" />
             <span className="fixed top-5 right-5 w-8 h-8 p-1 text-white cursor-pointer text-4xl"
-             onClick={() =>( setModal(false), setimg(''))}>&times;</span>
+             onClick={() =>( setModal_camp(false), setimg_camp(''))}>&times;</span>
     </div>
 
       <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
@@ -79,7 +79,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
                title={image.tags}
                alt={image.tags}
                className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
-               onClick={() => (setimg(image.imageScr), setModal(true))}
+               onClick={() => (setimg_camp(image.imageScr), setModal_camp(true))}
                />
             
             )
@@ -101,7 +101,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
               title={image.tags}
               alt={image.tags}
               className="block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
-              onClick={() => (setimg(image.imageScr), setModal(true))}
+              onClick={() => (setimg_camp(image.imageScr), setModal_camp(true))}
              />
           
             )
