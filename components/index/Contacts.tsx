@@ -10,8 +10,9 @@ export default function Contacts() {
             <p className="text-center ">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
             <p className="text-center ">Created by: Hang Benjámin</p>
         </div>
-        <div className="absolute bottom-0 bg-black w-full">
-            <div className="flex justify-between w-1/2 mx-auto my-2 ">
+
+        <div className="sticky bottom-0 bg-black w-full h-full">
+            <div className="flex justify-between w-1/2 mx-auto">
                 <a href="https://www.facebook.com/682-V%C3%A1cz-Jen%C5%91-cserk%C3%A9sz-csapat-108332291535654" className="icon facebook">
             <span><i className="fab fa-facebook-f  bg-white p-5 rounded-full m-2 text-2xl"></i></span>
                 </a>
