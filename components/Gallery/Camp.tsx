@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import { Link } from 'react-scroll'
 
 
   type Image = {  
@@ -11,8 +10,9 @@ import { Link } from 'react-scroll'
  
 export default function Camp({ camp }: { camp: Image[] }) {
   const [open, setOpen] = useState(false);
-  
-  
+  const [tempimg, setimg] = useState('');
+  const [modal, setModal] = useState(false);
+
  function ShowCamp(){
    const camp = document.getElementById('camp');
    const btn = document.getElementById('bt-camp');
@@ -32,8 +32,6 @@ export default function Camp({ camp }: { camp: Image[] }) {
     }
 }
 
-
- 
 
 
   return (
@@ -55,11 +53,22 @@ export default function Camp({ camp }: { camp: Image[] }) {
     🡡
     </a>
      
+   
+    <div 
+        className={modal ? 
+        ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50")
+        :
+        ("hidden overflow-hidden")}>
+            <img src={tempimg} className="block w-auto max-w-full h-auto max-h-full box-border p-3 mx-auto my-0" />
+            <span className="fixed top-5 right-5 w-8 h-8 p-1 text-white cursor-pointer text-4xl"
+             onClick={() =>( setModal(false), setimg(''))}>&times;</span>
+    </div>
+
       <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
          if(image.imageScr.includes('long'))
          return (          
-              <a href={image.imageScr} >
+              
               <Image
                layout="responsive"
                width={150}
@@ -70,8 +79,9 @@ export default function Camp({ camp }: { camp: Image[] }) {
                title={image.tags}
                alt={image.tags}
                className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+               onClick={() => (setimg(image.imageScr), setModal(true))}
                />
-            </a> 
+            
             )
         })}
       </div>
@@ -80,7 +90,7 @@ export default function Camp({ camp }: { camp: Image[] }) {
         {camp?.map((image) => {
           if(!image.imageScr.includes('long'))
           return (
-            <a href={image.imageScr}  >
+           
             <Image
               layout="responsive"
               width={450}
@@ -89,10 +99,11 @@ export default function Camp({ camp }: { camp: Image[] }) {
               src={image.imageScr}
               key={image.id}
               title={image.tags}
-               alt={image.tags}
+              alt={image.tags}
               className="block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
-              />
-          </a>
+              onClick={() => (setimg(image.imageScr), setModal(true))}
+             />
+          
             )
         })}
       </div>
