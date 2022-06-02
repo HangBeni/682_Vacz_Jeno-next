@@ -40,8 +40,7 @@ function Mates() {
         
     }
 
-    return (
-            
+    return (   
             <div className="mb-24">
                 <div className="flex w-4/5  mx-auto ">
                     <button onClick={() => (handleChange(), console.log(sw, direction))} className="relative inline-block h-auto bg-transparent 
