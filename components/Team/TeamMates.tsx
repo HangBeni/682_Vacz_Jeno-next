@@ -1,4 +1,4 @@
-import { motion} from "framer-motion";
+import { motion, useMotionValue, useTransform} from "framer-motion";
 import { useState } from "react";
 
 
@@ -17,9 +17,14 @@ function Mates() {
     const [direction, setDirection] = useState("left");
     const [sw, setsw] = useState(0);
     
+    const x = useMotionValue(0);
+    const background = useTransform(
+        x, 
+        [-200, 0 , 100],
+        ["hsl(133, 74.2%, 32%)", "#ffff", "hsl(4, 87.3%, 30.8%)"]
+    )
     function handleChange(){
-        
-        
+
         if(direction=="open")
             {
                 if(sw==0)
@@ -35,25 +40,31 @@ function Mates() {
                 }
             }
         else
-             setDirection("open");
-
-        
+             setDirection("open");        
     }
+
+
 
     return (   
             <div className="mb-24">
-                <div className="flex w-4/5  mx-auto ">
-                    <button onClick={() => (handleChange(), console.log(sw, direction))} className="relative inline-block h-auto bg-transparent 
-                z-0 w-full mx-auto
-                 mt-32 pb-6   
-                 before:bg-gradient-to-b before:from-yellow-300 before:to-white">
-                       <span 
+                <div 
+               
+                className="flex w-4/5  mx-auto ">
+                    <motion.button 
+                     style={{background}}
+                    onClick={() => (handleChange(), console.log(sw, direction))} 
+                className="relative inline-block h-auto bg-transparent 
+                z-0 w-full mx-auto  justify-content-center
+                 mt-32  border-2 border-black md:rounded-full rounded-3xl">
+                       <motion.span 
+                       drag="x"
+                       dragConstraints={{left:0, right:0}}
+                       style={{x}}
                        className="relative inline-block text-lg lg:text-3xl font-bold uppercase 
-                       top-0 left-0 w-full px-4 py-5 border-2 border-black 
-                       md:rounded-full rounded-3xl tracking-widest">
+                        w-full px-4 py-5 tracking-widest ">
                            Csapatunk tagjai
-                        </span>
-                    </button>
+                        </motion.span>
+                    </motion.button>
                 </div>
                 
                  <motion.div animate={direction} initial="left" variants={variants} >   

@@ -16,9 +16,14 @@ export default function Contacts() {
                 <a href="https://www.facebook.com/682-V%C3%A1cz-Jen%C5%91-cserk%C3%A9sz-csapat-108332291535654" className="icon facebook">
             <span><i className="fab fa-facebook-f  bg-white p-5 rounded-full m-2 text-2xl"></i></span>
                 </a>
+                <a href="https://www.cserkesz.hu" className="">
+                    <span><img src="https://ik.imagekit.io/HangBeni/Tabor/liliom_D3k2o81c_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649005932775" 
+                    className="bg-white rounded-full m-2 w-28"></img></span>
+                </a>
                 <a href="https://www.instagram.com/682.sz.vaczjeno" className="icon instagram ">
                     <span><i className="fab fa-instagram bg-white p-5 rounded-full m-2 text-2xl"></i></span>
                 </a>
+                
             </div>
         </div>
     </footer>
