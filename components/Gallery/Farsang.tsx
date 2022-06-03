@@ -44,17 +44,7 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
    </button>
    </div>
 
-    <div id='farsi' className="m-4 hidden">
-
-    <a className='hidden md:block sticky top-28 float-right z-50
-    font-extrabold p-2 ml-1 text-xl rounded-full bg-slate-800 text-red-600 hover:bg-red-700 hover:text-black
-    cursor-pointer' 
-    href='#bt-far'>
-    🡡
-    </a>
-
-
-    <div 
+   <div 
         className={modal_farsang ? 
         ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50")
         :
@@ -64,9 +54,9 @@ export default function Farsang({ farsang }: { farsang: Image[] }) {
              onClick={() =>( setModal_farsang(false), setImg_farsang(''))}>&times;</span>
     </div>
 
+    <div id='farsi' className="m-4 hidden ">
 
-
-
+  
       <div className="mt-4 mr-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {farsang?.map((image) => {
          if(image.imageScr.includes('long'))

@@ -45,15 +45,6 @@ export default function Camp({ camp }: { camp: Image[] }) {
    </button>   
     </div>
     
-    <div id='camp' className="m-4 hidden">
-    <a className='hidden md:block sticky top-28 float-right 
-    font-extrabold p-2 ml-1 text-xl rounded-full bg-slate-800 text-red-600 hover:bg-red-700 hover:text-black
-    cursor-pointer'
-    href='#bt-camp'>
-    🡡
-    </a>
-     
-   
     <div 
         className={modal_camp ? 
         ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50")
@@ -64,6 +55,8 @@ export default function Camp({ camp }: { camp: Image[] }) {
              onClick={() =>( setModal_camp(false), setimg_camp(''))}>&times;</span>
     </div>
 
+    <div id='camp' className="m-4 hidden">
+  
       <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
         {camp?.map((image) => {
          if(image.imageScr.includes('long'))
