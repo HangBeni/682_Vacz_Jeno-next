@@ -1,7 +1,7 @@
-import supabase from "../utils/supabase"
 import Navbar from "../components/index/Navbar"
 import Footer from '../components/index/Contacts'
 import Head from "next/head"
+import Menu from "../components/Gallery/Menu";
 
 
 
@@ -15,7 +15,7 @@ import Head from "next/head"
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </Head>
  <Navbar></Navbar>
- 
+ <Menu></Menu>
  <Footer></Footer>
  </> 
  );

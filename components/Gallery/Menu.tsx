@@ -6,7 +6,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'camp' },
+            query: { event: 'Camp' },
           }}
         >
             Táborunk
@@ -14,7 +14,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'farsang' },
+            query: { event: 'Farsang' },
           }}
         >
                 <a>Farsang</a>

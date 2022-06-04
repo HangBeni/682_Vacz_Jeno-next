@@ -10,6 +10,9 @@ module.exports = {
         light_blue:"var(--light-blue)",
         regos:"var(--regos)",
         türkisz:"var(--türkisz)"
+      },
+      scale: {
+        '-1': '-1'
       }
     },
   },

@@ -10,7 +10,7 @@ export default function Navbar() {
   }
   
     return (
-    <nav className=" sticky z-10 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
+    <nav className=" sticky z-30 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
         <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
           682{' '}
