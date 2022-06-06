@@ -25,22 +25,24 @@ function Mates() {
     )
     function handleChange(){
 
-        if(direction=="open")
-            {
-                if(sw==0)
-                {
-                    setsw(1);
-                    setDirection("left");
-                }
-                else if(sw==1)
-               {    
-                   setsw(0);
-                   setDirection("right");
-                
-                }
-            }
+        if(direction!="open")
+        {
+            setDirection("open");
+        }
         else
-             setDirection("open");        
+        {
+            if(sw==0)
+            {
+                setsw(1);
+                setDirection("left");
+            }
+            else if(sw==1)
+           {    
+               setsw(0);
+               setDirection("right");
+            
+            }
+        }       
     }
 
 
