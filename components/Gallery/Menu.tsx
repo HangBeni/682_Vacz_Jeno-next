@@ -10,7 +10,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 function EventHandler() {
 
-  const [direction_Gallery, setDirection] = useState(false);
+  const [direction_Gallery, setDirection] = useState(true);
 
   const variants_Gallery = {
     up:{y:"-200%", transition:{duration:1}},
@@ -24,7 +24,7 @@ function EventHandler() {
     return ( 
       <>
       <motion.div 
-      variants={variants_Gallery} initial="up" animate={direction_Gallery ? "down" : "up"}
+      variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       className="w-11/12 mx-auto rounded-b-xl bg-[#009a93]">
         <div className="flex justify-between w-1/2 mx-auto">
             <Link
@@ -47,9 +47,9 @@ function EventHandler() {
     
       </motion.div>
       <motion.span
-       variants={variants_arrow_Gallery} initial="up" animate={direction_Gallery ? "down" : "up"}
+       variants={variants_arrow_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       onClick={() => setDirection(direction_Gallery=> !direction_Gallery)}
-      className="absolute cursor-pointer font-bold text-xl right-10 top-auto bg-[#009a93] p-2 m-1 rounded-full translate-y-0 z-20">&#8593;</motion.span>
+      className="absolute cursor-pointer font-bold text-xl right-10 top-auto md:top-24 md:outline-double bg-[#009a93] p-2 m-1 rounded-full translate-y-0 z-20">&#8593;</motion.span>
       </>
      );
 }

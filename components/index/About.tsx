@@ -8,8 +8,20 @@ type Image = {
 
 function About({data}:{data:Image[]}) {
     return ( 
+        <>
+       
     <div role={'main'} className="inline-block">
 
+        <div className='block mx-auto'>
+            <Image
+                src={'https://ik.imagekit.io/HangBeni/Tabor/Nyakkend%C5%91_ACCpwPT98_Bg-1E9R_P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654603059933'}
+                layout={'responsive'}
+                width={'275px'}
+                height={'55px'}
+                sizes={'90vw'}
+                className="mx-auto w-full"
+                />
+        </div>
         <div className="w-full mx-auto text-justify items-center">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg
             Hosszúhetényben. Valójában viszont már 2011 óta folyik cserkész munka a faluban.
@@ -64,6 +76,7 @@ function About({data}:{data:Image[]}) {
         </div>  
     
     </div> 
+    </>
     );
 }
 
