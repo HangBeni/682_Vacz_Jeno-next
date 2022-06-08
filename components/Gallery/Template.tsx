@@ -41,12 +41,12 @@ function Template({images}: {images: Image[]}) {
                   layout="responsive"
                   width={150}
                   height={250}
-                  quality={100}
+                  quality={80}
                   src={image.imageScr}
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
-                  loading={'lazy'}
+                  loading={'eager'}
                   className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
@@ -64,7 +64,7 @@ function Template({images}: {images: Image[]}) {
                   layout="responsive"
                   width={450}
                   height={300}
-                  quality={100}
+                  quality={80}
                   src={image.imageScr}
                   key={image.id}
                   title={image.tags}
