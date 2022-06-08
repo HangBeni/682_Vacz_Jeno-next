@@ -62,6 +62,8 @@ function Mates() {
                        drag="x"
                        dragConstraints={{left:0, right:0}}
                        style={{x}}
+                       whileHover={{ scale: 1.1 }}
+                       whileTap={{ scale: 0.9 }}
                        className="relative inline-block text-lg lg:text-3xl font-bold uppercase 
                         w-full px-4 py-5 tracking-widest ">
                            Csapatunk tagjai

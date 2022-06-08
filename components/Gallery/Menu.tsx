@@ -26,7 +26,7 @@ function EventHandler() {
       <motion.div 
       variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       className="w-11/12 mx-auto rounded-b-xl bg-[#009a93]">
-        <div className="flex justify-between w-1/2 mx-auto">
+        <div className="flex justify-around w-1/2 mx-auto">
             <Link
           href={{
             pathname: '/Gallery/[event]',
@@ -49,7 +49,7 @@ function EventHandler() {
       <motion.span
        variants={variants_arrow_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       onClick={() => setDirection(direction_Gallery=> !direction_Gallery)}
-      className="absolute cursor-pointer font-bold text-xl right-10 top-auto md:top-24 md:outline-double bg-[#009a93] p-2 m-1 rounded-full translate-y-0 z-20">&#8593;</motion.span>
+      className="absolute cursor-pointer font-bold text-xl right-10 top-auto md:top-24 md:right-16 lg:right-20 outline-double bg-[#009a93] p-2 m-1 rounded-full translate-y-0 z-20">&#8593;</motion.span>
       </>
      );
 }
