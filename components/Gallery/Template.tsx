@@ -46,6 +46,7 @@ function Template({images}: {images: Image[]}) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
+                  loading={'lazy'}
                   className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
@@ -68,6 +69,7 @@ function Template({images}: {images: Image[]}) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
+                  loading={'lazy'}
                   className="block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
