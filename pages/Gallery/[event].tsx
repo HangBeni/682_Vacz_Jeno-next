@@ -34,7 +34,6 @@ type Image = {
 export async function getServerSideProps(context:any) {
     const {params} = context
     const {event} = params
-    console.log(event);
 const {data:images} = await supabase.from(event).select('*').order('id')
 
 return {

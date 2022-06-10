@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Curriculum from '../Curriculum/Curriculum'
 
 type Image = {  
     id: number

@@ -1,4 +1,3 @@
-import { Head } from "next/document";
 import Navbar from "../../components/index/Navbar";
 import Footer from '../../components/index/Contacts'
 import CurriculumNav from "../../components/Curriculum/Curriculum";
