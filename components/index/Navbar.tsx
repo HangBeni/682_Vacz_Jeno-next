@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
     <nav className=" sticky z-30 top-0 flex rounded-lg border-b-4 border-r-4 border-l-8 border-[#76b82a] bg-white text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
-        <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
+        <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] md:mx-auto md:text-2xl lg:after:content-['_Vácz_Jenő']  sm:text-xl my-auto ">
           682{' '}
         </h1>
         <button onClick={menu} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100">
@@ -37,6 +37,11 @@ export default function Navbar() {
           <li key="Galéria">
             <Link href="/Gallery">
               <a className="nav_link">Galéria</a>
+            </Link>
+          </li>
+          <li key="Tananyagunk">
+            <Link href="/Curriculum">
+              <a className="nav_link">Tananyagaink</a>
             </Link>
           </li>
           <li key="ECSET Naptárunk">
