@@ -13,6 +13,10 @@ body{
 position: relative;
 }
 
+#shape{
+border-radius: 54% 46% 78% 22% / 30% 100% 0% 70% ;
+}
+
 :root{
     --trendy-green: #76b82a;
     --light-blue: #0075bf;
