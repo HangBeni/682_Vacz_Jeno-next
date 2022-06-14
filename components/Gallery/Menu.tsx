@@ -76,7 +76,7 @@ function EventHandler() {
       <motion.span
        variants={variants_arrow_Gallery} initial="up" animate={direction_Gallery ? "up" : "down"}
       onClick={() => setDirection(direction_Gallery=> !direction_Gallery)}
-      className="absolute cursor-pointer font-bold text-xl right-10 top-24 md:top-24 md:right-16 lg:right-20 outline-double bg-[#009a93] p-2 m-1 rounded-full translate-y-0 z-20">&#8593;</motion.span>
+      className="absolute cursor-pointer font-bold text-xl right-10 top-28 md:right-16 lg:right-20 outline-double bg-[#009a93] p-2 m-2 rounded-full translate-y-0 z-20">&#8593;</motion.span>
       </>
      );
 }
