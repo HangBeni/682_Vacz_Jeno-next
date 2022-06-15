@@ -4,7 +4,7 @@ export default function Contacts() {
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
         <div
         className="grid grid-cols-2 place-items-center 
-    opacity-70 hover:opacity-100 transition-all mt-10 text-sm m-1">
+    opacity-70 hover:opacity-100 transition-all mt-10 text-base lg:text-lg m-1">
             <p className="text-center p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
             <p className="text-center p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <i> www.cserkesz.hu</i></p>
             <p className="text-center ">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>

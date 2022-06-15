@@ -3,7 +3,7 @@ import Navbar from '../components/index/Navbar'
 import About from '../components/index/About'
 import Contacts from '../components/index/Contacts'
 import supabase from '../utils/supabase';
-import News from '../components/index/ActualNews';
+
 
 
 export async function getStaticProps() {
@@ -32,7 +32,7 @@ function Home({data}:{data:Image[]}) {
       </Head>
     <Navbar/>
     <About data={data}/>
-    <News></News>
+    
     <Contacts/>
     </div>
   );
