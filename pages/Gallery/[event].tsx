@@ -1,4 +1,3 @@
-import { GetServerSideProps } from 'next';
 import Image from 'next/image'
 import Menu from '../../components/Gallery/Menu';
 import Template from '../../components/Gallery/Template';

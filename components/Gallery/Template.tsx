@@ -13,16 +13,35 @@ function Template({images}: {images: Image[]}) {
     const [tempimg, setimg] = useState('');
     const [modal, setModal] = useState(false);
   
+
+    
+    let zoom = 1;
+    const ZOOM_SPEED = 0.1;
+    const zoomElement = document.querySelector<HTMLElement>("#zoom");
+    
+    document.addEventListener("wheel", function(e) {  
+        
+        if(e.deltaY > 0 ){    
+            zoomElement!.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
+        }else if(e.deltaY < 0 && zoom > 1){    
+            zoomElement!.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
+            
+        console.log(e.deltaY)
+    });
+
+    function reset(){
+        zoomElement!.style.transform = `scale(1)`;  }
+
       return ( 
   <>
       <div 
               className={modal ? 
-              ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50")
+              ("flex w-full h-full fixed top-0 left-0 items-center justify-center bg-black z-50 overflow-scroll")
               :
               ("hidden overflow-hidden")}>
-                  <img src={tempimg} className="block w-auto max-w-full h-auto max-h-full box-border p-3 mx-auto my-0" />
+                  <img id="zoom" src={tempimg} className="block w-auto max-w-full h-auto max-h-full box-border p-3 mx-auto my-0" />
                   <span className="fixed top-5 right-5 w-8 h-8 p-1 text-white cursor-pointer text-4xl"
-                  onClick={() =>( setModal(false), setimg(''))}>&times;</span>
+                  onClick={() =>( setModal(false), setimg(''), reset())}>&times;</span>
           </div>
   
   
