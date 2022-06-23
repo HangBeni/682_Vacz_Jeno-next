@@ -20,18 +20,13 @@ function Template({images}: {images: Image[]}) {
     const zoomElement = document.querySelector<HTMLElement>("#zoom");
     
     document.addEventListener("wheel", function(e) {  
-        
-        if(e.deltaY > 0 ){    
+        if(e.deltaY < 0 ){    
             zoomElement!.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
-        }else if(e.deltaY < 0 && zoom > 1){    
+        }else if(e.deltaY > 0 && zoom > 1){    
             zoomElement!.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
-            
-        console.log(e.deltaY)
     });
 
-    function reset(){
-        zoomElement!.style.transform = `scale(1)`;  }
-
+    function reset(){zoomElement!.style.transform = `scale(1)`; zoom=1 }
       return ( 
   <>
       <div 
