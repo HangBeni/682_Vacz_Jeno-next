@@ -34,12 +34,12 @@ function Mates() {
             if(sw==0)
             {
                 setsw(1);
-                setDirection("left");
+                setDirection("right");
             }
-            else if(sw==1)
+            else
            {    
                setsw(0);
-               setDirection("right");
+               setDirection("left");
             
             }
         }       
@@ -74,7 +74,7 @@ function Mates() {
                  <motion.div animate={direction} initial="left" variants={variants} >   
      
             
-            <motion.li transition={direction=="left" ||  direction=="right" ? {delay: 2.2} : {delay: 0.5}} animate={direction=="left" ||  direction=="right" ? {display: "none"} : {display: "block"}} initial="grid">
+            <motion.li transition={direction=="left" ||  direction=="right" ? {delay: 1} : {delay: 0.5}} animate={direction=="left" ||  direction=="right" ? {display: "none"} : {display: "block"}} initial="grid">
                 <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
 
                 <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
