@@ -3,12 +3,12 @@ export default function Contacts() {
     <footer>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
         <div
-        className="grid grid-cols-2 place-items-center 
-    opacity-70 hover:opacity-100 transition-all mt-10 text-base lg:text-lg m-1">
-            <p className="text-center p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
-            <p className="text-center p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <i> www.cserkesz.hu</i></p>
-            <p className="text-center ">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
-            <p className="text-center ">Created by: Hang Benjámin</p>
+        className="grid grid-cols-2 sm:grid-cols-3 place-items-center 
+         transition-all mt-10 text-base lg:text-lg gap-3 sm:gap-0">
+            <p className="text-center col-span-2 sm:col-span-1 p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
+            <p className="text-center col-span-2 sm:col-span-1 p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <i> www.cserkesz.hu</i></p>
+            <p className="text-center col-span-2 sm:col-span-1">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
+            <p className="text-center col-span-2 sm:col-span-3">Created by: Hang Benjámin</p>
         </div>
 
         <div className="sticky bottom-0 bg-black w-full h-full">

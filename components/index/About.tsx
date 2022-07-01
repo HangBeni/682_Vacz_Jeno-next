@@ -20,6 +20,7 @@ function About({data}:{data:Image[]}) {
                 height={'55px'}
                 sizes={'90vw'}
                 className="mx-auto w-full"
+                priority
                 />
         </div>
         <div className="w-full mx-auto text-justify items-center">

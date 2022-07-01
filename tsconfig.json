@@ -13,7 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+   
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/[Gallery]/GallerysLoadUp.jsx", "pages/_app.tsx", "pages/Team.tsx", "pages/Gallery.tsx", "pages/index.tsx", "pages/[Gallery]/Camp.tsx", "pages/[Gallery]/Farsang.tsx"],
   "exclude": ["node_modules"]
