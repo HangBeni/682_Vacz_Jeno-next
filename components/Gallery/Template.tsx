@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/future/image";
 import BackTo from "./BackTo";
 
 
@@ -34,15 +34,14 @@ function Template({images}: {images: Image[]}) {
                 
           <BackTo></BackTo>
 
-          <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+          <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] gap-y-2">
               {images?.map((image:any) => {
               if(image.imageScr.includes('long'))
               return (          
                   
                   <Image
-                  layout="responsive"
-                  width={150}
-                  height={250}
+                  width={380}
+                  height={'100%'}
                   quality={80}
                   src={image.imageScr}
                   key={image.id}
@@ -63,7 +62,7 @@ function Template({images}: {images: Image[]}) {
               return (
               
                   <Image
-                  layout="responsive"
+                 
                   width={450}
                   height={300}
                   quality={80}
