@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Navbar() {
   
   const [visible, setVisible] = useState(false);
-
+  
   const menu_variants = {
     open: {opacity: 1,x:0},
     closed: {opacity: 0,x:"100%"}
@@ -17,7 +17,7 @@ export default function Navbar() {
         <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
           682{' '}
         </h1>
-        <button onClick={() =>setVisible((visible) => !visible)} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100">
+        <button id='menu_bt' onClick={() => setVisible((visible) => !visible)} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100 md:cursor-default">
             <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
             <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
             <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
@@ -28,11 +28,6 @@ export default function Navbar() {
             <li key="Főoldal">
               <Link href="/">
                 <a className="nav_link">Főoldal</a>
-              </Link>
-            </li>
-            <li key="Csapatunkról">
-              <Link href="/Team">
-                <a className="nav_link">Csapatunkról</a>
               </Link>
             </li>
             <li key="Galéria">
@@ -58,11 +53,6 @@ export default function Navbar() {
             <li key="Főoldal">
               <Link href="/">
                 <a className="nav_link">Főoldal</a>
-              </Link>
-            </li>
-            <li key="Csapatunkról">
-              <Link href="/Team">
-                <a className="nav_link">Csapatunkról</a>
               </Link>
             </li>
             <li key="Galéria">

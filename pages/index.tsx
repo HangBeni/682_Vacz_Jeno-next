@@ -3,6 +3,8 @@ import Navbar from '../components/index/Navbar'
 import About from '../components/index/About'
 import Contacts from '../components/index/Contacts'
 import supabase from '../utils/supabase';
+import TeamMates from '../components/Team/TeamMates';
+import Laws from '../components/Team/Laws';
 
 
 
@@ -32,7 +34,8 @@ function Home({data}:{data:Image[]}) {
       </Head>
     <Navbar/>
     <About data={data}/>
-    
+    <Laws/>
+    <TeamMates/>
     <Contacts/>
     </div>
   );
