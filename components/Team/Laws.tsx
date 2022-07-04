@@ -21,7 +21,11 @@ function Laws() {
                 right: 0,
             }}
             >
-            <button onClick={() => setOpen(open => !open)} className="block uppercase font-mono text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest">Törvényeink</button>
+            <motion.button onClick={() => setOpen(open => !open)}
+            
+                whileHover={{scale:1.1}}
+               
+            className="block uppercase font-mono text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest">Törvényeink</motion.button>
             </motion.div>
            
             <motion.div animate={open ? "open":"close" } initial="close" variants={variants_laws}>
