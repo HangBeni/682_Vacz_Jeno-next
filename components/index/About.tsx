@@ -23,7 +23,7 @@ function About({data}:{data:Image[]}) {
                 priority
                 />
         </div>
-        <div className="w-full mx-auto text-justify items-center">
+        <div className="w-full mx-auto text-justify items-center text-lg">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg
             Hosszúhetényben. Valójában viszont már 2011 óta folyik cserkész munka a faluban.
             Kezdetben a 673. sz. Pius és a 47. sz. Szent László cserkész csapat őrsvezetői foglalkoztak a helyi
