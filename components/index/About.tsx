@@ -16,9 +16,8 @@ function About({data}:{data:Image[]}) {
             <Image
                 src={'https://ik.imagekit.io/HangBeni/Tabor/Nyakkend%C5%91_ACCpwPT98_Bg-1E9R_P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654603059933'}
                 layout={'responsive'}
-                width={'275px'}
-                height={'55px'}
-                sizes={'90vw'}
+                width={'100vw'}
+                height={'12vh'}
                 className="mx-auto w-full"
                 priority
                 />
