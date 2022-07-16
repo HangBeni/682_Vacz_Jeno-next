@@ -16,16 +16,13 @@ function EventHandler() {
     down:{y:0,transition:{duration:1}}
   }
 
-  const variants_arrow_Gallery = {
-    down:{ transition:{duration:1}, rotate: 180,},
-    up:{transition:{duration:1}, rotate: 0,}
-  }
+  
     return ( 
       <>
       <motion.div 
       variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       className="w-11/12 mx-auto rounded-b-xl bg-[#009a93]">
-        <div className="flex justify-around flex-wrap w-1/2 mx-auto text-center">
+        <div className="flex justify-around flex-wrap w-1/2 h-max pb-5 mx-auto text-center">
             <Link
           href={{
             pathname: '/Gallery/[event]',
@@ -35,7 +32,7 @@ function EventHandler() {
               <motion.a
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl m-2">Táborunk</motion.a>
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl">Táborunk</motion.a>
             </Link>
             <Link
           href={{
@@ -46,7 +43,7 @@ function EventHandler() {
               <motion.a
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl m-2">Farsang</motion.a>
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl">Farsang</motion.a>
             </Link>
             <Link
           href={{
@@ -57,7 +54,7 @@ function EventHandler() {
               <motion.a
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl m-2">Locsoló Bál</motion.a>
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Locsoló Bál</motion.a>
             </Link>
             <Link
           href={{
@@ -68,15 +65,23 @@ function EventHandler() {
               <motion.a
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl m-2">Májusi Portya</motion.a>
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Májusi Portya</motion.a>
+            </Link>
+
+            <Link
+          href={{
+            pathname: '/Gallery/[event]',
+            query: { event: 'KNT' },
+          }}
+        >
+              <motion.a
+               whileHover={{ scale: 1.1 }}
+               whileTap={{ scale: 0.9 }}
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Kerületi Nagytábor</motion.a>
             </Link>
         </div>
     
       </motion.div>
-      <motion.span
-       variants={variants_arrow_Gallery} initial="up" animate={direction_Gallery ? "up" : "down"}
-      onClick={() => setDirection(direction_Gallery=> !direction_Gallery)}
-      className="absolute cursor-pointer font-bold text-xl right-10 top-28 md:right-16 lg:right-20 outline-double bg-[#009a93] p-2 m-2 rounded-full translate-y-0 z-20">&#8593;</motion.span>
       </>
      );
 }
