@@ -40,15 +40,15 @@ function Template({images}: {images: Image[]}) {
               return (          
                   
                   <Image
-                  width={380}
-                  height={'100%'}
+                  width={400}
+                  height={200}
                   quality={80}
                   src={image.imageScr}
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
                   loading={'eager'}
-                  className="relative block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+                  className="relative block h-full max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
                   
