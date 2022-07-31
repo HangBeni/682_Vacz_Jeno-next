@@ -14,9 +14,7 @@ import Menu from "../components/Gallery/Menu";
     <title>682 Vácz Jenő</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </Head>
- <Navbar></Navbar>
  <Menu></Menu>
- <Footer></Footer>
  </> 
  );
 }

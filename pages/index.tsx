@@ -32,11 +32,9 @@ function Home({data}:{data:Image[]}) {
         <title>682 Vácz Jenő</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
-      <Navbar/>
       <About data={data}/>
       <Laws/>
       <TeamMates/>
-      <Contacts/>
     </div>
   );
 }
