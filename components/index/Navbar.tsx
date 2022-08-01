@@ -31,12 +31,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li key="Galéria">
-              <Link href="/Gallery">
+              <Link  href="/Gallery">
                 <a className="nav_link">Galéria</a>
               </Link>
             </li>
             <li key="ECSET Naptárunk">
-              <Link href="https://ecset.cserkesz.hu/mcssz/682/naptar">
+              <Link  href="https://ecset.cserkesz.hu/mcssz/682/naptar">
                 <a className="nav_link">ECSET Naptár</a>
               </Link>
             </li>
@@ -52,17 +52,17 @@ export default function Navbar() {
           <ul className="block my-[50%] h-fit w-fit">
             <li key="Főoldal">
               <Link href="/">
-                <a className="nav_link">Főoldal</a>
+                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Főoldal</a>
               </Link>
             </li>
             <li key="Galéria">
               <Link href="/Gallery">
-                <a className="nav_link">Galéria</a>
+                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Galéria</a>
               </Link>
             </li>
             <li key="ECSET Naptárunk">
               <Link href="https://ecset.cserkesz.hu/mcssz/682/naptar">
-                <a className="nav_link">ECSET Naptár</a>
+                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">ECSET Naptár</a>
               </Link>
             </li>
           </ul>
