@@ -7,7 +7,7 @@ import supabase from '../../utils/supabase';
 
 
 
-type Image = {  
+ type Image = {  
     id: number
     imageScr: string
     tags: string

@@ -12,7 +12,7 @@ export default function Navbar() {
   }
   
     return (
-    <nav className=" sticky z-30 top-0 flex rounded-t-none border-4 border-t-0 border-[#76b82a] bg-white text-xl">
+    <nav className=" sticky z-30 top-0 flex rounded-t-none border-4 border-t-0 border-trendy_green bg-white text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
         <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
           682{' '}
@@ -46,7 +46,7 @@ export default function Navbar() {
         variants={menu_variants}
         animate={visible ? "open" : "closed"}
         initial="closed"
-        className='md:hidden fixed bg-[#76b82a] h-full text-2xl
+        className='md:hidden fixed bg-trendy_green h-full text-2xl
           md:bg-white  py-2 md:pl-0 pl-7 top-0 right-0 
           rounded-xl text-right font-semibold '>
           <ul className="block my-[50%] h-fit w-fit">
