@@ -7,7 +7,7 @@ function Donation() {
         teheti meg: <strong>11773315-02097341</strong>, a <strong> Hosszúhetényi Cserkész Barátikör</strong> számára. Ezekkel a
         támogatásokkal felszereléseket vásárolunk és a programjainkat
         finanszírozzuk, amiket a gyerekek részére csinálunk. Az adományozás
-        teljesen önkéntes.
+        teljesen önkéntes, mindent hálával fogadunk.
       </p>
     </div>
   )
