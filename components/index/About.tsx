@@ -48,7 +48,7 @@ function About({data}:{data:Image[]}) {
             <div className='grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 place-items-center w-auto mx-1'>
             {
                 data?.map((image) => {
-                    if((image || [])?.tags.includes('Csapatunk'))
+                    if(image!.tags.includes('Csapatunk'))
                     return(
                     <Image
                         width={450}
