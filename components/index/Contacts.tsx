@@ -17,7 +17,7 @@ export default function Contacts() {
             <span><i className="fab fa-facebook-f  bg-white p-5 rounded-full m-5 sm:m-2 text-2xl"></i></span>
                 </a>
                 <a href="https://www.cserkesz.hu" className="block">
-                    <span><img src="https://ik.imagekit.io/HangBeni/Tabor/liliom_D3k2o81c_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649005932775" 
+                    <span><img src="https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/liliom_D3k2o81c_.jpg" 
                     className="bg-white rounded-full m-2 w-28"></img></span>
                 </a>
                 <a href="https://www.instagram.com/682.sz.vaczjeno" className="icon instagram m-auto">

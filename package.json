@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.12.2",
+    "@netlify/plugin-nextjs": "^4.14.0",
     "@prisma/client": "^4.0.0",
     "@supabase/supabase-js": "^1.33.3",
     "framer-motion": "^6.5.1",

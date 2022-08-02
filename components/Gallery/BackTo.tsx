@@ -1,4 +1,4 @@
-import Image from "next/image"; 
+import Image from "next/future/image"; 
 import ScrollToTop from "react-scroll-to-top";
 
 function Back() {
@@ -12,8 +12,7 @@ function Back() {
             className="rounded-3xl p-1"
             component={ 
                 <Image
-                src={'https://ik.imagekit.io/HangBeni/Tabor/156110-removebg-preview_2-hsyCcxK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654337895856'}
-                    layout='fixed'
+                src={'https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/156110-removebg-preview_2-hsyCcxK.png'}
                     width={'75px'}
                     height={'125px'}
                 />}

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 type Image = {  
     id: number
@@ -14,8 +14,7 @@ function About({data}:{data:Image[]}) {
 
         <div className='block mx-auto'>
             <Image
-                src={'https://ik.imagekit.io/HangBeni/Tabor/Nyakkend%C5%91_ACCpwPT98_Bg-1E9R_P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654603059933'}
-                layout={'responsive'}
+                src={'https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/Nyakkendo_ACCpwPT98_Bg-1E9R_P.png'}
                 width={'100vw'}
                 height={'12vh'}
                 className="mx-auto w-full"
@@ -52,7 +51,6 @@ function About({data}:{data:Image[]}) {
                     if(image.tags.includes('Csapatunk nyáritáborában'))
                     return(
                     <Image
-                        layout="intrinsic"
                         width={450}
                         height={275}
                         quality={100}
