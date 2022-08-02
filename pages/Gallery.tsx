@@ -1,5 +1,3 @@
-import Navbar from "../components/index/Navbar"
-import Footer from '../components/index/Contacts'
 import Head from "next/head"
 import Menu from "../components/Gallery/Menu";
 

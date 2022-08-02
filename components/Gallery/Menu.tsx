@@ -50,7 +50,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'Locsoló_Bál' },
+            query: { event: 'Locsolo_Bal' },
           }}
         >
               <motion.a
@@ -62,7 +62,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'May_Portya' },
+            query: { event: '2022_May_Portya' },
           }}
         >
               <motion.a

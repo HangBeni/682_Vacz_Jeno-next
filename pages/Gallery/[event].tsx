@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import Menu from '../../components/Gallery/Menu';
 import Template from '../../components/Gallery/Template';
-import Contacts from '../../components/index/Contacts';
-import Navbar from '../../components/index/Navbar';
 import supabase from '../../utils/supabase';
 
 
@@ -21,10 +19,8 @@ import supabase from '../../utils/supabase';
   
     return ( 
       <>
-      <Navbar></Navbar>
       <Menu></Menu>
       <Template images={images}/>
-      <Contacts></Contacts>
       </>
      );
 }

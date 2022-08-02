@@ -45,7 +45,7 @@ function Template({ images }: { images: Image[] }) {
                 <Image
                   width={400}
                   height={200}
-                  quality={80}
+                  quality={100}
                   src={image.imageScr}
                   key={image.id}
                   title={image.tags}
