@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue, useTransform} from "framer-motion";
 import { useState } from "react";
 
 
@@ -46,7 +46,6 @@ function Mates() {
     return (
         <div className="mb-24">
             <div
-
                 className="flex w-4/5  mx-auto ">
                 <motion.button
                     style={{ background }}
@@ -70,8 +69,9 @@ function Mates() {
             <motion.div animate={direction} initial="left" variants={variants} >
 
 
-                <motion.li transition={direction == "left" || direction == "right" ? { delay: 1 } : { delay: 0.5 }} animate={direction == "left" || direction == "right" ? { display: "none" } : { display: "block" }} initial="grid">
-                    <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
+                <motion.li  transition={direction == "left" || direction == "right" ? { delay: 1 } : { delay: 0.5 }} animate={direction == "left" || direction == "right" ? { display: "none" } : { display: "block" }} initial="grid">
+                   
+                    <motion.div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
 
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className=" sm:text-2xl text-xl font-bold text-center">Vidra őrs</h2>
@@ -114,7 +114,7 @@ function Mates() {
                             </ul>
                         </div>
 
-                    </div> {/*Bois raj*/}
+                    </motion.div> {/*Bois raj*/}
 
                     <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10">
 
