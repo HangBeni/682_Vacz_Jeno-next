@@ -46,24 +46,7 @@ function About({data}:{data:Image[]}) {
             tábort tartunk.
             </p>
             <div className='grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 place-items-center w-auto mx-1'>
-            {
-                data?.map((image) => {
-                    if(image?.tags.includes('Csapatunk nyáritáborában'))
-                    {
-                            return(
-                        <Image
-                            width={450}
-                            height={275}
-                            quality={100}
-                            src={image.imageScr}
-                            key={image.id}
-                            title={image.tags}
-                            alt={image.tags}
-                            className="rounded-lg m-6 w-full "/>
-                        )
-                    }
-                })
-            }
+            
             </div>
             <p className="m-4 px-4">
             Alapvető értékeink a kereszténység, a hazaszeretet, természet szeretet. A közösségben és a
