@@ -8,7 +8,6 @@ import Laws from '../components/Team/Laws';
 
 export async function getStaticProps() {
  const {data:data} = await supabase.from('Camp').select('*').order('id')
-
   return{
       props:{
           data,
