@@ -3,7 +3,8 @@ import Contacts from '../components/index/Contacts'
 import Navbar from './../components/index/Navbar'
 import '../styles/globals.css'
 import Donation from '../components/index/Donation'
-import { Head } from 'next/document'
+import Head from 'next/head'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return ( <>
