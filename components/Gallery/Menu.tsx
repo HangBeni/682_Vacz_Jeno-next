@@ -26,7 +26,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'Camp' },
+            query: { event: '2021_Camp' },
           }}
         >
               <motion.a
@@ -38,7 +38,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'Farsang' },
+            query: { event: '2021_Farsang' },
           }}
         >
               <motion.a
@@ -50,7 +50,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'Locsolo_Bal' },
+            query: { event: '2022_Locsolo_Bal' },
           }}
         >
               <motion.a
@@ -75,7 +75,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: 'KNT' },
+            query: { event: '2022_KNT' },
           }}
         >
               <motion.a
