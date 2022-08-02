@@ -1,7 +1,5 @@
-import Navbar from "../../../components/index/Navbar";
-import Footer from "../../../components/index/Contacts"
 import Menu from "../../../components/Gallery/Menu";
-import Template from "../../../components/Gallery/Template";
+import KntTemplate from "../../../components/Gallery/Template";
 import supabase from "../../../utils/supabase";
 
 
@@ -14,10 +12,8 @@ type Image = {
 function Knt({images}: {images: Image[]}) {
     return ( 
         <>
-    <Navbar></Navbar>
     <Menu></Menu>
-    <Template images={images}></Template>
-    <Footer></Footer>
+    <KntTemplate images={images}></KntTemplate>
         </>
      );
 }
