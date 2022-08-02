@@ -907,7 +907,7 @@ function About({ data  }) {
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 place-items-center w-auto mx-1",
                             children: data?.map((image)=>{
-                                if (image?.tags.includes("Csapatunk")) return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_future_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                if (image?.tags.includes("Csapatunk ny\xe1rit\xe1bor\xe1ban")) return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_future_image__WEBPACK_IMPORTED_MODULE_1___default()), {
                                     width: 450,
                                     height: 275,
                                     quality: 100,

@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import About from '../components/index/About'
 import supabase from '../utils/supabase';
 import TeamMates from '../components/Team/TeamMates';
@@ -25,10 +24,6 @@ type Image = {
 function Home({data}:{data:Image[]}) {
   return (
     <div>
-      <Head>
-        <title>682 Vácz Jenő</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      </Head>
       <About data={data}/>
       <Laws/>
       <TeamMates/>
