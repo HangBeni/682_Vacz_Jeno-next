@@ -49,17 +49,19 @@ function About({data}:{data:Image[]}) {
             {
                 data?.map((image) => {
                     if(image?.tags.includes('Csapatunk nyáritáborában'))
-                    return(
-                    <Image
-                        width={450}
-                        height={275}
-                        quality={100}
-                        src={image.imageScr}
-                        key={image.id}
-                        title={image.tags}
-                        alt={image.tags}
-                        className="rounded-lg m-6 w-full "/>
-                    )
+                    {
+                            return(
+                        <Image
+                            width={450}
+                            height={275}
+                            quality={100}
+                            src={image.imageScr}
+                            key={image.id}
+                            title={image.tags}
+                            alt={image.tags}
+                            className="rounded-lg m-6 w-full "/>
+                        )
+                    }
                 })
             }
             </div>
