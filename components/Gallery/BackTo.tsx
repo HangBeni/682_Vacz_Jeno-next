@@ -1,7 +1,7 @@
-import Image from "next/future/image"; 
+import Image from "next/image"; 
 import ScrollToTop from "react-scroll-to-top";
 
-function Back() {
+function BackTo() {
     
     
     return (
@@ -13,8 +13,9 @@ function Back() {
             component={ 
                 <Image
                 src={'https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/156110-removebg-preview_2-hsyCcxK.png'}
-                    width={'75px'}
-                    height={'125px'}
+                layout={'fixed'}   
+                width={'75px'}
+                height={'125px'}
                 />}
             />
         </div>
@@ -22,4 +23,4 @@ function Back() {
     );
 }
 
-export default Back;
+export default BackTo;

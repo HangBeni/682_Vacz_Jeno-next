@@ -12,15 +12,6 @@ function About({data}:{data:Image[]}) {
        
     <div role={'main'} className="inline-block">
 
-        <div className='block mx-auto'>
-            <Image
-                src={'https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/Nyakkendo_ACCpwPT98_Bg-1E9R_P.png'}
-                width={'100vw'}
-                height={'12vh'}
-                className="mx-auto w-full"
-                priority
-                />
-        </div>
         <div className="w-full mx-auto text-justify items-center text-lg">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg
             Hosszúhetényben. Valójában viszont már 2011 óta folyik cserkész munka a faluban.

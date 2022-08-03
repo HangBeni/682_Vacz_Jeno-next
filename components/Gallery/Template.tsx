@@ -28,7 +28,7 @@ function Template({ images }: { images: Image[] }) {
         />
 
         <span
-          className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-4xl text-white"
+          className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
           onClick={() => (setModal(false), setimg(''))}
         >
           &times;
