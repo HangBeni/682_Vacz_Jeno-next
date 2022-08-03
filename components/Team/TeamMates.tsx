@@ -21,7 +21,7 @@ function Mates() {
     const background = useTransform(
         x,
         [-200, 0, 100],
-        ["hsl(133, 74.2%, 32%)", "#ffff", "hsl(4, 87.3%, 30.8%)"]
+        ["hsl(4, 87.3%, 30.8%)", "#ffff", "hsl(133, 74.2%, 32%)"]
     )
     function handleChange() {
 
