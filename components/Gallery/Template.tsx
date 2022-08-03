@@ -38,7 +38,7 @@ function Template({ images }: { images: Image[] }) {
       <div>
         <BackTo></BackTo>
 
-        <div className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-1">
+        <div className="mt-4 mx-2 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-2">
           {images?.map((image: any) => {
             if (image.imageScr.includes('long'))
               return (
@@ -58,7 +58,7 @@ function Template({ images }: { images: Image[] }) {
           })}
         </div>
 
-        <div className="mt-4 mr-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4">
+        <div className="mt-4 mx-3 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4 place-items-center">
           {images?.map((image) => {
             if (!image.imageScr.includes('long'))
               return (
