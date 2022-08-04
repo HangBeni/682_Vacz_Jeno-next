@@ -15,7 +15,6 @@ model Camp {
 
 model Farsang {
   id         BigInt    @id(map: "image-gallery_pkey") @default(autoincrement())
-  created_at DateTime? @default(now()) @db.Timestamptz(6)
   imageScr   String?
   tags       String?
 }
@@ -26,12 +25,12 @@ model KNT {
   tags     String?
 }
 
-model Locsol__B_l {
+model Locsolo__Bal {
   id       BigInt  @id
   imageScr String?
   tags     String?
 
-  @@map("Locsoló_Bál")
+  @@map("Locsolo_Bal")
 }
 
 model May_Portya {
