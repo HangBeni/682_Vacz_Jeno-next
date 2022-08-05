@@ -6,7 +6,7 @@ function Donation() {
     initial={{opacity: 0, x:'40%'}}
     whileInView={{opacity:1, x:0}}
     transition={{duration: 0.5}}
-    className="block h-full pb-10 bg-trendy_green text-justify">
+    className="block h-full py-8 bg-trendy_green text-justify">
       <h1 className="text-3xl font-extrabold pt-4 ml-6 text-center sm:text-left">Támogatási lehetőség</h1>
       <p className="text-lg mt-5 px-5 ">
         Amennyiben támogatni szeretné csapatunkat, azt ezen a számlára utalva
