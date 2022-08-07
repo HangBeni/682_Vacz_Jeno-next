@@ -28,8 +28,8 @@ import supabase from '../../utils/supabase';
 
 export async function getServerSideProps(context:any) {
     const {params} = context
-    const {event} = params
-    console.log(event);
+    const {event} =params
+    
 const {data:images} = await supabase.from(event).select('*').order('id')
 
 return {

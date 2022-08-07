@@ -75,7 +75,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: { event: '2022_KNT' },
+            query: { event: 'KNT' },
           }}
         >
               <motion.a

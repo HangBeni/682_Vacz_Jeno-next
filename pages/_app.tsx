@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   <Navbar/>
   <Component {...pageProps} />
   <Contacts/>
-  <Donation/>
+  
   </>)
 }
 
