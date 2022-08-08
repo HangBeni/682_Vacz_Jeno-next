@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Image from 'next/future/image'
-import BackTo from './BackTo'
 
 type Image = {
   id: number
@@ -36,7 +35,6 @@ function Template({ images }: { images: Image[] }) {
       </div>
 
       <div>
-        <BackTo></BackTo>
 
         <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-1">
               {images?.map((image:any) => {
