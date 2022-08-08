@@ -8,8 +8,25 @@ type Image = {
 }
 
 function Template({ images }: { images: Image[] }) {
-  const [tempimg, setimg] = useState('')
+  const [tempimg, setimg] = useState("")
   const [modal, setModal] = useState(false)
+
+
+  const back = () => {
+    images.map((img) => {
+      if (images.findIndex(img => img.imageScr == tempimg) == img.id) 
+        setimg(img.imageScr)
+    })
+    console.log(tempimg, images.findIndex(img => img.imageScr == tempimg))
+  }
+
+  const forward = () => {
+    images.map((img) => {
+      if (images.findIndex(img => img.imageScr == tempimg)+2 == img.id) 
+        setimg(img.imageScr)
+    })
+    console.log(tempimg, images.findIndex(img => img.imageScr == tempimg)+2)
+  }
 
   return (
     <>
@@ -17,21 +34,28 @@ function Template({ images }: { images: Image[] }) {
         className={
           modal
             ? 'fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-black '
-            : 'hidden'
-        }
-      >
-        <img
-          id="zoom"
-          src={tempimg}
-          className="mx-auto box-border block h-auto max-h-full w-auto max-w-full p-3"
-        />
-
+            : 'hidden'}>
+       
+       <span className='fixed text-white text-6xl font-extrabold p-2 cursor-pointer z-10 left-4'
+       onClick={back}
+       >&#8249;</span>
+        
+          <img
+            id="zoom"
+            src={tempimg}
+            className="mx-auto box-border block h-auto max-h-full w-auto p-3"
+          />
+        
         <span
           className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
           onClick={() => (setModal(false), setimg(''))}
         >
           &times;
         </span>
+        <span className='fixed text-white text-6xl font-extrabold p-2 cursor-pointer z-10 right-4'
+        onClick={forward}
+        >&#8250;</span>
+        
       </div>
 
       <div>
