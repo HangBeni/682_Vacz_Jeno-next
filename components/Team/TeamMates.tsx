@@ -123,7 +123,7 @@ function Mates() {
                             <ul className="grid place-items-center gap-2">
                                 <li className="team_mate">Kozmáry Kamilla  </li>
                                 <li className="team_mate">Nyisztor Zselyke </li>
-                                <li className="team_mate">Kaáli Nagy Villő Janka</li>
+                                <li className="team_mate">Kaáli-Nagy Villő Janka</li>
                                 <li className="team_mate">Bergauer Dorina  </li>
                                 <li className="team_mate">Fehér Rebeka </li>
                                 <li className="team_mate">Jánosi Emőke </li>
