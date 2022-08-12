@@ -7,14 +7,15 @@ import Head from 'next/head'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return ( <>
-  <Head>
-        <title>682 Vácz Jenő</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </Head>
-  <Navbar/>
-  <Component {...pageProps} />
-  <Contacts/>
+  return ( 
+  <>
+    <Head>
+          <title>682 Vácz Jenő</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </Head>
+    <Navbar/>
+    <Component {...pageProps} />
+    <Contacts/>
   
   </>)
 }

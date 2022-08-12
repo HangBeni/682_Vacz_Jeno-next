@@ -10,9 +10,13 @@ body {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
     font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
+    position: relative;
 }
-body{
-position: relative;
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
 }
 
 #shape{

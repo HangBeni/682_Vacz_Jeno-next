@@ -17,7 +17,6 @@ function Template({ images }: { images: Image[] }) {
       if (images.findIndex(img => img.imageScr == tempimg) == img.id) 
         setimg(img.imageScr)
     })
-    console.log(tempimg, images.findIndex(img => img.imageScr == tempimg))
   }
 
   const forward = () => {
@@ -25,7 +24,6 @@ function Template({ images }: { images: Image[] }) {
       if (images.findIndex(img => img.imageScr == tempimg)+2 == img.id) 
         setimg(img.imageScr)
     })
-    console.log(tempimg, images.findIndex(img => img.imageScr == tempimg)+2)
   }
 
   return (
@@ -58,9 +56,9 @@ function Template({ images }: { images: Image[] }) {
         
       </div>
 
-      <div>
+      <div className='mx-2'>
 
-        <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-2">
+        <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-3 ">
               {images?.map((image:any) => {
               if(image.imageScr.includes('long'))
               return (          
@@ -73,7 +71,8 @@ function Template({ images }: { images: Image[] }) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
-                  className="relative block h-full row-span-2 max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+                  className=' dark:border dark:border-trendy_green
+                  relative block h-full row-span-2 max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
                   )
@@ -88,7 +87,8 @@ function Template({ images }: { images: Image[] }) {
                       key={image.id}
                       title={image.tags}
                       alt={image.tags}
-                      className="block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black"
+                      className=' dark:border dark:border-türkisz
+                      block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                       onClick={() => (setimg(image.imageScr), setModal(true))}
                       />
                   

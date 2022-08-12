@@ -10,7 +10,7 @@ function About({data}:{data:Image[]}) {
     return ( 
         <>
        
-    <div role={'main'} className="inline-block">
+    <div role={'main'} className="inline-block dark:text-white">
 
         <div className="w-full mx-auto text-justify items-center text-lg">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg

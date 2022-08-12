@@ -12,9 +12,9 @@ export default function Navbar() {
   }
   
     return (
-    <nav className=" sticky z-30 top-0 flex rounded-t-none border-4 border-t-0 border-trendy_green bg-white text-xl">
+    <nav className=" sticky z-30 top-0 flex rounded-t-none border-4 border-t-0 border-trendy_green bg-white dark:bg-black text-xl">
       <div className="container mx-auto flex w-11/12 flex-wrap justify-between  sm:py-2 md:py-4">
-        <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
+        <h1 className="flex dark:text-white z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
           682{' '}
         </h1>
         <button id='menu_bt' onClick={() => setVisible((visible) => !visible)} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100 md:cursor-default">
@@ -24,12 +24,17 @@ export default function Navbar() {
         </button>
         <div className='hidden md:block ml-auto  text-2xl py-2  
           rounded-xl font-semibold '>
-          <ul className="md:flex md:items-center">
+          <ul className="md:flex md:items-center dark:text-white">
             <li key="Főoldal">
               <Link href="/">
                 <a className="nav_link">Főoldal</a>
               </Link>
             </li>
+            {/*<li key="Tudasanyag">
+              <Link  href="/Curriculum">
+                <a className="nav_link">Tudástár</a>
+    </Link>
+            </li>*/}
             <li key="Galéria">
               <Link  href="/Gallery">
                 <a className="nav_link">Galéria</a>

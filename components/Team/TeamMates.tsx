@@ -66,12 +66,12 @@ function Mates() {
                 </motion.button>
             </div>
 
-            <motion.div animate={direction} initial="left" variants={variants} >
+            <motion.div animate={direction} initial="left" variants={variants} className='dark:text-white'>
 
 
                 <motion.li  transition={direction == "left" || direction == "right" ? { delay: 1 } : { delay: 0.5 }} animate={direction == "left" || direction == "right" ? { display: "none" } : { display: "block" }} initial="grid">
                    
-                    <motion.div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10" >
+                    <motion.div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,1fr))] place-items-center gap-5 m-10 " >
 
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className=" sm:text-2xl text-xl font-bold text-center">Vidra őrs</h2>
