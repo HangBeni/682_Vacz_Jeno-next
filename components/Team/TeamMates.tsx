@@ -44,7 +44,7 @@ function Mates() {
 
 
     return (
-        <div className="mb-24">
+        <div className="pb-24">
             <div
                 className="flex w-4/5  mx-auto ">
                 <motion.button
@@ -60,7 +60,7 @@ function Mates() {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="relative inline-block text-lg lg:text-3xl font-bold uppercase 
-                        w-full px-4 py-5 tracking-widest ">
+                        w-full px-4 py-5 tracking-widest text-black">
                         Csapatunk tagjai
                     </motion.span>
                 </motion.button>

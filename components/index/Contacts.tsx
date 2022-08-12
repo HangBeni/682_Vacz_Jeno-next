@@ -1,10 +1,10 @@
 export default function Contacts() {
     return(
-    <footer className="h-full dark:text-white ">
+    <footer className="h-full text-font bg-bg">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
         <div
         className="grid grid-cols-2 sm:grid-cols-3 place-items-center 
-         transition-all mt-10 text-base lg:text-lg gap-3 sm:gap-0 ">
+         transition-all pt-10 text-base lg:text-lg gap-3 sm:gap-0 ">
             <p className="text-center col-span-2 sm:col-span-1 p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
             <p className="text-center col-span-2 sm:col-span-1 p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300"><i>cserkesz.hu</i></a></p>
             <p className="text-center col-span-2 sm:col-span-1">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>

@@ -32,8 +32,8 @@ function Home({data}:{data:Image[]}) {
 
   
   return (
-    <>
-    <div className='relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-full'>
+    <div className='text-font bg-bg'>
+    <div className='  relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-full'>
         <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
           <Image 
           src={teamPics}
@@ -45,7 +45,7 @@ function Home({data}:{data:Image[]}) {
       <About data={data}/>
       <Laws/>
       <TeamMates/>
-    </>
+    </div>
   );
 }
 export default Home

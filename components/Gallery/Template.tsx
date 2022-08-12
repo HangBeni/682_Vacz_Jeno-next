@@ -27,7 +27,7 @@ function Template({ images }: { images: Image[] }) {
   }
 
   return (
-    <>
+    <div className='bg-bg text-font'>
       <div
         className={
           modal
@@ -56,9 +56,9 @@ function Template({ images }: { images: Image[] }) {
         
       </div>
 
-      <div className='mx-2'>
+      <div className='mx-2 '>
 
-        <div  className="mt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-3 ">
+        <div  className="pt-4 grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] place-items-center gap-3 ">
               {images?.map((image:any) => {
               if(image.imageScr.includes('long'))
               return (          
@@ -71,7 +71,7 @@ function Template({ images }: { images: Image[] }) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
-                  className=' dark:border dark:border-trendy_green
+                  className=' dark:border dark:border-trendy_green dark:shadow-white
                   relative block h-full row-span-2 max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
@@ -87,7 +87,7 @@ function Template({ images }: { images: Image[] }) {
                       key={image.id}
                       title={image.tags}
                       alt={image.tags}
-                      className=' dark:border dark:border-türkisz
+                      className=' dark:border dark:border-türkisz dark:shadow-white
                       block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                       onClick={() => (setimg(image.imageScr), setModal(true))}
                       />
@@ -97,7 +97,7 @@ function Template({ images }: { images: Image[] }) {
               }
           </div>
         </div>
-    </>
+    </div>
   )
 }
 
