@@ -71,7 +71,7 @@ function Template({ images }: { images: Image[] }) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
-                  className=' dark:border dark:border-trendy_green dark:shadow-white
+                  className=' border-border_color_primary border
                   relative block h-full row-span-2 max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                   onClick={() => (setimg(image.imageScr), setModal(true))}
                   />
@@ -87,7 +87,7 @@ function Template({ images }: { images: Image[] }) {
                       key={image.id}
                       title={image.tags}
                       alt={image.tags}
-                      className=' dark:border dark:border-türkisz dark:shadow-white
+                      className=' border-border_color_secondary border
                       block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                       onClick={() => (setimg(image.imageScr), setModal(true))}
                       />

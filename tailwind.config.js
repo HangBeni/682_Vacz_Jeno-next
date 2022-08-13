@@ -12,7 +12,9 @@ module.exports = {
         regos:"var(--regos)",
         türkisz:"var(--türkisz)",
         font:'var(--font)',
-        bg:'var(--bg)'
+        bg:'var(--bg)',
+        border_color_primary: 'var(--border_color_primary)',
+        border_color_secondary: 'var(--border_color_secondary)',  
       },
       scale: {
         '-1': '-1'

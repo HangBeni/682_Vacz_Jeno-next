@@ -11,6 +11,7 @@ body {
     scroll-padding-top: 100px;
     font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
     position: relative;
+    background: var(--bg);
 }
 
 
@@ -22,12 +23,16 @@ body {
     --türkisz: #009a93;
     --font: #161625;
     --bg: #ffff;
+    --border_color_primary: #000;
+    --border_color_secondary: #000;
    }
 
 
 [data-theme="dark"] {
     --font: #ffff;
     --bg: #161625;
+    --border_color_primary: #009a93;
+    --border_color_secondary:#76b82a;
 }
 
 .theme-switch-wrapper {
