@@ -50,9 +50,9 @@ function switchTheme(e:any) {
       </div>
       
       
-      <div className="container mx-auto flex w-11/12 flex-wrap justify-between sm:py-2 md:py-4 z-30">
+      <div className="container mx-auto flex w-11/12 flex-wrap justify-between sm:py-2 md:py-3 z-30">
   
-        <h1 className="flex  z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
+        <h1 className="flex z-1 lg:text-3xl font-extrabold md:after:content-['_V._J.'] lg:after:content-['_Vácz_Jenő'] md:text-2xl sm:text-xl my-auto -ml-1">
           682{' '}
         </h1>
         <button id='menu_bt' onClick={() => setVisible((visible) => !visible)} className="block z-10 my-3 mr-0 space-y-[5px] md:opacity-0 opacity-100 md:cursor-default">
@@ -60,15 +60,14 @@ function switchTheme(e:any) {
             <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
             <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
         </button>
-        <div className='hidden md:block ml-auto  text-2xl py-2  
-          rounded-xl font-semibold '>
+        <div className='hidden md:block ml-auto text-2xl py-2 rounded-xl font-semibold '>
           <ul className="md:flex md:items-center">
             <li key="Főoldal">
               <Link href="/">
                 <a className="nav_link">Főoldal</a>
               </Link>
             </li>
-           {/* <li key="Tudasanyag">
+            {/*<li key="Tudasanyag">
               <Link  href="/Curriculum">
                 <a className="nav_link">Tudástár</a>
               </Link>
