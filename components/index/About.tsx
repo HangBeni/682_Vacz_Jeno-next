@@ -36,7 +36,7 @@ function About({data}:{data:Image[]}) {
             programunk van: kirándulások, portyák, csapat karácsony, farsang, nyáron pedig nomád
             tábort tartunk.
             </p>
-            <div className='grid grid-cols-[repeat(auto-fit,_minmax(380px,1fr))] gap-2 place-items-center w-auto mx-1'>
+            <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 place-items-center w-auto mx-1'>
             {
                 data?.map((image) => {
                     if(image?.tags?.includes('Csapatunk nyáritáborában'))
