@@ -67,11 +67,11 @@ function switchTheme(e:any) {
                 <a className="nav_link">Főoldal</a>
               </Link>
             </li>
-            {/*<li key="Tudasanyag">
+            <li key="Tudasanyag">
               <Link  href="/Curriculum">
                 <a className="nav_link">Tudástár</a>
               </Link>
-    </li>*/}
+            </li>
             <li key="Galéria">
               <Link  href="/Gallery">
                 <a className="nav_link">Galéria</a>
