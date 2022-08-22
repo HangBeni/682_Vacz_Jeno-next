@@ -97,6 +97,11 @@ function switchTheme(e:any) {
                 <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Főoldal</a>
               </Link>
             </li>
+            <li key="Tudasanyag">
+              <Link  href="/Curriculum">
+                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Tudástár</a>
+              </Link>
+            </li>
             <li key="Galéria">
               <Link href="/Gallery">
                 <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Galéria</a>

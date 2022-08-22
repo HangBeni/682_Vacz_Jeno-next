@@ -1,5 +1,6 @@
 import Flag from "../../components/Curriculum/Magyarsag/Flag";
 import GreatMagyars from "../../components/Curriculum/Magyarsag/GreatMagyars";
+import Poems from "../../components/Curriculum/Magyarsag/Poems";
 import supabase from "../../utils/supabase";
 
 
@@ -17,6 +18,7 @@ function Magyarsag({greats}: {greats: Greats[]}) {
         <div>
             <Flag></Flag>
             <GreatMagyars greats={greats}></GreatMagyars>
+            <Poems></Poems>
         </div>
      );
 }
