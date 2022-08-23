@@ -3,8 +3,8 @@ import Image from 'next/future/image'
 function Flag() {
   return (
     <div className="py-5 px-2 rounded-b-3xl h-full bg-gradient-to-b from-red-600 via-white to-green-600">
-      <div className='text-center '>
-        <h1 className="text-2xl text-black md:text-left">
+      <div className='flex items-center'>
+        <h1 className="text-2xl text-black text-center w-1/2">
           Magyarország zászlaja
         </h1>
         <p className="mx-auto md:ml-auto md:mr-3  w-1/2 text-justify text-lg text-black ">
@@ -20,7 +20,7 @@ function Flag() {
 
       <div className="mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 w-11/12">
         <div className='grid place-items-center'>
-          <h1 className="text-2xl text-black">
+          <h1 className="text-2xl text-black ">
             Magyarország címere
           </h1>
           <Image

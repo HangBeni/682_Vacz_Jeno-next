@@ -6,7 +6,7 @@ export default function Contacts() {
         className="grid grid-cols-2 sm:grid-cols-3 place-items-center 
          transition-all pt-10 text-base lg:text-lg gap-3 sm:gap-0 ">
             <p className="text-center col-span-2 sm:col-span-1 p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
-            <p className="text-center col-span-2 sm:col-span-1 p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:"><i>cserkesz.hu</i></a></p>
+            <p className="text-center col-span-2 sm:col-span-1 p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:text-trendy_green"><i>cserkesz.hu</i></a></p>
             <p className="text-center col-span-2 sm:col-span-1">Nyisztor Zsolt csp. <br/>+36 30 820 5693 nyisztorzsolt77@gmail.com</p>
             <p className="text-center col-span-2 sm:col-span-3">Created by: Hang Benjámin</p>
         </div>

@@ -6,7 +6,7 @@ function GreatMagyars({greats}: {greats: Greats[]}) {
     return ( 
         <div className="mb-16 mx-3 mt-5 h-full">
 
-            <h1 className="text-font w-full text-3xl text-center mb-2">Nagy Magyarjaink</h1>
+            <h1 className="w-full text-center text-3xl font-black tracking-widest uppercase mb-2">Nagy Magyarjaink</h1>
             
             <div className="grid md:grid-cols-[repeat(auto-fit,_minmax(450px,1fr))] gap-5 mx-2 max-h-fit
                             grid-cols-1">
