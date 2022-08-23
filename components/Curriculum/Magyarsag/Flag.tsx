@@ -4,7 +4,7 @@ function Flag() {
   return (
     <div className="py-5 px-2 rounded-b-3xl h-full bg-gradient-to-b from-red-600 via-white to-green-600">
       <div className='flex items-center'>
-        <h1 className="text-2xl text-black text-center w-1/2">
+        <h1 className="text-2xl text-black text-center w-1/2 mx-2">
           Magyarország zászlaja
         </h1>
         <p className="mx-auto md:ml-auto md:mr-3  w-1/2 text-justify text-lg text-black ">
@@ -38,7 +38,7 @@ function Flag() {
           </li>
           <ul></ul>
           <li className="list-decimal">
-            <em>Első mezeje vörössel és ezüsttel hétszer vágott.</em>
+            <em>Első mezeje vörössel és ezüsttel hétszer vágott."</em>
           </li>
           <ul>
             <li className="list-disc">
@@ -53,8 +53,8 @@ function Flag() {
           </ul>
           <li className="list-decimal">
             <em>
-              Második, vörös mezejében zöld hármas halomnak arany koronás
-              kiemelkedő középső részén ezüst kettős kereszt.
+              "Második, vörös mezejében zöld hármas halomnak arany koronás
+              kiemelkedő középső részén ezüst kettős kereszt."
             </em>
           </li>
           <ul>
@@ -71,7 +71,7 @@ function Flag() {
           </ul>
 
           <li className="list-decimal">
-            <em>A pajzson a magyar Szent Korona nyugszik."</em>
+            <em>"A pajzson a magyar Szent Korona nyugszik."</em>
           </li>
           <ul>
             <li className="list-disc">

@@ -8,10 +8,10 @@ function Poems({ poems }: { poems: Poem[] }) {
         Magyar Irodalom
       </h1>
 
-      <div className="mx-5 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-5">
+      <div className="mx-5 grid grid-cols-[repeat(auto-fit,_minmax(250px,1fr))] gap-5 place-items-center">
         {poems.map((poem) => {
           return (
-            <div className="text-lg font-semibold">
+            <div className="sm:text-lg text-base font-semibold">
               <h2 className="text-2xl font-extrabold">{poem.Name}</h2>
               <p className="text-justify">
                 <em>{poem.Reszlet}</em>
@@ -25,7 +25,7 @@ function Poems({ poems }: { poems: Poem[] }) {
               </p>
 
               <p
-                className="w-fit rounded-xl p-1 text-xl font-bold outline
+                className="w-fit rounded-xl p-1 sm:text-xl text-lg font-bold outline
                 duration-300 hover:bg-black hover:text-trendy_green [@media(hover:none)]:bg-black [@media(hover:none)]:text-trendy_green     "
               >
                 <a href={poem.Link}>A teljes művet itt találhatjátok</a>
