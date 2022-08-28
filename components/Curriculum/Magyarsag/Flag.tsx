@@ -11,7 +11,7 @@ function Flag() {
           <em>
             "Magyarország zászlaja három, egyenlő szélességű, sorrendben felülről
             piros, fehér és zöld színű, vízszintes sávból áll, amelyben a piros
-            szín az erő, a fehér szín a hűség, a zöld szín a remény jelképe."{' '}
+            szín az <strong>erő</strong>, a fehér szín a <strong>hűség</strong>, a zöld szín a <strong>remény</strong> jelképe."{' '}
             <br />
           </em>
           <p className="text-right"> –Magyarország alaptörvénye I) cikk (2)</p>

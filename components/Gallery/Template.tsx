@@ -56,7 +56,7 @@ function Template({ images }: { images: Image[] }) {
         
       </div>
 
-      <div className='mx-2 '>
+      <div className='mx-1 '>
 
         <div  className="pt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] place-items-center gap-3 ">
               {images?.map((image:any) => {
@@ -64,7 +64,7 @@ function Template({ images }: { images: Image[] }) {
               return (          
                   
                   <Image
-                  width={450}
+                  width={300}
                   height={200}
                   quality={80}
                   src={image.imageScr}
@@ -80,7 +80,7 @@ function Template({ images }: { images: Image[] }) {
                   return (
                       <Image
                      
-                      width={450}
+                      width={300}
                       height={300}
                       quality={80}
                       src={image.imageScr}

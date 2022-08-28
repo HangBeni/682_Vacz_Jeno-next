@@ -12,7 +12,7 @@ function EventHandler() {
   const [direction_Gallery, setDirection] = useState(true);
 
   const variants_Gallery = {
-    up:{y:"-200%", transition:{duration:1}},
+    up:{y:"-200%", transition:{duration:1}, display: 'none'},
     down:{y:0,transition:{duration:1}}
   }
 
@@ -88,7 +88,7 @@ function EventHandler() {
           
       </motion.div>
       <motion.div 
-      className="grid place-items-center bg-bg text-font">
+      className="grid place-items-center bg-bg text-font m-12">
       <motion.span 
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
