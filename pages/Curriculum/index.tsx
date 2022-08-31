@@ -5,7 +5,8 @@ export type Field = {
     id : string,
     imageSrc : string,
     Description: string,
-    Link : string
+    Link : string,
+    Aktív: boolean
 }
 
 
