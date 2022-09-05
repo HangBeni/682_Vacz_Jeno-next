@@ -77,9 +77,9 @@ function switchTheme(e:any) {
                 <a className="nav_link">Galéria</a>
               </Link>
             </li>
-            <li key="ECSET Naptárunk">
-              <Link  href="https://ecset.cserkesz.hu/mcssz/682/naptar">
-                <a className="nav_link">ECSET Naptár</a>
+            <li key="Naptárunk">
+              <Link  href="/Calendar">
+                <a className="nav_link">Naptárunk</a>
               </Link>
             </li>
           </ul>
@@ -97,7 +97,7 @@ function switchTheme(e:any) {
                 <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Főoldal</a>
               </Link>
             </li>
-            <li key="Tudasanyag">
+            <li key="Tudásanyag">
               <Link  href="/Curriculum">
                 <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Tudástár</a>
               </Link>
@@ -107,9 +107,9 @@ function switchTheme(e:any) {
                 <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Galéria</a>
               </Link>
             </li>
-            <li key="ECSET Naptárunk">
-              <Link href="https://ecset.cserkesz.hu/mcssz/682/naptar">
-                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">ECSET Naptár</a>
+            <li key="Naptárunk">
+              <Link href="/Calendar">
+                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Naptárunk</a>
               </Link>
             </li>
           </ul>
