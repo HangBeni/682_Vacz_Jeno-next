@@ -25,10 +25,14 @@ type Image = {
 function Home({data}:{data:Image[]}) {
   
   var teamPics:Image;
+  var count = 0;
   data.forEach((image) => {
-   if(image?.tags?.includes('Csapatunk nyáritáborában'))
-    teamPics = image
-  });
+   if(image?.tags?.includes('Csapatunk nyáritáborában') && count == 0)
+    {
+      teamPics = image;
+      count++;
+    }
+    });
 
   
   return (
