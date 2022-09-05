@@ -1,12 +1,9 @@
 import Image from 'next/future/image'
+import { image } from '../../utils/Types';
 
-type Image = {  
-    id: number
-    imageScr: string
-    tags: string
-  }
 
-function About({data}:{data:Image[]}) {
+
+function About({data}:{data:image[]}) {
     return ( 
         <>
        

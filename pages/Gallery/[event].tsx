@@ -1,20 +1,13 @@
-import Image from 'next/image'
 import Menu from '../../components/Gallery/Menu';
 import Template from '../../components/Gallery/Template';
 import supabase from '../../utils/supabase';
+import { image } from '../../utils/Types';
 
-
-
- type Image = {  
-    id: number
-    imageScr: string
-    tags: string
-  }
 
   
 
 
-  export default function Event({images}: {images: Image[]}) {
+  export default function Event({images}: {images: image[]}) {
 
   
     return ( 

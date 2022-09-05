@@ -1,12 +1,8 @@
 import Dalok from "../../components/Curriculum/Nepdalok/Dalok";
 import supabase from "../../utils/supabase";
+import { Dal } from "../../utils/Types";
 
-export type Dal = {
-    id: number,
-    Name: string,
-    Lyrics: string,
-    Video: string
-}
+
 
 function Nepdal({dalok}: {dalok: Dal[]}) {
     return ( 

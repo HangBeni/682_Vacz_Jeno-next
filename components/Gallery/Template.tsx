@@ -1,13 +1,10 @@
 import { useState } from 'react'
 import Image from 'next/future/image'
+import { image } from '../../utils/Types'
 
-type Image = {
-  id: number
-  imageScr: string
-  tags: string
-}
 
-function Template({ images }: { images: Image[] }) {
+
+function Template({ images }: { images: image[] }) {
   const [tempimg, setimg] = useState("")
   const [modal, setModal] = useState(false)
 

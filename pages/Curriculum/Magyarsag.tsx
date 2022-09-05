@@ -2,22 +2,9 @@ import Flag from "../../components/Curriculum/Magyarsag/Flag";
 import GreatMagyars from "../../components/Curriculum/Magyarsag/GreatMagyars";
 import Poems from "../../components/Curriculum/Magyarsag/Poems";
 import supabase from "../../utils/supabase";
+import { Greats, Poem } from "../../utils/Types";
 
-export type Greats = {
-    id: number,
-    Name: string,
-    Promo: string,
-    Link: string,
-    Image: string,
-    Quote: string
-}
-export type Poem = {
-  id: number,
-  Name: string,
-  Topics: string,
-  Link: string,
-  Reszlet: string
-}
+
 
 function Magyarsag({poems, greats}: {poems: Poem[], greats: Greats[]}) {
     return ( 
