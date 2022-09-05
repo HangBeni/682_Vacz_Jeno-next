@@ -36,21 +36,21 @@ function About({data}:{data:Image[]}) {
             programunk van: kirándulások, portyák, csapat karácsony, farsang, nyáron pedig nomád
             tábort tartunk.
             </p>
-            <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 place-items-center w-auto mx-1'>
+            <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 place-items-center mx-2'>
             {
                 data?.map((image) => {
                     if(image?.tags?.includes('Csapatunk nyáritáborában'))
                     {
                             return(
                         <Image
-                            width={450}
+                            width={400}
                             height={275}
                             quality={100}
                             src={image.imageScr}
                             key={image.id}
                             title={image.tags}
                             alt={image.tags}
-                            className="rounded-lg m-6 w-full object-cover"/>
+                            className="rounded-lg"/>
                         )
                     }
                 })
