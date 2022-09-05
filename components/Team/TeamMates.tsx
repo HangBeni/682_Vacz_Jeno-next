@@ -76,7 +76,7 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className=" sm:text-2xl text-xl font-bold text-center">Vidra őrs</h2>
                             <ul className="grid place-items-center gap-2">
-                                <li className="team_mate">Hang Benjámin </li>
+                                <li className="team_mate">Hang Benjámin <br />+36 30 812 9933</li>
                                 <li className="team_mate">Nyisztor Álmos</li>
                                 <li className="team_mate">Merics Imre   </li>
                                 <li className="team_mate">Bodó Bendegúz </li>
@@ -90,7 +90,6 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Vörös róka őrs</h2>
                             <ul className="grid place-items-center gap-2">
-                                <li className="team_mate">Őv: Piffkó Dániel </li>
                                 <li className="team_mate">Friedrich Ákos    </li>
                                 <li className="team_mate">Friedrich Gergő   </li>
                                 <li className="team_mate">Siker András      </li>
@@ -102,6 +101,7 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Tigris őrs</h2>
                             <ul className="grid place-items-center gap-2">
+                                <li className="team_mate">ŐV: Hang Benjámin <br />+36 30 812 9933</li>
                                 <li className="team_mate">Dákai Botond </li>
                                 <li className="team_mate">Gábor Dániel </li>
                                 <li className="team_mate">Hajdú Kolos  </li>
@@ -134,7 +134,7 @@ function Mates() {
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Gránátalma őrs</h2>
                             <ul className="grid place-items-center gap-2">
 
-                                <li className="team_mate">Őv: Jánosi Kincső    </li>
+                                <li className="team_mate">Őv: Jánosi Kincső <br />+36 30 483 7220</li>
                                 <li className="team_mate">Bodó Csenge Mária    </li>
                                 <li className="team_mate">Puxler Flóra         </li>
                                 <li className="team_mate">Reinhardt Júlia       </li>
@@ -152,7 +152,7 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full">
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Avokádó őrs</h2>
                             <ul className="grid place-items-center gap-2">
-                                <li className="team_mate">Őv: Bergauer Dorina, Jánosi Emőke </li>
+                                <li className="team_mate">Őv: Bergauer Dorina <br /> +36 30 323 2072 <br /> Jánosi Emőke  <br />+36 30 368 1034</li>
                                 <li className="team_mate">Bertus Kata </li>
                                 <li className="team_mate">Bodó Lilla</li>
                                 <li className="team_mate">Bojtos Lili  </li>
@@ -170,7 +170,7 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Tavirózsa őrs</h2>
                             <ul className="grid place-items-center gap-2">
-                                <li className="team_mate">Őv: Nyisztor Zselyke </li>
+                                <li className="team_mate">Őv: Nyisztor Zselyke <br />+36 30 536 8986</li>
                                 <li className="team_mate">Ágotai Gréta </li>
                                 <li className="team_mate">Bodó Szederke</li>
                                 <li className="team_mate">Gábor Kata  </li>
@@ -223,7 +223,7 @@ function Mates() {
                         <div className="mb-auto hover:opacity-100 opacity-70 transition-all duration-200 w-full" >
                             <h2 className="sm:text-2xl text-xl font-bold text-center" >Csíkos szöcskeegér őrs</h2>
                             <ul className="grid place-items-center gap-2">
-                                <li className="team_mate">Őv: Merics Imre, Bodó Bendegúz   </li>
+                                <li className="team_mate">Őv: Bodó Bendegúz <br /> +36 30 846 6001 <br /> Merics Imre <br />+36 70 235 4112</li>
                                 <li className="team_mate">Gyurasics János    </li>
                                 <li className="team_mate">Grünfeld Bence    </li>
                                 <li className="team_mate">Jánosi Örs László </li>
