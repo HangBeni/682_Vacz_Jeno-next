@@ -2,10 +2,11 @@
 export type Event = {
     id:number,
     ProgramNeve: string,
-    Dátum: Date,
     Részletek: string,
     Img: string,
-    Tetszikelések: number
+    Tetszikelések: number,
+    Program_Vege: Date,
+    Program_Kezdete: Date
 }
 
 export type Greats = {

@@ -1,9 +1,10 @@
+import EventList from "../components/Calendar/EventList";
 import supabase from "../utils/supabase";
-
-function Calendar() {
+import {Event} from "../utils/Types"
+function Calendar({events}: {events: Event[]}) {
     return ( 
         <div>
-            
+            <EventList events={events}></EventList>
         </div>
      );
 }
