@@ -5,7 +5,7 @@ function EventList({events}: {events: Event[]}) {
         <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-3 mt-10 text-font">
             {events.map((event) => {
                 return(
-                    <div className="lg:flex w-[35ch] md:w-5/12 lg:w-2/4 max-w-lg lg:max-w-2xl bg-bg rounded-lg m-5 border-türkisz border-solid border-2">
+                    <div className="lg:flex w-[35ch] md:w-5/12 lg:w-2/4 max-w-lg lg:max-w-2xl bg-bg rounded-2xl m-5 border-türkisz border-solid border-2">
                         <Image
                         src={event.Img}
                         width={300}
