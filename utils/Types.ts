@@ -4,7 +4,6 @@ export type Event = {
     ProgramNeve: string,
     Részletek: string,
     Img: string,
-    Tetszikelések: number,
     Program_Vege: Date,
     Program_Kezdete: Date
 }

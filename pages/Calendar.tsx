@@ -3,9 +3,9 @@ import supabase from "../utils/supabase";
 import {Event} from "../utils/Types"
 function Calendar({events}: {events: Event[]}) {
     return ( 
-        <div>
+        <>
             <EventList events={events}></EventList>
-        </div>
+        </>
      );
 }
 
