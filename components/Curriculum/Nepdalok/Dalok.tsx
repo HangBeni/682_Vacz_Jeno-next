@@ -1,4 +1,4 @@
-import { Dal } from "../../../pages/Curriculum/Nepdal";
+import { Dal } from "../../../utils/Types";
 
 
 
@@ -14,7 +14,7 @@ function Dalok({dalok}: {dalok: Dal[]}) {
             {dalok.map((dal) => {
                 
                 return (
-                    <div className="bg-font text-bg rounded-2xl h-auto">
+                    <div className="bg-bg_secondary text-font rounded-2xl h-auto">
                         <video className="rounded-xl mx-auto w-full max-h-60" width={300} controls playsInline >
                             <source src={dal.Video} type="video/mp4"/>
                         </video>

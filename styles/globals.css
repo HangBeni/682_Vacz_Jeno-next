@@ -22,9 +22,12 @@ body {
     --regos:hsl(4,88%,25%);
     --türkisz: #009a93;
     --font: #161625;
+    --font_secondary: var(--font); 
     --bg: #ffff;
+    --bg_secondary: #9797bb;
     --border_color_primary: #000;
     --border_color_secondary: #000;
+
    }
 
 
@@ -33,6 +36,8 @@ body {
     --bg: #161625;
     --border_color_primary: #009a93;
     --border_color_secondary:#76b82a;
+    --bg_secondary: #35354e;
+    --font_secondary: #c4c4cf;
 }
 
 .theme-switch-wrapper {

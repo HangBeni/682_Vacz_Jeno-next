@@ -14,7 +14,9 @@ module.exports = {
         font:'var(--font)',
         bg:'var(--bg)',
         border_color_primary: 'var(--border_color_primary)',
-        border_color_secondary: 'var(--border_color_secondary)',  
+        border_color_secondary: 'var(--border_color_secondary)',
+        font_secondary: 'var(--font_secondary)',
+        bg_secondary: 'var(--bg_secondary)'  
       },
       scale: {
         '-1': '-1'
