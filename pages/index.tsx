@@ -3,7 +3,7 @@ import supabase from '../utils/supabase';
 import TeamMates from '../components/Team/TeamMates';
 import Laws from '../components/Team/Laws';
 import Image from 'next/future/image';
-
+import {image} from '../utils/Types'
 
 
 export async function getStaticProps() {
@@ -15,16 +15,12 @@ export async function getStaticProps() {
   }
 }
 
-type Image = {  
-  id: number
-  imageScr: string
-  tags: string
-}
 
 
-function Home({data}:{data:Image[]}) {
+
+function Home({data}:{data:image[]}) {
   
-  var teamPics:Image;
+  var teamPics:image;
   var count = 0;
   data.forEach((image) => {
    if(image?.tags?.includes('Csapatunk nyáritáborában') && count == 0)
