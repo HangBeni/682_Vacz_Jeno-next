@@ -1,4 +1,4 @@
-import { Greats } from "../../../pages/Curriculum/Magyarsag";
+import { Greats } from "../../../utils/Types";
 import Image from "next/future/image";
 
 
@@ -15,6 +15,7 @@ function GreatMagyars({greats}: {greats: Greats[]}) {
                     <div className="group text-font h-full flex flex-wrap md:flex-nowrap justify-center mx-3">
                         <div className="group-hover:translate-y-0 group-focus:translate-y-0 translate-y-5 [@media(hover:none)]:translate-y-0 duration-500">
                             <Image
+                            alt="Kép az illetőről"
                             src={great.Image}
                             width={300}
                             height={200}
