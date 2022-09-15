@@ -24,6 +24,7 @@ function Flag() {
             Magyarország címere
           </h1>
           <Image
+          alt='Magyarország címere'
             src={
               'https://viiudujcvsyrgxwatpxm.supabase.co/storage/v1/object/public/images/Curriculum/Coat_of_arms_of_Hungary.svg.png?t=2022-08-13T12%3A20%3A44.059Z'
             }
