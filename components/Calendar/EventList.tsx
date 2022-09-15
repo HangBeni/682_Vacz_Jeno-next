@@ -7,6 +7,7 @@ function EventList({events}: {events: Event[]}) {
                 return(
                     <div className="lg:flex w-[35ch] md:w-5/12 lg:w-2/4 max-w-lg lg:max-w-3xl rounded-2xl m-5 border-türkisz border-solid border-2 bg-[#44de444d]">
                         <Image
+                        alt="Kép a programról"
                         src={event.Img}
                         width={300}
                         height={250}
