@@ -1,4 +1,4 @@
-import { Poem } from '../../../pages/Curriculum/Magyarsag'
+import { Poem } from '../../../utils/Types'
 
 function Poems({ poems }: { poems: Poem[] }) {
   
