@@ -2,10 +2,11 @@ import {Event} from "../../utils/Types"
 import Image from "next/future/image";
 function EventList({events}: {events: Event[]}) {
     return ( 
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-3 mt-10 text-font ">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 mt-10 text-font place-items-center">
             {events.map((event) => {
                 return(
-                    <div className="lg:flex w-[35ch] md:w-5/12 lg:w-2/4 max-w-lg lg:max-w-3xl rounded-2xl m-5 border-türkisz border-solid border-2 bg-[#44de444d]">
+                    <div className="lg:flex w-[35ch] md:w-5/12 lg:w-2/4 max-w-lg lg:max-w-3xl rounded-2xl m-2 border-türkisz border-solid border-2 bg-[#44de444d]"
+                    key={event.ProgramNeve}>
                         <Image
                         alt="Kép a programról"
                         src={event.Img}
