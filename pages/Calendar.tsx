@@ -12,7 +12,7 @@ function Calendar({events}: {events: Event[]}) {
 
 
 export async function getServerSideProps() {
-    const {data:events} = await supabase.from('Event').select('*').order('id')
+    const {data:events} = await supabase.from('Event').select('*').order('Program_Kezdete')
     return {
       props: {
         events

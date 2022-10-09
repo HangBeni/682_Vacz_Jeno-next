@@ -6,7 +6,7 @@ function EventList({events}: {events: Event[]}) {
         <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(490px,1.5fr))] gap-2 mt-10 mx-3 text-font place-items-center">
             {events.map((event) => {
                 return(
-                    <div className="lg:flex rounded-2xl m-2 h-full w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
+                    <div className="lg:flex rounded-2xl m-2 h-full w-8/12 sm:w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
                     key={event.ProgramNeve}>
                         <Image
                         alt="Illusztráció a programról"
