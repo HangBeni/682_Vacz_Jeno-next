@@ -3,7 +3,7 @@ import { image } from '../../utils/Types';
 
 
 
-function About({data}:{data:image[]}) {
+function About({data}:{data:image[]}) {  
     return ( 
         <>
        

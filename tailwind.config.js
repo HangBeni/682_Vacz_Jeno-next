@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+    
       colors: {
         trendy_green:"var(--trendy-green)",
         light_blue:"var(--light-blue)",
@@ -18,9 +19,6 @@ module.exports = {
         font_secondary: 'var(--font_secondary)',
         bg_secondary: 'var(--bg_secondary)'  
       },
-      scale: {
-        '-1': '-1'
-      }
     },
   },
   plugins: [],
