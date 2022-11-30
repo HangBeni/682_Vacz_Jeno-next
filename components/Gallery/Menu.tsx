@@ -69,7 +69,7 @@ function EventHandler() {
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Májusi Portya</motion.a>
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">2022-es Májusi Portya</motion.a>
             </Link>
 
             <Link
@@ -83,6 +83,18 @@ function EventHandler() {
                whileHover={{ scale: 1.1 }}
                whileTap={{ scale: 0.9 }}
               className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Kerületi Nagytábor</motion.a>
+            </Link>
+            <Link
+          href={{
+            pathname: '/Gallery/[event]',
+            query: {event : '2022_Winter_Portya'}
+          }}
+        >
+              <motion.a
+              onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
+               whileHover={{ scale: 1.1 }}
+               whileTap={{ scale: 0.9 }}
+              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">2022-es téli Portya</motion.a>
             </Link>
         </div>
           
