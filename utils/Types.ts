@@ -34,6 +34,6 @@ export type Dal = {
 
 export type image = {  
     id: number
-    imageScr: string
+    imageSrc: string
     tags: string
   }
