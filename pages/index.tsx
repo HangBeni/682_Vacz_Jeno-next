@@ -2,7 +2,7 @@ import About from '../components/index/About'
 import supabase from '../utils/supabase';
 import TeamMates from '../components/Team/TeamMates';
 import Laws from '../components/Team/Laws';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import {image} from '../utils/Types'
 
 

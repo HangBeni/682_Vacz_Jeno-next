@@ -1,5 +1,5 @@
 import {Event} from "../../utils/Types"
-import Image from "next/future/image";
+import Image from "next/image";
 function EventList({events}: {events: Event[]}) {
    
     return ( 
