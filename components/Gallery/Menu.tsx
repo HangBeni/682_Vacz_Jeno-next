@@ -87,7 +87,7 @@ function EventHandler() {
             <Link
           href={{
             pathname: '/Gallery/[event]',
-            query: {event : '2022_Winter_Portya'}
+            query: {event : '2022_Winter'}
           }}
         >
               <motion.a
@@ -96,6 +96,7 @@ function EventHandler() {
                whileTap={{ scale: 0.9 }}
               className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">2022-es téli Portya</motion.a>
             </Link>
+
         </div>
           
       </motion.div>
