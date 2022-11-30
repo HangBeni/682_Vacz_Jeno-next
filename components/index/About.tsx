@@ -43,7 +43,7 @@ function About({data}:{data:image[]}) {
                             width={400}
                             height={275}
                             quality={100}
-                            src={image.imageScr}
+                            src={image.imageSrc}
                             key={image.id}
                             title={image.tags}
                             alt={image.tags}
