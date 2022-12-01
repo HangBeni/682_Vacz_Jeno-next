@@ -64,22 +64,22 @@ function switchTheme(e:any) {
           <ul className="md:flex md:items-center">
             <li key="Főoldal">
               <Link href="/">
-                <a className="nav_link">Főoldal</a>
+                <span className="nav_link">Főoldal</span>
               </Link>
             </li>
             <li key="Tudasanyag">
               <Link  href="/Curriculum">
-                <a className="nav_link">Tudástár</a>
+                <span className="nav_link">Tudástár</span>
               </Link>
             </li>
             <li key="Galéria">
               <Link  href="/Gallery">
-                <a className="nav_link">Galéria</a>
+                <span className="nav_link">Galéria</span>
               </Link>
             </li>
             <li key="Naptárunk">
               <Link  href="/Calendar">
-                <a className="nav_link">Naptárunk</a>
+                <span className="nav_link">Naptárunk</span>
               </Link>
             </li>
           </ul>
@@ -94,22 +94,22 @@ function switchTheme(e:any) {
           <ul className="block my-[50%] h-fit w-fit">
             <li key="Főoldal">
               <Link href="/">
-                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Főoldal</a>
+                <span onClick={() => setVisible( (visible) => !visible)} className="nav_link">Főoldal</span>
               </Link>
             </li>
             <li key="Tudásanyag">
               <Link  href="/Curriculum">
-                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Tudástár</a>
+                <span onClick={() => setVisible( (visible) => !visible)} className="nav_link">Tudástár</span>
               </Link>
             </li>
             <li key="Galéria">
               <Link href="/Gallery">
-                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Galéria</a>
+                <span onClick={() => setVisible( (visible) => !visible)} className="nav_link">Galéria</span>
               </Link>
             </li>
             <li key="Naptárunk">
               <Link href="/Calendar">
-                <a onClick={() => setVisible( (visible) => !visible)} className="nav_link">Naptárunk</a>
+                <span onClick={() => setVisible( (visible) => !visible)} className="nav_link">Naptárunk</span>
               </Link>
             </li>
           </ul>

@@ -22,79 +22,84 @@ function EventHandler() {
       <motion.div 
       variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
       className="relative w-11/12 mx-auto rounded-b-xl bg-türkisz z-10">
-        <div className="flex justify-around flex-wrap w-1/2 h-max pb-5 mx-auto text-center ">
+        <div className="flex flex-wrap justify-around w-1/2 h-max py-5 mx-auto text-center ">
             <Link
-          href={{
-            pathname: '/Gallery/[event]',
-            query: { event: '2021_Camp' },
-          }}
-        >
-              <motion.a
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 my-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
+            scroll={false}
+            href={{
+              pathname: '/Gallery/[event]',
+              query: { event: '2021_Camp' },
+            }}
+            >
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl">2021-es Táborunk</motion.a>
+              >2021-es Táborunk</motion.span>
             </Link>
             <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
           href={{
             pathname: '/Gallery/[event]',
             query: { event: '2021_Farsang' },
           }}
         >
-              <motion.a
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl">Farsang</motion.a>
+              >Farsang</motion.span>
             </Link>
             <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1  font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
           href={{
             pathname: '/Gallery/[event]',
             query: { event: '2022_Locsolo_Bal' },
           }}
-        >
-              <motion.a
+            >
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Locsoló Bál</motion.a>
+              >Locsoló Bál</motion.span>
             </Link>
+
             <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl "
           href={{
             pathname: '/Gallery/[event]',
             query: { event: '2022_May_Portya' },
           }}
-        >
-              <motion.a
+            >
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">2022-es Májusi Portya</motion.a>
+                >2022-es Májusi Portya</motion.span>
+
             </Link>
 
             <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
           href={{
             pathname: '/Gallery/[event]',
             query: {event : '2022_KNT'}
           }}
         >
-              <motion.a
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">Kerületi Nagytábor</motion.a>
+              >Kerületi Nagytábor</motion.span>
+
             </Link>
+
             <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl "
           href={{
             pathname: '/Gallery/[event]',
             query: {event : '2022_Winter'}
-          }}
-        >
-              <motion.a
+          }}>
+
+              <motion.span
               onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
-               whileHover={{ scale: 1.1 }}
-               whileTap={{ scale: 0.9 }}
-              className="lg:text-2xl m-5 text-xl p-4 mx-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl ">2022-es téli Portya</motion.a>
+              >2022-es téli Portya</motion.span>
+
             </Link>
 
         </div>

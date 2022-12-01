@@ -4,6 +4,7 @@ import Navbar from './../components/index/Navbar'
 import '../styles/globals.css'
 import Donation from '../components/index/Donation'
 import Head from 'next/head'
+import { AnimatePresence } from 'framer-motion'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -16,9 +17,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <meta name="color-scheme" content="dark light"></meta>
     </Head>
-    <Navbar/>
+    <AnimatePresence
+                exitBeforeEnter
+                onExitComplete={() => window.scrollTo(0, 0)}
+    >
+      <Navbar/>
     <Component {...pageProps} />
     <Contacts/>
+    </AnimatePresence>
   
   </>)
 }
