@@ -68,7 +68,7 @@ function Template({ images }: { images: image[] }) {
                   key={image.id}
                   title={image.tags}
                   alt={image.tags}
-                  className=' border-border_color_primary border
+                  className='border-border_color_primary border
                   relative block h-full row-span-2 max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                   onClick={() => (setimg(image.imageSrc), setModal(true))}
                   />
