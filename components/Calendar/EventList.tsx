@@ -3,18 +3,23 @@ import Image from "next/image";
 
 function EventList({events}: {events: Event[]}) {
     return ( 
-        <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(490px,1.5fr))] gap-2 mt-10 mx-3 text-font place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(440px,1.5fr))] gap-2 mt-10 mx-3 text-font place-items-center">
             { events?.map((event) => {
                 return(
-                    <div className="lg:flex rounded-2xl m-2 h-full w-8/12 sm:w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
+                    <div className="lg:flex lg:flex-wrap rounded-2xl m-2 w-8/12 md:w-3/4  sm:w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
                     key={event.ProgramNeve}>
-                        <Image
-                        alt="Illusztráció a programról"
-                        src={event.Img}
-                        width={300}
-                        height={250}
-                        className='rounded-xl w-full'
-                        />
+                        
+                        <div className="relative w-full h-20 lg:h-30">
+
+                            <Image
+                            alt="Illusztráció a programról"
+                            src={event.Img}
+                            sizes="100vw" fill
+                            quality={95}
+                            className='relative rounded-xl w-full object-cover '
+                            />
+
+                        </div>
                         <div className="p-3">
                             <h2 className="after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-türkisz after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300
                                             [@media(hover:none)]:after:scale-x-100
