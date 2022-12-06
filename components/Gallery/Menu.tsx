@@ -2,11 +2,6 @@ import { motion } from "framer-motion";
 import Link  from "next/link";
 import { useState } from "react";
 
-
-
-
-
-
 function EventHandler() {
 
   const [direction_Gallery, setDirection] = useState(true);
