@@ -102,6 +102,19 @@ function EventHandler() {
 
             </Link>
 
+            <Link
+            scroll={false}
+            className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl "
+          href={{
+            pathname: '/Gallery/[event]',
+            query: {event : 'Regos_Napok'}
+          }}>
+
+              <motion.span
+              onClick={ () => setDirection((direction_Gallery => !direction_Gallery))}
+              >Kerületi Regös Napok</motion.span>
+
+            </Link>
         </div>
           
       </motion.div>
