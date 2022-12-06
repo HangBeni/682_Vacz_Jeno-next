@@ -10,17 +10,37 @@ function Template({ images }: { images: image[] }) {
 
 
   const back = () => {
+    var switched = false;
     images.map((img) => {
-      if (images.findIndex(img => img.imageSrc == tempimg) == img.id) 
-        setimg(img.imageSrc)
+      if (images.findIndex(img => img.imageSrc == tempimg) == img.id){ 
+        setimg(img.imageSrc)        
+        switched = true;
+      }
     })
+    if(!switched)
+    {
+      images.map((img) => {
+        if (images.length == img.id)
+          setimg(img.imageSrc)         
+      })
+    }
   }
 
   const forward = () => {
+    var switched = false;
     images.map((img) => {
-      if (images.findIndex(img => img.imageSrc == tempimg)+2 == img.id) 
+      if (images.findIndex(img => img.imageSrc == tempimg)+2 == img.id){
         setimg(img.imageSrc)
+        switched = true;
+      }
     })
+    if(!switched)
+    {
+      images.map((img) => {
+        if (1 == img.id)
+          setimg(img.imageSrc)         
+      })
+    }
   }
 
   return (
