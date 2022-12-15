@@ -22,12 +22,21 @@ import { image } from '../../utils/Types';
 export async function getServerSideProps(context:any) {
     const {params} = context
     const {event} =params
-    
-const {data:images} = await supabase.from(event).select('*').order('id')
-
-return {
-  props: {
-    images
-  },
+if(event == "Regos_Napok"){    
+  const {data:images} = await supabase.from(event).select('*').order('timeLine')
+  return {
+    props: {
+      images
+    },
+  }
 }
+else{
+  const {data:images} = await supabase.from(event).select('*').order('id')
+  return {
+    props: {
+      images
+    },
+  }  
+}
+
 }
