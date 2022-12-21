@@ -3,40 +3,26 @@ import Template from '../../components/Gallery/Template';
 import supabase from '../../utils/supabase';
 import { image } from '../../utils/Types';
 
+  export default function Event({images}: {images:image[]}) {
 
-  
-
-
-  export default function Event({images}: {images: image[]}) {
-
-  
-    return ( 
+    return(
       <>
-      <Menu></Menu>
-      <Template images={images}/>
-      </>
-     );
+    <Menu></Menu>
+    <Template images={images}/>) 
+    </>
+     )
 }
 
 
 export async function getServerSideProps(context:any) {
     const {params} = context
     const {event} =params
-if(event == "Regos_Napok"){    
   const {data:images} = await supabase.from(event).select('*').order('timeLine')
   return {
     props: {
-      images
+      images,
     },
+    
   }
-}
-else{
-  const {data:images} = await supabase.from(event).select('*').order('id')
-  return {
-    props: {
-      images
-    },
-  }  
-}
 
 }

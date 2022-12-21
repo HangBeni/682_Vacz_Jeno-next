@@ -31,14 +31,9 @@ export type Dal = {
     Video: string
 }
 
-export type regos = {  
-    id: number
-    imageSrc: string
-    tags: string
-  }
-
 export type image = {  
     id: number
     imageSrc: string
     tags: string
+    timeLine:number
   }

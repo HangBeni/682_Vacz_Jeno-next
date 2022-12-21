@@ -6,41 +6,36 @@ import { image } from '../../utils/Types'
 
 function Template({ images }: { images: image[] }) {
   const [tempimg, setimg] = useState("")
+  const [actuall, setActuall] = useState(0)
   const [modal, setModal] = useState(false)
 
-
   const back = () => {
-    var switched = false;
-    images.map((img) => {
-      if (images.findIndex(img => img.imageSrc == tempimg) == img.id){ 
-        setimg(img.imageSrc)        
-        switched = true;
-      }
-    })
-    if(!switched)
+
+    let test = images?.find(img => img.timeLine == (actuall - 1))?.imageSrc
+    if( test === undefined)
     {
-      images.map((img) => {
-        if (images.length == img.id)
-          setimg(img.imageSrc)         
-      })
+      setimg(images?.find(img => img.timeLine == 1)!.imageSrc)
+      setActuall(images.length)
     }
+    else{
+    setimg(test)
+    setActuall(images?.find(img => img.imageSrc == tempimg)!.timeLine)}
+    console.log("Image timeLine: "+ images.find(img => img.imageSrc == tempimg)?.timeLine )
   }
 
   const forward = () => {
-    var switched = false;
-    images.map((img) => {
-      if (images.findIndex(img => img.imageSrc == tempimg)+2 == img.id){
-        setimg(img.imageSrc)
-        switched = true;
-      }
-    })
-    if(!switched)
-    {
-      images.map((img) => {
-        if (1 == img.id)
-          setimg(img.imageSrc)         
-      })
-    }
+      let test = images?.find(img => img.timeLine == (actuall + 2))?.imageSrc
+          if( test === undefined)
+          {
+            setimg(images?.find(img => img.timeLine == 1)!.imageSrc)
+            setActuall(1)
+          }
+          else{
+          setimg(test)
+          setActuall(images?.find(img => img.imageSrc == tempimg)!.timeLine)
+          }
+
+    console.log("Image timeLine: "+ images!.find(img => img.imageSrc == tempimg)?.timeLine )
   }
 
   return (
@@ -63,7 +58,7 @@ function Template({ images }: { images: image[] }) {
         
         <span
           className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
-          onClick={() => (setModal(false), setimg(''))}
+          onClick={() => (setModal(false), setimg(''), setActuall(0))}
         >
           &times;
         </span>
@@ -90,7 +85,7 @@ function Template({ images }: { images: image[] }) {
                   alt={image.tags}
                   className='border-border_color_primary border
                   block h-full row-span-2 max-h-[95%] max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                  onClick={() => (setimg(image.imageSrc), setModal(true))}
+                  onClick={() => (setimg(image.imageSrc),setActuall(image.timeLine) ,setModal(true))}
                   />
                   )
                   else
@@ -106,7 +101,7 @@ function Template({ images }: { images: image[] }) {
                       alt={image.tags}
                       className=' border-border_color_secondary border
                       block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                      onClick={() => (setimg(image.imageSrc), setModal(true))}
+                      onClick={() => (setimg(image.imageSrc),setActuall(image.timeLine), setModal(true))}
                       />
                   
                       )
