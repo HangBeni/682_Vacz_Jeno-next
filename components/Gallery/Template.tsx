@@ -8,34 +8,26 @@ function Template({ images }: { images: image[] }) {
   const [tempimg, setimg] = useState("")
   const [actuall, setActuall] = useState(0)
   const [modal, setModal] = useState(false)
+  
+   let imageDic = new Map<number, string>;
+   images.map(img => {
+    imageDic.set(img.timeLine,img.imageSrc)
+   })
 
   const back = () => {
-
-    let test = images?.find(img => img.timeLine == (actuall - 1))?.imageSrc
-    if( test === undefined)
-    {
-      setimg(images?.find(img => img.timeLine == 1)!.imageSrc)
-      setActuall(images.length)
-    }
-    else{
-    setimg(test)
-    setActuall(images?.find(img => img.imageSrc == tempimg)!.timeLine)}
-    console.log("Image timeLine: "+ images.find(img => img.imageSrc == tempimg)?.timeLine )
+    setimg(imageDic.get(images.find((img) => img.timeLine == actuall - 1)?.timeLine || 0) || "")
+    if(actuall != 1)
+      setActuall(actuall - 1)
+    else
+    setActuall(images.length)
   }
 
   const forward = () => {
-      let test = images?.find(img => img.timeLine == (actuall + 2))?.imageSrc
-          if( test === undefined)
-          {
-            setimg(images?.find(img => img.timeLine == 1)!.imageSrc)
-            setActuall(1)
-          }
-          else{
-          setimg(test)
-          setActuall(images?.find(img => img.imageSrc == tempimg)!.timeLine)
-          }
-
-    console.log("Image timeLine: "+ images!.find(img => img.imageSrc == tempimg)?.timeLine )
+    setimg(imageDic.get(images.find((img) => img.timeLine == actuall + 1)?.timeLine || 0) || "")
+    if(actuall != images.length - 1)
+      setActuall(actuall + 1)
+    else
+      setActuall(0)
   }
 
   return (
@@ -85,7 +77,10 @@ function Template({ images }: { images: image[] }) {
                   alt={image.tags}
                   className='border-border_color_primary border
                   block h-full row-span-2 max-h-[95%] max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                  onClick={() => (setimg(image.imageSrc),setActuall(image.timeLine) ,setModal(true))}
+                  onClick={() => {
+                    setimg(imageDic.get(image.timeLine) || "")
+                    setActuall(image.timeLine)
+                    setModal(true)}}
                   />
                   )
                   else
@@ -101,7 +96,10 @@ function Template({ images }: { images: image[] }) {
                       alt={image.tags}
                       className=' border-border_color_secondary border
                       block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                      onClick={() => (setimg(image.imageSrc),setActuall(image.timeLine), setModal(true))}
+                      onClick={() => {
+                        setimg(imageDic.get(image.timeLine) || "")
+                        setActuall(image.timeLine)
+                        setModal(true)}}
                       />
                   
                       )
