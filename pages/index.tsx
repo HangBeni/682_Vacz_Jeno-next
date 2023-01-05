@@ -40,7 +40,7 @@ function Home({data}:{data:image[]}) {
           sizes='100vw' fill priority
           className='object-contain'
           title={teamPics!.tags}
-          alt={teamPics!.tags}
+          alt={'Képek a csapatról'}
           />
         </div>
       </div>
@@ -48,6 +48,6 @@ function Home({data}:{data:image[]}) {
       <Laws/>
       <TeamMates/>
     </div>
-  );
+  )
 }
 export default Home

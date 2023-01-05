@@ -124,7 +124,7 @@ function EventHandler() {
           </motion.span>
       </motion.div>
       </div>
-     );
+     )
 }
 
 export default EventHandler;

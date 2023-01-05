@@ -65,44 +65,40 @@ function Template({ images }: { images: image[] }) {
         <div  className="pt-4 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] place-items-center gap-3 ">
               {images?.map((image:any) => {
               if(image.imageSrc.includes('long'))
-              return (          
-                  
-                  <Image
-                  width={300}
-                  height={240}
-                  quality={80}
-                  src={image.imageSrc}
-                  key={image.id}
-                  title={image.tags}
-                  alt={image.tags}
-                  className='border-border_color_primary border
-                  block h-full row-span-2 max-h-[95%] max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                  onClick={() => {
-                    setimg(imageDic.get(image.timeLine) || "")
-                    setActuall(image.timeLine)
-                    setModal(true)}}
-                  />
-                  )
+                return (          
+                    <Image
+                    width={300}
+                    height={240}
+                    quality={80}
+                    src={image.imageSrc}
+                    key={image.id}
+                    title={image.tags}
+                    alt={image.tags}
+                    className='border-border_color_primary border
+                    block h-full row-span-2 max-h-[95%] max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
+                    onClick={() => {
+                      setimg(imageDic.get(image.timeLine) || "")
+                      setActuall(image.timeLine)
+                      setModal(true)}}
+                    />)
                   else
-                  return (
-                      <Image
-                     
-                      width={300}
-                      height={280}
-                      quality={80}
-                      src={image.imageSrc}
-                      key={image.id}
-                      title={image.tags}
-                      alt={image.tags}
-                      className=' border-border_color_secondary border
-                      block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                      onClick={() => {
-                        setimg(imageDic.get(image.timeLine) || "")
-                        setActuall(image.timeLine)
-                        setModal(true)}}
-                      />
-                  
-                      )
+                    return (
+                        <Image
+                        width={300}
+                        height={280}
+                        quality={80}
+                        src={image.imageSrc}
+                        key={image.id}
+                        title={image.tags}
+                        alt={image.tags}
+                        className=' border-border_color_secondary border
+                        block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
+                        onClick={() => {
+                          setimg(imageDic.get(image.timeLine) || "")
+                          setActuall(image.timeLine)
+                          setModal(true)}}
+                        />
+                        )
               })
               }
           </div>
