@@ -25,9 +25,9 @@ function EventList({events}: {events: Event[]}) {
                                             [@media(hover:none)]:after:scale-x-100
                                             relative text-2xl lg:text-3xl">{event.ProgramNeve}</h2>
                             <p className="text-lg lg:text-xl leading-7 mt-2">{event.Részletek}</p>
-                            <p className="text-xl lg:text-2xl font-bold">Kezdete: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Kezdete}</span></p>
+                            <p className="text-xl lg:text-2xl font-bold">Kezdete: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Kezdete.toString()}</span></p>
                             {
-                            event.Program_Vege == null? null : <p className="text-xl lg:text-2xl font-bold">Vége: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Vege}</span></p>
+                            event.Program_Vege == null? null : <p className="text-xl lg:text-2xl font-bold">Vége: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Vege.toString()}</span></p>
                         }
                             </div>
                     </div>
