@@ -4,10 +4,10 @@ function Flag() {
   return (
     <div className="py-5 px-2 rounded-b-3xl h-full bg-gradient-to-b from-red-600 via-white to-green-600">
       <div className='flex items-center'>
-        <h1 className="text-2xl text-black text-center w-1/2 mx-2">
+        <h1 className="text-3xl text-black text-center w-1/2 mx-2">
           Magyarország zászlaja
         </h1>
-        <p className="mx-auto md:ml-auto md:mr-3  w-1/2 text-justify text-lg text-black ">
+        <p className="mx-auto md:ml-auto md:mr-3  w-1/2 text-justify text-xl text-black ">
           <em>
             "Magyarország zászlaja három, egyenlő szélességű, sorrendben felülről
             piros, fehér és zöld színű, vízszintes sávból áll, amelyben a piros
@@ -20,7 +20,7 @@ function Flag() {
 
       <div className="mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 w-11/12">
         <div className='grid place-items-center'>
-          <h1 className="text-2xl text-black ">
+          <h1 className="text-3xl text-black ">
             Magyarország címere
           </h1>
           <Image
@@ -33,15 +33,14 @@ function Flag() {
             
           />
         </div>
-        <ol className=" mr-3 w-fit text-justify text-lg text-black">
-          <li className="list-decimal">
+        <ol className=" mr-3 w-fit text-justify text-xl text-black">
+          <li className="list-decimal mb-2">
             <em>"Magyarország címere hegyes talpú, hasított pajzs.</em>
           </li>
-          <ul></ul>
           <li className="list-decimal">
             <em>Első mezeje vörössel és ezüsttel hétszer vágott."</em>
           </li>
-          <ul>
+          <ul className='mb-2'>
             <li className="list-disc">
               A hét törzs egyesülését jelképezi. Sok helyen olvasható hétszer
               tagolt Árpád Sávok. Akkor miért van nyolc sáv? A válasz egyszerű.
@@ -49,7 +48,7 @@ function Flag() {
               a hét vágást, amit a hét vezér tett a vérszerződéskor.
             </li>
             <li className="list-disc">
-            Az ézüst sávok a Dunát, Tiszát, Drávát és a Szávát jelképezik.
+            Az ézüst sávok a Dunát, Tiszát, Drávát és a Szávát is jelképezik.
             </li>
           </ul>
           <li className="list-decimal">
@@ -58,7 +57,7 @@ function Flag() {
               kiemelkedő középső részén ezüst kettős kereszt."
             </em>
           </li>
-          <ul>
+          <ul className='mb-2'>
             <li className="list-disc">
               A magyar katolikus hagyomány szerint a címerben ábrázolt kettős
               kereszt (<em>crux gemina</em>) Szent István király apostoli
