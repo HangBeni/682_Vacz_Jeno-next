@@ -14,7 +14,7 @@ function Dalok({dalok}: {dalok: Dal[]}) {
             {dalok.map((dal) => { 
                 return (
                     <div className="bg-bg_secondary text-font rounded-2xl h-min">
-                        <video className="sticky top-[5.7rem] rounded-xl mx-auto w-full max-h-60 bg-bg_secondary" width={300} controls playsInline >
+                        <video className="sticky md:sm:top-[5.7rem] top-[4.3rem] rounded-xl mx-auto w-full max-h-60 bg-bg_secondary" width={300} controls playsInline >
                             <source src={dal.Video} type="video/mp4" />
                             <source src={dal.Video} type="video/webm" />
                         </video>
