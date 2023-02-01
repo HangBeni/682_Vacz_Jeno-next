@@ -94,13 +94,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
-#shape{
-border-radius: 54% 46% 78% 22% / 30% 100% 0% 70% ;
-}
-
-
-
 @layer components{
     .nav_link{
         @apply block mx-1 my-2 p-2 pr-5 md:my-0 cursor-pointer hover:text-regos hover:translate-x-[6px] transition-transform after:h-0.5 after:absolute after:left-0 after:bottom-0 after:w-full after:bg-orange-400 after:scale-x-0 after:origin-right after:transition-transform  hover:after:scale-x-100  hover:after:origin-left;

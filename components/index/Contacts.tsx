@@ -1,12 +1,12 @@
 export default function Contacts() {
     return(
-    <footer className="h-full text-font bg-bg">
+    <footer className="h-full">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
         <div
         className="grid grid-cols-2 sm:grid-cols-3 place-items-center 
-         transition-all pt-10 text-base lg:text-lg gap-3 sm:gap-0 ">
-            <p className="text-center col-span-2 sm:col-span-1 p-2">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
-            <p className="text-center col-span-2 sm:col-span-1 p-2">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:text-trendy_green"><i>cserkesz.hu</i></a></p>
+         transition-all pt-5 text-[1.05rem] lg:text-lg gap-3 sm:gap-0 ">
+            <p className="text-center col-span-2 sm:col-span-1">Nyisztor Sarolta csph. <br/> +36 30 276 8427 nyisztorsari@gmail.com</p>
+            <p className="text-center col-span-2 sm:col-span-1">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:text-trendy_green"><i>cserkesz.hu</i></a></p>
             <p className="text-center col-span-2 sm:col-span-1">Tarjányi József csp. <br/>+36 30 588 2438 tarjanyi.jozsi@gmail.com</p>
             <p className="text-center col-span-2 sm:col-span-3">Created by: Hang Benjámin</p>
         </div>
