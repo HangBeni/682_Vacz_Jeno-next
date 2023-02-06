@@ -13,7 +13,7 @@
     "eslint-config-next": "^13.0.5",
     "framer-motion": "^8.5.4",
     "imagekit-javascript": "^1.5.2",
-    "netlify": "^13.1.0",
+    "netlify": "^13.1.2",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
