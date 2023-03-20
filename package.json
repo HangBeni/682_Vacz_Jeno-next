@@ -21,7 +21,7 @@
     "react-scroll-to-top": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.4",
+    "@types/node": "^18.15.3",
     "@types/react": "18.0.28",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.8",
