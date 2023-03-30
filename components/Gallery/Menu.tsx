@@ -28,12 +28,12 @@ function EventHandler() {
       <motion.div
         variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
         className="relative w-11/12 mx-auto rounded-b-xl bg-türkisz z-10">
-        <div className="flex flex-wrap justify-around w-1/2 h-max py-5 mx-auto text-center ">
+        <div className="flex flex-wrap gap-3 justify-evenly w-4/6 h-max py-5 mx-auto text-center ">
           {
             events.map((actual) =>{
               return(
                 <Link
-                      className="hover:scale-110 transition-all lg:text-2xl text-xl p-4 m-1 my-1 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
+                      className="hover:scale-110 transition-all text-xl p-3.5 font-semibold cursor-pointer outline-2 outline-dashed rounded-xl"
                       scroll={false}
                       href={{
                         pathname: '/Gallery/[event]',
