@@ -9,13 +9,13 @@ function Template({ images }: { images: image[] }) {
   const [actuall, setActuall] = useState(0)
   const [modal, setModal] = useState(false)
   
-   let imageDic = new Map<number, string>;
+   let imageDictionary = new Map<number, string>;
    images.map(img => {
-    imageDic.set(img.timeLine,img.imageSrc)
+    imageDictionary.set(img.timeLine,img.imageSrc)
    })
 
   const back = () => {
-    setimg(imageDic.get(images.find((img) => img.timeLine == actuall - 1)?.timeLine || 0) || "")
+    setimg(imageDictionary.get(images.find((img) => img.timeLine == actuall - 1)?.timeLine || 0) || "")
     if(actuall != 1)
       setActuall(actuall - 1)
     else
@@ -23,7 +23,7 @@ function Template({ images }: { images: image[] }) {
   }
 
   const forward = () => {
-    setimg(imageDic.get(images.find((img) => img.timeLine == actuall + 1)?.timeLine || 0) || "")
+    setimg(imageDictionary.get(images.find((img) => img.timeLine == actuall + 1)?.timeLine || 0) || "")
     if(actuall != images.length - 1)
       setActuall(actuall + 1)
     else
@@ -77,7 +77,7 @@ function Template({ images }: { images: image[] }) {
                     className='border-border_color_primary border
                     block h-full row-span-2 max-h-[95%] max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                     onClick={() => {
-                      setimg(imageDic.get(image.timeLine) || "")
+                      setimg(imageDictionary.get(image.timeLine) || "")
                       setActuall(image.timeLine)
                       setModal(true)}}
                     />)
@@ -94,7 +94,7 @@ function Template({ images }: { images: image[] }) {
                         className=' border-border_color_secondary border
                         block max-h-full max-w-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                         onClick={() => {
-                          setimg(imageDic.get(image.timeLine) || "")
+                          setimg(imageDictionary.get(image.timeLine) || "")
                           setActuall(image.timeLine)
                           setModal(true)}}
                         />
