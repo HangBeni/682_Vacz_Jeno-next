@@ -11,22 +11,20 @@ function MyApp({ Component, pageProps }: AppProps) {
   
  
   return ( 
-  <>
+  <body className="flex flex-col min-h-screen">
     <Head>
           <title>682 Vácz Jenő</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <meta name="color-scheme" content="dark light"></meta>
     </Head>
-    <AnimatePresence
-                exitBeforeEnter
-                onExitComplete={() => window.scrollTo(0, 0)}
+    <AnimatePresence onExitComplete={() => window.scrollTo(0, 0)}
     >
       <Navbar/>
     <Component {...pageProps} />
     <Contacts/>
     </AnimatePresence>
   
-  </>)
+  </body>)
 }
 
 export default MyApp

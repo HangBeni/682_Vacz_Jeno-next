@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState } from 'react';
 
 function EventHandler() {
 
@@ -18,7 +18,8 @@ function EventHandler() {
     ["2022_May_Portya","2022 Májusi Portya"],
     ["2022_KNT","Kerületi Nagytábor"],
     ["2022_Winter","2022 Téli Portya"],
-    ["Regos_Napok","2022 Regös Napok"]
+    ["Regos_Napok","2022 Regös Napok"],
+    [ "2023_March_Portya", "2023 Márciusi Portya"]
     ];
 
 
