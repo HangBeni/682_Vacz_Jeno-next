@@ -1,13 +1,11 @@
 import Image from 'next/image'
 import { image } from '../../utils/Types';
 
-
-
 function About({data}:{data:image[]}) {  
     return ( 
         <>
        
-    <div role={'main'} className="inline-block text-font bg-bg">
+    <div role={'main'} className="inline-block text-font bg-bg dark:bg-bg_dark dark:text-font_dark">
 
         <div className="w-full mx-auto text-justify items-center text-lg">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg

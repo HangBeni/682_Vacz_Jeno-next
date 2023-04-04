@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Flag() {
   return (
-    <div className="py-5 px-2 rounded-b-3xl h-full bg-gradient-to-b from-red-600 via-white to-green-600">
+    <div className="py-5 px-2 rounded-b-3xl h-max bg-gradient-to-b from-red-600 via-white to-green-600">
       <div className='flex items-center'>
         <h1 className="text-3xl text-black text-center w-1/2 mx-2">
           Magyarország zászlaja

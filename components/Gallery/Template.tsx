@@ -31,7 +31,7 @@ function Template({ images }: { images: image[] }) {
   }
 
   return (
-    <div className='bg-bg text-font'>
+    <div className='bg-bg dark:bg-bg_dark text-font'>
       <div
         className={
           modal

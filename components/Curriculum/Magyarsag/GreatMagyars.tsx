@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function GreatMagyars({greats}: {greats: Greats[]}) {
     return ( 
-        <div className="mb-16 mx-3 mt-5 h-full">
+        <div className="mb-16 mx-3 mt-5 h-max">
 
             <h1 className="w-full text-center text-3xl font-black tracking-widest uppercase mb-2">Nagy Magyarjaink</h1>
             
@@ -12,7 +12,7 @@ function GreatMagyars({greats}: {greats: Greats[]}) {
                             grid-cols-1">
                 {greats.map((great) => {
                 return (
-                    <div className="group text-font h-full flex flex-wrap md:flex-nowrap justify-center mx-3">
+                    <div className="group text-font dark:text-font_dark h-full flex flex-wrap md:flex-nowrap justify-center mx-3">
                         <div className="group-hover:translate-y-0 group-focus:translate-y-0 translate-y-5 [@media(hover:none)]:translate-y-0 duration-500">
                             <Image
                             alt="Kép az illetőről"

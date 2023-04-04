@@ -25,7 +25,7 @@ function EventHandler() {
 
 
   return (
-    <div className="bg-bg text-black">
+    <div className="bg-bg dark:bg-bg_dark text-black">
       <motion.div
         variants={variants_Gallery} initial="down" animate={direction_Gallery ? "down" : "up"}
         className="relative w-11/12 mx-auto rounded-b-xl bg-türkisz z-10">
@@ -50,7 +50,7 @@ function EventHandler() {
         </div>
       </motion.div>
       <motion.div
-        className="grid place-items-center bg-bg text-font m-12">
+        className="grid place-items-center bg-bg dark:bg-bg_dark text-font m-12">
         <motion.span
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

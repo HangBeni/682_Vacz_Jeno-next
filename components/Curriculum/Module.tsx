@@ -4,7 +4,7 @@ import { Field } from "../../pages/Curriculum";
 function Module({knowledge}: {knowledge: Field}) {
     return ( 
     <Link href={`Curriculum/${knowledge.Link}`}>
-         <div className=" text-font bg-bg w-3/4 h-fit m-2 p-1 shadow-lg rounded-lg hover:translate-y-1 hover:translate-x-1 duration-150 cursor-pointer">
+         <div className=" text-font bg-bg dark:bg-bg_dark dark:text-font_dark w-3/4 h-fit m-2 p-1 shadow-lg rounded-lg hover:translate-y-1 hover:translate-x-1 duration-150 cursor-pointer">
            
                 <img className="rounded-lg object-cover" src={knowledge.imageSrc} alt="A Tudásanyag képe" />
            

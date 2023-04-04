@@ -3,7 +3,7 @@ import { Poem } from '../../../utils/Types'
 function Poems({ poems }: { poems: Poem[] }) {
   
   return (
-    <div className="text-font">
+    <div className="text-font dark:text-font_dark mb-4">
       <h1 className="mb-3 w-full text-center text-3xl font-black uppercase tracking-widest">
         Magyar Irodalom
       </h1>

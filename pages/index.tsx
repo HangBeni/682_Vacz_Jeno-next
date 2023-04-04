@@ -15,9 +15,6 @@ export async function getStaticProps() {
   }
 }
 
-
-
-
 function Home({data}:{data:image[]}) {
   
   var teamPics:image;
@@ -32,18 +29,22 @@ function Home({data}:{data:image[]}) {
 
   
   return (
-    <div className='text-font bg-bg'>
-    <div className='  relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-full'>
-        <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
-          <Image 
-          src={teamPics!.imageSrc}
-          sizes='100vw' fill priority
-          className='object-contain'
-          title={teamPics!.tags}
-          alt={'Képek a csapatról'}
-          />
-        </div>
-      </div>
+    <div className='text-font bg-bg dark:bg-bg_dark'>
+       <div className='relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-48'>
+          <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
+            <Image 
+            src={teamPics!.imageSrc}
+            fill
+            sizes='(max-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw' 
+            priority
+            className='object-contain'
+            title={teamPics!.tags}
+            alt={'Képek a csapatról'}
+            />
+          </div>
+       </div>
       <About data={data}/>
       <Laws/>
       <TeamMates/>

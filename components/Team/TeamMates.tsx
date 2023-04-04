@@ -1,12 +1,6 @@
 import { motion, useMotionValue, useTransform} from "framer-motion";
 import { useState } from "react";
 
-
-
-
-
-
-
 function Mates() {
     const variants = {
         left: { opacity: 0, y: "-150%", x: "-150%", transition: { duration: 2, delayChildren: 2 } },
@@ -36,7 +30,6 @@ function Mates() {
             else {
                 setsw(0);
                 setDirection("left");
-
             }
         }
     }

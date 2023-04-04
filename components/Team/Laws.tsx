@@ -25,10 +25,10 @@ function Laws() {
             
                 whileHover={{scale:1.1}}
                
-            className="block uppercase font-mono text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest dark:text-white">Törvényeink</motion.button>
+            className="block uppercase font-mono text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest">Törvényeink</motion.button>
             </motion.div>
            
-            <motion.div animate={open ? "open":"close" } initial="close" variants={variants_laws} className='dark:text-white'>
+            <motion.div animate={open ? "open":"close" } initial="close" variants={variants_laws}>
                 <ol id="laws" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center transition-all duration-500 mb-4 p-3">  
                     <li className="first-letter:text-2xl text-center p-2 text-lg md:text-xl lg:text-2xl  ">1. A cserkész <strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green">híven teljesíti kötelességeit </strong>, amelyekkel <strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green"> Istennek </strong>,<strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green">hazájának</strong>  és <strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green">embertársainak</strong>  tartozik.</li>
                     <li className="first-letter:text-2xl text-center p-2 text-lg md:text-xl lg:text-2xl  ">2. A cserkész,<strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green">ahol tud</strong> ,<strong className="hover:text-trendy_green duration-300 [@media(hover:none)]:text-trendy_green">segít.</strong></li>
