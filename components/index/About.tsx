@@ -40,7 +40,7 @@ function About({data}:{data:image[]}) {
                         <Image
                             width={400}
                             height={275}
-                            quality={100}
+                            quality={90}
                             src={image.imageSrc}
                             key={image.id}
                             title={image.tags}

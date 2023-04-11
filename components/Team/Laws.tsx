@@ -11,7 +11,7 @@ function Laws() {
 
     return (
        
-            <div id="content" className="content-center items-center mt-4"> 
+            <div id="content" className="content-center items-center mt-4 text-font dark:text-font_dark"> 
             <motion.div 
             drag
             dragConstraints = {{
@@ -25,7 +25,7 @@ function Laws() {
             
                 whileHover={{scale:1.1}}
                
-            className="block uppercase font-mono text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest">Törvényeink</motion.button>
+            className="block uppercase font-mono  text-center my-2 mx-auto text-3xl lg:text-5xl md:text-4xl p-2 w-auto tracking-widest">Törvényeink</motion.button>
             </motion.div>
            
             <motion.div animate={open ? "open":"close" } initial="close" variants={variants_laws}>

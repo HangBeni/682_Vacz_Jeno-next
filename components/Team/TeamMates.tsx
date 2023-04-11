@@ -15,7 +15,7 @@ function Mates() {
     const background = useTransform(
         x,
         [-200, 0, 100],
-        ["hsl(4, 87.3%, 30.8%)", "#ffff", "hsl(133, 74.2%, 32%)"]
+        ["hsl(4, 87.3%, 30.8%)", "#d2d1c6", "hsl(133, 74.2%, 32%)"]
     )
     function handleChange() {
 
@@ -39,13 +39,13 @@ function Mates() {
     return (
         <div className="pb-24">
             <div
-                className="flex w-4/5  mx-auto ">
+                className="flex w-4/5  mx-auto">
                 <motion.button
                     style={{ background }}
                     onClick={() => handleChange()}
-                    className="relative inline-block h-auto bg-transparent 
+                    className="relative inline-block h-auto
                 z-0 w-full mx-auto  justify-content-center
-                 mt-32  border-2 border-black md:rounded-full rounded-3xl">
+                 mt-32  border-2 border-black md:rounded-full rounded-3xl ">
                     <motion.span
                         drag="x"
                         dragConstraints={{ left: 0, right: 0 }}
@@ -53,7 +53,7 @@ function Mates() {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="relative inline-block text-lg lg:text-3xl font-bold uppercase 
-                        w-full px-4 py-5 tracking-widest text-black">
+                        w-full px-4 py-5 tracking-widest text-black md:rounded-full rounded-3xl">
                         Csapatunk tagjai
                     </motion.span>
                 </motion.button>

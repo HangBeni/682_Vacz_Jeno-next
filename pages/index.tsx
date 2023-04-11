@@ -17,15 +17,7 @@ export async function getStaticProps() {
 
 function Home({data}:{data:image[]}) {
   
-  var teamPics:image;
-  var count = 0;
-  data.forEach((image) => {
-   if(image?.tags?.includes('Csapatunk nyáritáborában') && count == 0)
-    {
-      teamPics = image;
-      count++;
-    }
-    });
+let teamPic = data.find((image) => image.tags && image!.tags.includes('Csapatunk nyáritáborában'))
 
   
   return (
@@ -33,14 +25,13 @@ function Home({data}:{data:image[]}) {
        <div className='relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-48'>
           <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
             <Image 
-            src={teamPics!.imageSrc}
+            src={teamPic!.imageSrc}
             fill
-            sizes='(max-width: 768px) 100vw,
-            (max-width: 1200px) 50vw,
-            33vw' 
+            quality={100}
+            sizes={'100dvw'} 
             priority
             className='object-contain'
-            title={teamPics!.tags}
+            title={teamPic!.tags}
             alt={'Képek a csapatról'}
             />
           </div>
