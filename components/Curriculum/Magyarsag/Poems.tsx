@@ -13,7 +13,7 @@ function Poems({ poems }: { poems: Poem[] }) {
           return (
             <div className="sm:text-lg text-base font-semibold">
               <h2 className="text-2xl font-extrabold">{poem.Name}</h2>
-              <p className="text-justify">
+              <p className="text-justify text-lg">
                 <em>{poem.Reszlet}</em>
               </p>
               
