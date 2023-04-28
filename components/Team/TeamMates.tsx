@@ -76,7 +76,6 @@ function Mates() {
                                 <li className="team_mate">Puxler Mátyás </li>
                                 <li className="team_mate">Kernya Szilveszter</li>
                                 <li className="team_mate">Bocz Botond  </li>
-                                <li className="team_mate">Stolcz Norbi </li>
                             </ul>
                         </div>
 
