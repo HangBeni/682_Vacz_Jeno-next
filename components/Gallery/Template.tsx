@@ -12,7 +12,7 @@ function Template({ images }: { images: image[] }) {
   const [tempimg, setimg] = useState("")
   const [actuall, setActuall] = useState(0)
   const [modal, setModal] = useState(false)
-  //New
+  
   const COUNT = 30
   const router = useRouter()
   const containerRef = useRef(null)
@@ -20,7 +20,7 @@ function Template({ images }: { images: image[] }) {
   const [offset, setOffset] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
   const [isInView, setIsInView] = useState(false)
-  //Infinit
+
 
     const handleScroll = () =>{
     if (containerRef.current && typeof window !== 'undefined') {
@@ -63,7 +63,6 @@ function Template({ images }: { images: image[] }) {
       const {data:images} = await supabase.from(pid!.toString()).select('*').range(from,to).order('timeLine')
       return images;
     }
- //Infinit
 
 
    let imageDictionary = new Map<number, string>;
