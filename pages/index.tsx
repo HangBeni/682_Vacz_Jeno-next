@@ -37,7 +37,7 @@ function Home({data}:{data:image[]}) {
         <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
           <Image 
           src={teamPics!.imageSrc}
-          sizes='100vw' fill priority
+          sizes='100vw' priority
           className='object-contain'
           title={teamPics!.tags}
           alt={'Képek a csapatról'}
