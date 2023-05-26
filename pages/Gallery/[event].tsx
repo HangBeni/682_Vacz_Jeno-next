@@ -7,7 +7,7 @@ import { image } from '../../utils/Types';
 
     return(
       <>
-    <Menu></Menu>
+      <Menu/>
     <Template images={images}/> 
     </>
      )
