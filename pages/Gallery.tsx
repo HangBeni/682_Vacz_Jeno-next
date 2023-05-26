@@ -1,12 +1,8 @@
-import Menu from "../components/Gallery/Menu";
-
- function Gallery() {
-  
-  return(
-    <>
-    <Menu></Menu>
-    </> 
- )
+import Menu from '../components/Gallery/Menu'
+function Gallery() {
+    return ( 
+        <Menu></Menu>
+     );
 }
 
-export default Gallery
+export default Gallery;
