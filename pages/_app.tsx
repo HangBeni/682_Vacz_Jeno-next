@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <meta name="color-scheme" content="dark light"></meta>
     </Head>
     <AnimatePresence
-                exitBeforeEnter
+                mode='popLayout'
                 onExitComplete={() => window.scrollTo(0, 0)}
     >
       <Navbar/>
