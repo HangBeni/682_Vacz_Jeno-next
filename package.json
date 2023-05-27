@@ -10,17 +10,18 @@
     "@prisma/client": "^4.8.1",
     "@supabase/supabase-js": "^2.22.0",
     "cacache": "^17.0.4",
-    "eslint-config-next": "^13.4.2",
+    "eslint-config-next": "^13.4.4",
     "framer-motion": "^10.12.11",
     "imagekit-javascript": "^1.5.2",
     "lodash": "^4.17.21",
     "netlify": "^13.1.3",
-    "next": "^13.3.0",
+    "next": "^13.4.4",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
-    "react-scroll-to-top": "^3.0.0"
+    "react-scroll-to-top": "^3.0.0",
+    "react-use-theme": "^1.0.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.194",
