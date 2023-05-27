@@ -1,17 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-body {
-    height: 100dvh;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-    font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
-    position: relative;
-}
     
+    body{
+       font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
+        }
     :root{
     --trendy-green: #76b82a;
     --light-blue: #0075bf;
@@ -31,7 +24,6 @@ body {
     --font_secondary-dark: #c4c4cf;
    }
 
-
 @layer components{
     .nav_link{
         @apply block mx-1 my-2 p-2 pr-5 md:my-0 cursor-pointer hover:text-regos hover:translate-x-[6px] transition-transform after:h-0.5 after:absolute after:left-0 after:bottom-0 after:w-full after:bg-orange-400 after:scale-x-0 after:origin-right after:transition-transform  hover:after:scale-x-100  hover:after:origin-left;
@@ -43,6 +35,6 @@ body {
 
 @layer base{
   body{
-    @apply bg-bg text-font dark:text-white dark:bg-bg
-  }
+    @apply bg-bg text-font dark:text-white dark:bg-bg_dark h-[100dvh] overflow-x-hidden scroll-smooth scroll-pt-24 relative
+      }
 }
