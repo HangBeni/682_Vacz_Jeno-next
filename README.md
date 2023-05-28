@@ -5,4 +5,4 @@ Ez egy saját project amit a lakóhelyemhez közeli cserkész csapatnak készít
 # Elérhető az oldal ezen a linken 
 Hostolva: https://vaczjeno.netlify.app
 
-### Ha valami észrevételetek van vagy szeretnétek dolgozni vele nyugodtan csináljatok branchet, de nem merge-jétek össze a main-el
+### Ha valami észrevételetek van írjatok nekem, különben nyugodtan "fork"-oljátok és dolgozzatok vele (Kókány az egész boccsixd)
