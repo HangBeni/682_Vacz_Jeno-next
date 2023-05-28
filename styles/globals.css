@@ -37,4 +37,7 @@
   body{
     @apply bg-bg text-font dark:text-white dark:bg-bg_dark h-[100dvh] overflow-x-hidden scroll-smooth scroll-pt-24 relative
       }
+  html{
+    @apply overflow-x-hidden
+  }
 }
