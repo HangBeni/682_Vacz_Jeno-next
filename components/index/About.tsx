@@ -31,14 +31,14 @@ function About({data}:{data:image[]}) {
             programunk van: kirándulások, portyák, csapat karácsony, farsang, nyáron pedig nomád
             tábort tartunk.
             </p>
-            <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 place-items-center mx-2'>
+            <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] w-[90%] mx-auto gap-2 place-items-center'>
             {
                 data?.map((image) => {
                     if(image?.tags?.includes('Csapatunk nyáritáborában'))
                     {
                             return(
                         <Image
-                            width={400}
+                            width={500}
                             height={275}
                             quality={90}
                             src={image.imageSrc}
