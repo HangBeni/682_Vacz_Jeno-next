@@ -20,7 +20,8 @@ function EventHandler() {
     ["2022_Winter","2022 Téli Portya"],
     ["Regos_Napok","2022 Regös Napok"],
     [ "2023_March_Portya", "2023 Márciusi Portya"],
-    ["2023_Locsolobal", "2023 Locsolóbál"]
+    ["2023_Locsolobal", "2023 Locsolóbál"],
+    ['2023_Farsang','2023-as Farsang']
     ];
 
 
