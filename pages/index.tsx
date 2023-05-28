@@ -13,12 +13,12 @@ function Home({data}:{data:image[]}) {
   
   return (
     <div className='text-font bg-bg dark:bg-bg_dark'>
-    <div className='  relative w-full sm:h-72 md:h-[25rem] lg:h-[30rem] h-full'>
-        <div className='absolute block w-5/6 h-full left-0 right-0 mx-auto '>
+    <div className='relative w-full h-44 mt-2 md:h-[20rem] lg:h-screen lg:mt-0'>
+        <div className='block h-max mx-auto'>
         <Image 
           src={teamPics[0]!.imageSrc}
           sizes={'100dvw'} fill
-          priority
+          priority quality={100}
           className='object-contain'
           title={teamPics[0]?.tags}
           alt={'Képek a csapatunkról'}
