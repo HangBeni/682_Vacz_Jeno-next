@@ -53,7 +53,7 @@ function Template({ images }: { images: image[] }) {
   }
 
    
-
+/*
   const back = () => {
     setimg('')
     setimg(imageDictionary.get(images.find((img) => img.timeLine === actuall - 1)?.timeLine || 0) || "")
@@ -71,7 +71,7 @@ function Template({ images }: { images: image[] }) {
     else
       setActuall(0)
   }
-
+*/
   return (
     <div
     className='bg-bg dark:bg-bg_dark text-font'>
