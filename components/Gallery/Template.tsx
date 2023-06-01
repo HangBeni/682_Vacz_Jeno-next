@@ -107,13 +107,13 @@ function Template({ images }: { images: image[] }) {
        </Suspense>
 
        
-        {/*<span
+      <span
           className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
           onClick={() => (setimg(''), setModal(false), setActuall(0))}
         >
           &times;
         </span>
-
+{/*
         <span className='fixed text-white w-max text-5xl font-extrabold mx-auto cursor-pointer z-10 right-4 p-2'
         onClick={forward}
         >&#62;</span>*/}
