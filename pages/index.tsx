@@ -1,8 +1,8 @@
+import Image from 'next/image';
 import About from '../components/index/About'
 import supabase from '../utils/supabase';
 import TeamMates from '../components/Team/TeamMates';
 import Laws from '../components/Team/Laws';
-import Image from 'next/image';
 import {image} from '../utils/Types'
 
 
@@ -13,8 +13,8 @@ function Home({data}:{data:image[]}) {
   
   return (
     <div className='text-font bg-bg dark:bg-bg_dark'>
-    <div className='relative w-full h-44 mt-2 md:h-[20rem] lg:h-screen lg:mt-0'>
-        <div className='block h-max mx-auto'>
+    <div className='relative h-44 md:h-[20rem] lg:h-screen mt-0'>
+        <div className='block h-full w-full mx-auto mt-0'>
         <Image 
           src={teamPics[0]!.imageSrc}
           sizes={'100dvw'} fill

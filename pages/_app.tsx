@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 >
     <ThemeProvider attribute='class'>
       <Navbar/>
-    <Component {...pageProps} />
+    <Component {...pageProps} suppressHydrationWarning/>
     <Contacts/>
       </ThemeProvider>
     </AnimatePresence>
