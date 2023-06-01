@@ -7,7 +7,7 @@ function About({data}:{data:image[]}) {
        
     <div role={'main'} className="inline-block text-font bg-bg dark:bg-bg_dark dark:text-font_dark">
 
-        <div className="w-full mx-auto text-justify items-center text-lg">
+        <div className="w-full mx-auto text-justify items-center text-xl">
             <p className="m-4 px-4"> A 682. számú Váczi Jenő cserkész csapat hivatalosan 2020. októberében alakult meg
             Hosszúhetényben. Valójában viszont már 2011 óta folyik cserkész munka a faluban.
             Kezdetben a 673. sz. Pius és a 47. sz. Szent László cserkész csapat őrsvezetői foglalkoztak a helyi
@@ -17,9 +17,9 @@ function About({data}:{data:image[]}) {
             <p className="m-4 px-4">
             Az alakulásakor csapatunk névadójának Vácz Jenőt választottuk, aki egy jezsuita atya volt.
             Sok évet szolgált Püspökszentlászlón, az Életrendezés Házának létrehozása az ő nevéhez
-            fűződik. Csapatunkból egy öreg cserkész ismerete az atyát személyesen. Váczi Jenő olyan
-            ember volt, akihez  közel állt a Jóisten és az embertársai is. Számunkra példa, az ő közben
-            járását kérjük a csapatért és tagjaiért.
+            fűződik. Csapatunkból egy öreg cserkész ismerte az atyát személyesen. Vácz Jenő olyan
+            ember volt, akihez  közel állt a Jóisten és az embertársai is. Számunkra példa, az ő közbenjárását
+            kérjük a csapatért és tagjaiért.
             </p>
 
             <p className="m-4 px-4">
