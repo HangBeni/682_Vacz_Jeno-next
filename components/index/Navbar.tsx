@@ -35,9 +35,9 @@ export default function Navbar() {
           682{' '}
         </h1>
         <button id='menu_bt' onClick={() => setVisible((visible) => !visible)} className="block z-10 my-3 mr-2 space-y-[5px] md:opacity-0 opacity-100 md:cursor-default">
-            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
-            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
-            <div className="w-7 h-[4px] bg-gray-600 rounded-lg"></div>
+            <span className="w-7 h-[4px] bg-gray-600 rounded-lg"></span>
+            <span className="w-7 h-[4px] bg-gray-600 rounded-lg"></span>
+            <span className="w-7 h-[4px] bg-gray-600 rounded-lg"></span>
         </button>
         <div className='hidden md:block ml-auto text-2xl py-2 rounded-xl font-semibold '>
           <ul className="md:flex md:items-center">
