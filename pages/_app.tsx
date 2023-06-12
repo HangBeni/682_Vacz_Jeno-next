@@ -10,19 +10,20 @@ function MyApp({ Component, pageProps }: AppProps) {
   
  
   return ( 
-    <html lang='hu' suppressHydrationWarning>
+    <html lang='hu'>
       
     <Head>
             <title key={'682 Vácz Jenő'}>682 Vácz Jenő</title>
             <meta key={'viewport'} name="viewport" content="width=device-width, initial-scale=1.0"/>
     </Head>
+    
     <AnimatePresence
                 mode='sync'
                 onExitComplete={() => window.scrollTo(0, 0)}
                 >
     <ThemeProvider attribute='class'>
       <Navbar/>
-    <Component {...pageProps} suppressHydrationWarning/>
+    <Component {...pageProps}/>
     <Contacts/>
       </ThemeProvider>
     </AnimatePresence>

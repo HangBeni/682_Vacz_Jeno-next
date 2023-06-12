@@ -1,13 +1,12 @@
-import { Suspense, useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { image } from '../../utils/Types'
-import Loading from './Loading'
 
 
 function Template({ images }: { images: image[] }) {
   
   const [tempimg, setimg] = useState("")
-  const [actuall, setActuall] = useState(0)
+  const [actuall, setActuall] = useState(Number)
   const [modal, setModal] = useState(false)
   
 
@@ -26,9 +25,9 @@ function Template({ images }: { images: image[] }) {
                       className='border-border_color_primary border aspect-[3/4] selective
                       row-span-2 h-full cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                       onClick={() => {
-                        setModal(true)
-                        setimg(image.imageSrc)
                         setActuall(index)
+                        setimg(image.imageSrc)
+                        setModal(true)
                       }}/>);
                     else
                       return(
@@ -44,31 +43,30 @@ function Template({ images }: { images: image[] }) {
                           className='border-border_color_secondary border row-span-[1/2] selective
                           cursor-pointer rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                           onClick={() => {
-                            setModal(true)
-                            setimg(image.imageSrc)
                             setActuall(index)
+                            setimg(image.imageSrc)
+                            setModal(true)
                             }}
                             />)
   }
 
+
   const back = () => {
-    if(actuall > 1)
-    setActuall(actuall - 1)
-    else
-    setActuall(images.length-1)
-    
-    setimg(images[actuall].imageSrc)
-    console.log(actuall);
+  if(actuall-1 >= 0 ){
+   setActuall(actuall-1);
+   setimg(images[actuall].imageSrc)}
+  else{
+    setActuall((images.length-1))
+    setimg(images[actuall].imageSrc)}
   }
 
   const forward = () => {
-    if(actuall < (images.length+1))
-    setActuall(actuall + 1)
-    else
-    setActuall(0)
-    
-    setimg(images[actuall].imageSrc)
-    console.log(actuall);
+  if(actuall+1 < images.length ){
+   setActuall(actuall+1);
+   setimg(images[actuall].imageSrc)}
+  else{
+   setActuall(0);
+   setimg(images[actuall].imageSrc)}
   }
 
   return (
@@ -83,14 +81,13 @@ function Template({ images }: { images: image[] }) {
        <button className='fixed text-white w-max text-5xl font-extrabold mx-auto cursor-pointer z-10 left-4 p-2'
        onClick={back}
         >&#60;</button>
-
-    <Suspense fallback={<Loading/>}>
        
-      <div className="relativ mx-auto box-border block h-max w-max p-3">
-          {tempimg.includes('long') ?
+      <div className="relative mx-auto box-border block h-full w-full p-3">
+          {tempimg !== "" && tempimg.includes('long') ?
               <Image
                 className='block h-full mb-2 w-auto object-contain' 
                 sizes='100vw' fill
+                loading='eager'
                 id="zoom"
                 src={tempimg}
                 alt='Aktuálisan kiemelt kép'
@@ -99,25 +96,24 @@ function Template({ images }: { images: image[] }) {
               <Image
                 className='block h-full mb-2 w-auto object-contain' 
                 sizes='100vw' fill
+                loading='eager'
                 id="zoom"
                 src={tempimg}
                 alt='Aktuálisan kiemelt kép'
               />
           }
        </div>
-    </Suspense>
-
        
       <button
           className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
-          onClick={() => (setimg(''), setModal(false), setActuall(0))}
+          onClick={() => (setimg(''), setModal(false), setActuall(Number))}
         >
           &times;
       </button>
 
-        <span className='fixed text-white w-max text-5xl font-extrabold mx-auto cursor-pointer z-10 right-4 p-2'
+        <button className='fixed text-white w-max text-5xl font-extrabold mx-auto cursor-pointer z-10 right-4 p-2'
         onClick={forward}
-        >&#62;</span>
+        >&#62;</button>
       
       </div>
 
@@ -129,7 +125,7 @@ function Template({ images }: { images: image[] }) {
               {images?.map((image:image, i:number) => {
                 return(
                   <>
-                  {Card(image, (i+1))}
+                  {Card(image, i)}
                   </>
               );
               })
