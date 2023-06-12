@@ -8,5 +8,5 @@ export const events = [
     {name:'2022 Regös Napok' ,db_name:'Regos_Napok'},
     {name:'2023 Locsolóbál' ,db_name:'2023_Locsolobal'},
     {name:'2023 Márciusi Portya' ,db_name:'2023_March_Portya'},
-    {name:'2023_Farsang' ,db_name:'2023-as Farsang'}
+    {name:'2023-as Farsang' ,db_name:'2023_Farsang'}
   ];
