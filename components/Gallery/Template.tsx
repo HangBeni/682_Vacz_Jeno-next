@@ -83,7 +83,7 @@ function Template({ images }: { images: image[] }) {
         >&#60;</button>
        
       <div className="relative mx-auto box-border block h-full w-full p-3">
-          {tempimg !== "" && tempimg.includes('long') ?
+          {tempimg && tempimg.includes('long') ?
               <Image
                 className='block h-full mb-2 w-auto object-contain' 
                 sizes='100vw' fill
