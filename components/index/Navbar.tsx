@@ -54,6 +54,7 @@ export default function Navbar() {
         <motion.div 
         variants={menu_variants}
         animate={visible ? "open" : "closed"}
+        initial='closed'
         className='md:hidden fixed bg-trendy_green h-full text-2xl
           md:bg-white  py-2 md:pl-0 pl-7 top-0 right-0 
           rounded-xl text-right font-semibold '>
