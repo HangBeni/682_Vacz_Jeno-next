@@ -11,7 +11,9 @@ function Poems({ poems }: { poems: Poem[] }) {
       <div className="mx-5 grid grid-cols-[repeat(auto-fit,_minmax(250px,1fr))] gap-5 place-items-center">
         {poems.map((poem) => {
           return (
-            <div className="sm:text-lg text-base font-semibold">
+            <div
+            key={poem.id}
+            className="sm:text-lg text-base font-semibold">
               <h2 className="text-2xl font-extrabold">{poem.Name}</h2>
               <p className="text-justify text-lg">
                 <em>{poem.Reszlet}</em>

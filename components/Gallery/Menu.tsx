@@ -30,6 +30,7 @@ function EventHandler() {
                         pathname: '/Gallery/[event]',
                         query: { event: (actual.db_name)},
                       }}
+                      key={actual.name}
                     >
                       <motion.span
                         onClick={() => setDirection((direction_Gallery => !direction_Gallery))}

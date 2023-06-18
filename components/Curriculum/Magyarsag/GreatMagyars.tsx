@@ -12,7 +12,9 @@ function GreatMagyars({greats}: {greats: Greats[]}) {
                             grid-cols-1">
                 {greats.map((great) => {
                 return (
-                    <div className="group text-font dark:text-font_dark h-full flex flex-wrap md:flex-nowrap justify-center mx-3">
+                    <div
+                    key={great.id}
+                    className="group text-font dark:text-font_dark h-full flex flex-wrap md:flex-nowrap justify-center mx-3">
                         <div className="group-hover:translate-y-0 group-focus:translate-y-0 translate-y-5 [@media(hover:none)]:translate-y-0 duration-500">
                             <Image
                             alt="Kép az illetőről"
