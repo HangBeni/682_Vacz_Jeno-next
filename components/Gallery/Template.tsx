@@ -9,54 +9,47 @@ function Template({ images }: { images: image[] }) {
   const [modal, setModal] = useState(false)
   
 
-  const Card = (image:image, index:number) => {
-    if(image.imageSrc.includes("long"))
-                    return(          
-                    
-                      <Image
-                        sizes="(max-width: 640px) 100vw,
+  function Card({image, index} : {image: image, index : number}) {
+    return (
+        image.imageSrc.includes("long") ?
+            <Image
+                sizes="(max-width: 640px) 100vw,
                         (max-width: 1280px) 50vw,
                         (max-width: 1536px) 33vw,
                         25vw"
-                      width={340}
-                      height={400}
-                      quality={80}
-                      loading={index < 4 ? "eager" : "lazy"}
-                      src={image.imageSrc}
-                      key= {index}
-                      title={image.tags}
-                      alt={image.tags}
-                      className='border-border_color_primary border aspect-[3/4] relative selective row-span-2 h-full w-full
+                width={340}
+                height={400}
+                quality={80}
+                loading={index < 4 ? "eager" : "lazy"}
+                src={image.imageSrc}
+                key={index}
+                title={image.tags}
+                alt={image.tags}
+                className='border-border_color_primary border aspect-[3/4] relative selective row-span-2 h-full w-full cursor-pointer
                       rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                      onClick={() => {
-                        setActuall(index)
-                        setModal(true)
-                      }}/>
-                      );
-                    else
-                      return(
-                        
-                          <Image
-                            sizes="(max-width: 640px) 100vw,
+                onClick={() => (setActuall(index),setModal(true))}
+            />
+            :
+            <Image
+                sizes="(max-width: 640px) 100vw,
                             (max-width: 1280px) 50vw,
                             (max-width: 1536px) 33vw,
                             25vw"
-                            width={340}
-                            height={190}
-                          quality={80}
-                          loading={index < 4 ? "eager" : "lazy"}
-                          src={image.imageSrc}
-                          key={index}
-                          title={image.tags}
-                          alt={image.tags}
-                          className='border-border_color_secondary border w-full h-min row-span-[1/2] selective
+                width={340}
+                height={190}
+                quality={80}
+                loading={index < 4 ? "eager" : "lazy"}
+                src={image.imageSrc}
+                key={index}
+                title={image.tags}
+                alt={image.tags}
+                className='border-border_color_secondary border w-full h-min row-span-[1/2] selective cursor-pointer
                           rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                          onClick={() => {
-                            setActuall(index)
-                            setModal(true)
-                            }}
-                            />);
-  }
+                          onClick={() => (setActuall(index),setModal(true))}
+            />
+    )
+}
+
 
   const Zoom = () => {
     return(
@@ -69,32 +62,30 @@ function Template({ images }: { images: image[] }) {
        <button className='fixed text-white opacity-70 hover:opacity-100 transition duration-200 w-max text-5xl font-extrabold mx-auto cursor-pointer z-10 left-4 p-2'
        onClick={() => (actuall!==0 ? setActuall(actuall-1) : setActuall(images.length-1))}
         >&#60;</button>
-       
-      <div className="relative mx-auto box-border block h-full w-full p-3">
-        
-          {actuall !== -47 && images[actuall].imageSrc.includes('long') ?
-              <Image
-                className='block h-full mb-2 w-auto object-contain'
-                sizes='100vw' fill
-                loading='eager'
-                id="zoom"
-                src={images[actuall].imageSrc}
-                alt='Aktuálisan kiemelt kép'
-                priority
-              /> :
+      
+        <div className="relative mx-auto box-border block h-full w-full p-3">
+            {actuall !== -47 && images[actuall].imageSrc.includes('long') ?
+                <Image
+                  className='block h-full mb-2 w-auto object-contain'
+                  sizes='100vw' fill
+                  loading='eager'
+                  id="zoom"
+                  src={images[actuall].imageSrc}
+                  alt='Aktuálisan kiemelt kép'
+                  priority
+                /> :
 
-              <Image
-                className='block h-full mb-2 w-auto object-contain'
-                sizes='100vw' fill
-                loading='eager'
-                id="zoom"
-                src={images[actuall].imageSrc}
-                alt='Aktuálisan kiemelt kép'
-                priority
-              />
-          }
-          
-       </div>
+                <Image
+                  className='block h-full mb-2 w-auto object-contain'
+                  sizes='100vw' fill
+                  loading='eager'
+                  id="zoom"
+                  src={images[actuall].imageSrc}
+                  alt='Aktuálisan kiemelt kép'
+                  priority
+                />
+            }
+        </div>
        
       <button
           className="fixed top-5 right-5 h-8 w-8 cursor-pointer p-1 text-5xl text-white"
@@ -111,8 +102,6 @@ function Template({ images }: { images: image[] }) {
     )
   }
 
-  
-
   return (
     <div
     className='bg-bg dark:bg-bg_dark text-font'>
@@ -124,11 +113,11 @@ function Template({ images }: { images: image[] }) {
         className="pt-4 grid relative grid-cols-[repeat(auto-fit,_minmax(300px,2fr))] place-items-center gap-3"
         >
               {images?.map((image:image, i:number) => {
-                return(
-                  <>
-                  {Card(image, i)}
-                  </>
-              );
+                return(<Card 
+                  image={image}
+                  index={i}
+                  key={i}
+                  />);
               })
             }
           </div>
@@ -136,11 +125,5 @@ function Template({ images }: { images: image[] }) {
         </div>
     </div>
   )
-
-  
-
 }
-
 export default Template
-
-
