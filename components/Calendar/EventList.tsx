@@ -7,14 +7,15 @@ function EventList({events}: {events: Event[]}) {
             { events?.map((event) => {
                 return(
                     <div className="lg:flex lg:flex-wrap rounded-2xl m-2 w-8/12 md:w-3/4  sm:w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
-                    key={event.ProgramNeve}>
+                    key={event.id}>
                         
                         <div className="relative w-full h-20 lg:h-30">
 
                             <Image
                             alt="Illusztráció a programról"
                             src={event.Img}
-                            sizes="100vw" fill
+                            sizes={"100vw"}
+                            fill
                             quality={95}
                             className='relative rounded-xl w-full object-cover '
                             />
@@ -27,7 +28,7 @@ function EventList({events}: {events: Event[]}) {
                             <p className="text-lg lg:text-xl leading-7 mt-2">{event.Részletek}</p>
                             <p className="text-xl lg:text-2xl font-bold">Kezdete: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Kezdete.toString()}</span></p>
                             {
-                            event.Program_Vege == null? null : <p className="text-xl lg:text-2xl font-bold">Vége: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Vege.toString()}</span></p>
+                            event.Program_Vege == null ? null : <p className="text-xl lg:text-2xl font-bold">Vége: <span className="relative after:absolute after:h-[3px] after:left-0 after:bottom-[-2px] after:w-full after:bg-regos after:scale-x-0 after:origin-left hover:after:scale-x-100 after:duration-300 [@media(hover:none)]:after:scale-x-100">{event.Program_Vege.toString()}</span></p>
                         }
                             </div>
                     </div>
