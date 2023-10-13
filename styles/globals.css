@@ -4,7 +4,7 @@
     
     body{
        font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
-        }
+    }
     :root{
     --trendy-green: #76b82a;
     --light-blue: #0075bf;
@@ -35,9 +35,9 @@
 
 @layer base{
   body{
-    @apply bg-bg text-font dark:text-white dark:bg-bg_dark h-[100dvh] overflow-x-hidden scroll-smooth scroll-pt-24 relative
+    @apply flex flex-col bg-bg text-font dark:text-white dark:bg-bg_dark h-full min-h-screen overflow-x-hidden scroll-smooth scroll-pt-24 relative 
       }
   html{
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden h-full
   }
 }
