@@ -26,7 +26,7 @@ function Template({ images }: { images: image[] }) {
                 title={image.tags}
                 alt={image.tags}
                 className='border-border_color_primary border aspect-[3/4] relative selective row-span-2 h-full w-full cursor-pointer
-                      rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
+                          rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
                 onClick={() => (setActuall(index),setModal(true))}
             />
             :
@@ -45,7 +45,7 @@ function Template({ images }: { images: image[] }) {
                 alt={image.tags}
                 className='border-border_color_secondary border w-full h-min row-span-[1/2] selective cursor-pointer
                           rounded-md transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-md hover:shadow-black'
-                          onClick={() => (setActuall(index),setModal(true))}
+                onClick={() => (setActuall(index),setModal(true))}
             />
     )
 }

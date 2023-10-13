@@ -6,9 +6,9 @@ import { image } from '../../utils/Types';
   export default function Event({images}: {images:image[]}) {
     return(
       <>
-      <Menu/>
-    <Template images={images}/> 
-    </>
+        <Menu/>
+        <Template images={images}/> 
+      </>
      )
 }
 
