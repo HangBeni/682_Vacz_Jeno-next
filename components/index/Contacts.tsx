@@ -1,6 +1,6 @@
 export default function Contacts() {
     return(
-    <footer className="statics bottom-0 left-0">
+    <footer className="mt-auto">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
         <div
         className="grid grid-cols-2 sm:grid-cols-3 place-items-center 
