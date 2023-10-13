@@ -21,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
     "react-scroll-to-top": "^3.0.0",
-    "react-use-theme": "^1.0.2"
+    "react-use-theme": "^1.0.2",
+    "styled-jsx": "^5.1.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.194",
