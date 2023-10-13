@@ -7,7 +7,7 @@ function EventList({events}: {events: Event[]}) {
             { events?.map((event) => {
                 return(
                     <div className="lg:flex lg:flex-wrap rounded-2xl m-2 w-8/12 md:w-3/4  sm:w-full border-türkisz border-solid border-2 bg-[#00ec004d]"
-                    key={event.ProgramNeve}>
+                    key={event.id}>
                         
                         <div className="relative w-full h-20 lg:h-30">
 
