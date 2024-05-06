@@ -3,4 +3,3 @@ Ez egy saját project amit a lakóhelyemhez közeli cserkész csapatnak készít
 # Elérhető az oldal ezen a linken 
 Hostolva: [https://vaczjeno.netlify.app](https://vaczjeno.cserkesz.hu/)
 
-## Ha valami észrevételetek van írjatok nekem, különben nyugodtan "fork"-oljátok és dolgozzatok vele (Kókány az egész boccsixd)
