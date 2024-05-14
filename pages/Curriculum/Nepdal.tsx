@@ -17,7 +17,6 @@ function Nepdal({dalok}: {dalok: Dal[]}) {
 }
 
 export async function getServerSideProps() {
-  "use server";
     const {data:dalok} = await supabase.from('Nepdalok').select('*').order('id')
     return {
       props: {

@@ -17,7 +17,6 @@ function Magyarsag({poems, greats}: {poems: Poem[], greats: Greats[]}) {
     }
     
     export async function getServerSideProps() {
-  "use server";
     const {data:greats} = await supabase.from('Greats').select('*').order('id')
     const {data:poems} = await supabase.from('Poems').select('*').order('id')
     return {

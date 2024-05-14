@@ -1,4 +1,4 @@
-"use server";
+
 import EventList from "../components/Calendar/EventList";
 import supabase from "../utils/supabase";
 import {Event} from "../utils/Types"
