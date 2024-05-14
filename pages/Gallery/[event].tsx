@@ -1,4 +1,3 @@
-"use server";
 import Menu from '../../components/Gallery/Menu';
 import Template from '../../components/Gallery/Template';
 import supabase from '../../utils/supabase';
@@ -14,6 +13,7 @@ import { image } from '../../utils/Types';
 }
 
 export async function getServerSideProps(context:any) {
+  "use server";
     const {params} = context
     const {event} =params
   const {data:images} = await supabase.from(event).select('*').order('timeLine')
