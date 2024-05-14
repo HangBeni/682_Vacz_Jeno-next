@@ -1,15 +1,45 @@
+"use client";
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import Link from 'next/link'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+
 export default function Navbar() {
   
   const [visible, setVisible] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === 'system' ? systemTheme : theme;
+  const [darkTheme, setDarkTheme] = useState(true);
 
 
+  const handleSwitch = () => {
+    setDarkTheme(!darkTheme);
+  };
+
+  const storeUserSetPreference = (pref: string) => {
+    localStorage.setItem("theme", pref);
+  };
+
+  
+  useEffect(() => {
+    const root = document.documentElement;
+    const initialColorValue = root.style.getPropertyValue(
+      "--initial-color-mode",
+    );
+    setDarkTheme(initialColorValue === "dark");
+  }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkTheme !== undefined) {
+      if (darkTheme) {
+        root.setAttribute("data-theme", "dark");
+        storeUserSetPreference("dark");
+      } else {
+        root.removeAttribute("data-theme");
+        storeUserSetPreference("light");
+      }
+    }
+  }, [darkTheme]);
+  
   const menu_variants = {
     open: {opacity: 1,x:0},
     closed: {opacity: 0,x:"100%"}
@@ -21,11 +51,12 @@ export default function Navbar() {
     return (
     <nav className="sticky w-full h-min z-30 top-0 flex rounded-t-none border-4 border-t-0 border-trendy_green text-xl bg-bg text-font dark:bg-bg_dark dark:text-font_dark">
       <div>
-        <button onClick={() => theme == 'dark' ? setTheme('light'): (setTheme('dark'))}>
-          <Image src='/day-and-night.png' alt="Theme changer"
+        <button onClick={() => handleSwitch()}>
+          <Image src='/day-and-night.png' alt="Theme changer" id='dayandnight'
+          fetchPriority='low'
           width={75}
           height={75} 
-          className="mx-3 dark:invert"/>
+          className="mx-3 data-[theme=dark]:invert data-[theme=dark]:filter"/>
         </button>
       </div>
       

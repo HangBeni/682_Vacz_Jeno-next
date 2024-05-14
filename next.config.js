@@ -8,6 +8,13 @@ module.exports = {
       loader: "default",
       imageSizes: [16,32,48,64,96,128,256,384],
       formats: ['image/webp'], 
+      remotePatterns:[
+        {
+          protocol: 'https',
+          hostname: 'viiudujcvsyrgxwatpxm.supabase.co',
+          pathname: '**',
+        }
+      ]
   },
     }
   

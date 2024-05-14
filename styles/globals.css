@@ -1,43 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-    
-    body{
-       font-family: "MCSZ SQ HUN, Scout Day HUN, Trajan Pro";
-    }
-    :root{
-    --trendy-green: #76b82a;
-    --light-blue: #0075bf;
-    --regos:hsl(4,88%,25%);
-    --türkisz: #009a93;
-    --font: #161625;
-    --bg: #d2d1c6;
-    --bg_secondary: #9797bb;
-    --border_color_primary: #000;
-    --border_color_secondary: #000;
 
-    --font-dark: #ffff;
-    --bg-dark: #161625;
-    --border_color_primary-dark: #009a93;
-    --border_color_secondary-dark:#76b82a;
-    --bg_secondary-dark: #35354e;
-    --font_secondary-dark: #c4c4cf;
-   }
+:root {
+  --trendy-green: #76b82a;
+  --light-blue: #0075bf;
+  --regos: hsl(4, 88%, 25%);
+  --türkisz: #009a93;
+  --font: #161625;
+  --bg: #d2d1c6;
+  --bg_secondary: #9797bb;
+  --border_color_primary: #000;
+  --border_color_secondary: #000;
 
-@layer components{
-    .nav_link{
-        @apply block mx-1 my-2 p-2 pr-5 md:my-0 cursor-pointer hover:text-regos hover:translate-x-[6px] transition-transform after:h-0.5 after:absolute after:left-0 after:bottom-0 after:w-full after:bg-orange-400 after:scale-x-0 after:origin-right after:transition-transform  hover:after:scale-x-100  hover:after:origin-left;
-    }
-    .team_mate{
-        @apply text-base md:text-lg lg:text-2xl p-2 w-fit text-center hover:translate-x-[6px] transition-transform after:h-0.5 after:absolute after:left-0 after:bottom-0 after:w-full after:bg-orange-600 after:scale-x-0 after:origin-right after:transition-transform  hover:after:scale-x-100  hover:after:origin-left;
-    }
+  --font-dark: #ffff;
+  --bg-dark: #161625;
+  --border_color_primary-dark: #009a93;
+  --border_color_secondary-dark: #76b82a;
+  --bg_secondary-dark: #35354e;
+  --font_secondary-dark: #c4c4cf;
 }
 
-@layer base{
-  body{
-    @apply flex flex-col bg-bg text-font dark:text-white dark:bg-bg_dark h-full min-h-screen overflow-x-hidden scroll-smooth scroll-pt-24 relative 
-      }
-  html{
-    @apply overflow-x-hidden h-full
+[data-theme='dark'] {
+  --bg: #161625;
+  --font: #ffff;
+  #dayandnight {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+body {
+  font-family: 'MCSZ SQ HUN, Scout Day HUN, Trajan Pro';
+  background: var(--bg);
+  color: var(--font);
+}
+
+@layer components {
+  .nav_link {
+    @apply mx-1 my-2 block cursor-pointer p-2 pr-5 transition-transform after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-right after:scale-x-0 after:bg-orange-400 after:transition-transform hover:translate-x-[6px] hover:text-regos hover:after:origin-left  hover:after:scale-x-100  md:my-0;
+  }
+  .team_mate {
+    @apply w-fit p-2 text-center text-base transition-transform after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-right after:scale-x-0 after:bg-orange-600 after:transition-transform hover:translate-x-[6px] hover:after:origin-left hover:after:scale-x-100  md:text-lg  lg:text-2xl;
+  }
+}
+
+@layer base {
+  body {
+    @apply relative flex h-full min-h-screen scroll-pt-24 flex-col overflow-x-hidden scroll-smooth;
+  }
+  html {
+    @apply h-full overflow-x-hidden;
   }
 }
