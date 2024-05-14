@@ -1,3 +1,4 @@
+"use server";
 import Courses from "../../components/Curriculum/Courses";
 import supabase from "../../utils/supabase";
 

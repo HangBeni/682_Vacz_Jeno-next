@@ -1,3 +1,4 @@
+"use server";
 import Dalok from "../../components/Curriculum/Nepdalok/Dalok";
 import supabase from "../../utils/supabase";
 import { Dal } from "../../utils/Types";

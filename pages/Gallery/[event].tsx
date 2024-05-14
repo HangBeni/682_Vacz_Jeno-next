@@ -1,3 +1,4 @@
+"use server";
 import Menu from '../../components/Gallery/Menu';
 import Template from '../../components/Gallery/Template';
 import supabase from '../../utils/supabase';

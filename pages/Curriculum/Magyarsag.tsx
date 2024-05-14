@@ -1,3 +1,4 @@
+"use server";
 import Flag from "../../components/Curriculum/Magyarsag/Flag";
 import GreatMagyars from "../../components/Curriculum/Magyarsag/GreatMagyars";
 import Poems from "../../components/Curriculum/Magyarsag/Poems";

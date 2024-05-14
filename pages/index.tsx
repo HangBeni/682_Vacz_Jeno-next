@@ -1,3 +1,4 @@
+"use server";
 import Image from 'next/image';
 import About from '../components/index/About'
 import supabase from '../utils/supabase';
