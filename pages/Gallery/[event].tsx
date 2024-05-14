@@ -15,7 +15,7 @@ import { image } from '../../utils/Types';
 export async function getServerSideProps(context:any) {
     const {params} = context
     const {event} =params
-  const {data:images} = await supabase.from(event).select('*').order('timeLine')
+  const {data:images} = await supabase!.from(event).select('*').order('timeLine')
   return {
     props: {
       images,

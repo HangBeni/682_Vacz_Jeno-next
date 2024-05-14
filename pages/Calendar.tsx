@@ -26,7 +26,7 @@ function formatDate(date: Date) {
 
 export async function getServerSideProps() {
   
-    const {data:events} = await supabase.from('Event').select('*').gte('Program_Kezdete',formatDate(new Date())).order('Program_Kezdete')
+    const {data:events} = await supabase!.from('Event').select('*').gte('Program_Kezdete',formatDate(new Date())).order('Program_Kezdete')
     return {
       props: {
         events

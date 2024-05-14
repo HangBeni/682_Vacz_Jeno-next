@@ -20,7 +20,7 @@ function Home({knowledge}: {knowledge: Field[]}) {
     
     
     export async function getServerSideProps() {
-       const {data:knowledge} = await supabase.from('Curriculum').select('*')
+       const {data:knowledge} = await supabase!.from('Curriculum').select('*')
     
     return {
       props: {
