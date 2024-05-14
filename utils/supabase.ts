@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 
 
 export default createClient(
-    process.env.SUPABASE_URL || 'https://viiudujcvsyrgxwatpxm.supabase.co',
-    process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZpaXVkdWpjdnN5cmd4d2F0cHhtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDkwMDIyNTYsImV4cCI6MTk2NDU3ODI1Nn0.yOWK_nzu2oPXaTlsh3ajoW1e_fkg3b6A-9MsbCVhKlY'
+   'https://viiudujcvsyrgxwatpxm.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZpaXVkdWpjdnN5cmd4d2F0cHhtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0OTAwMjI1NiwiZXhwIjoxOTY0NTc4MjU2fQ.zedYrWRLuS1Lk8XXGyxqOFa6SrqmgFMG-1ugtulNNpY'
   )
   
