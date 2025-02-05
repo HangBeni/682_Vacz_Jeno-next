@@ -7,7 +7,7 @@ export default function Contacts() {
          transition-all pt-5 text-[1.05rem] lg:text-lg gap-3 sm:gap-0  text-font dark:text-font_dark">
             <p className="text-center col-span-2 sm:col-span-1">Merics Imre csph. <br/> +36 70 235 4112 merics.imre@cserkesz.hu</p>
               <p className="text-center col-span-2 sm:col-span-1">Bergauer Dorina csph. <br/> +36 30 323 2072 bergauer.dorina@cserkesz.hu</p>
-            <p className="text-center col-span-2 sm:col-span-1">A 682 Vácz Jenő cserkészcsapat a Magyar Cserkészszövetség tagja <a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:text-trendy_green"><i>cserkesz.hu</i></a></p>
+            <p className="text-center col-span-2 sm:col-span-1">A 682 V.J. cscsd. az MCSSZ tagja<a href="https://cserkesz.hu" className="hover:text-trendy_green transition-all duration-300 [@media(hover:none)]:text-trendy_green"><i>cserkesz.hu</i></a></p>
             <p className="text-center col-span-2 sm:col-span-1">Tarjányi József csp. <br/>+36 30 588 2438 tarjanyi.jozsi@gmail.com</p>
             <p className="text-center col-span-2 sm:col-span-3">Created by: Hang Benjámin</p>
         </div>
